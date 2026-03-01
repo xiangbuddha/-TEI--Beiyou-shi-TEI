@@ -1,0 +1,15 @@
+@namespace tei "http://www.tei-c.org/ns/1.0";
+
+
+
+/* Override Oxygen TEI CSS: allow wrapping in notes/paragraphs */
+
+tei|note, tei|p {
+
+  white-space: normal !important;
+
+  overflow-wrap: anywhere;
+
+  word-break: break-all;
+
+}
