@@ -19,10 +19,18 @@
       <pubPlace xml:lang="zh-Hant">美國賓夕法尼亞州費城</pubPlace>
       <pubPlace xml:lang="en">Philadelphia, Pennsylvania, USA</pubPlace>
       <date when="2025">2025</date>
-      <availability status="restricted">
-        <p xml:lang="zh-Hant">本文件為博士論文附錄草稿，僅供學術研究使用。</p>
-        <p xml:lang="en">This file is a dissertation appendix (draft) for academic research purposes only.</p>
-      </availability>
+      <availability status="free">
+  <p xml:lang="zh-Hant">
+    本 TEI XML 數據以 Creative Commons Attribution 4.0 International (CC BY 4.0) 授權釋出。
+    使用者可自由分享與改作，但須標明作者魏翔（Xiang Wei）。
+    詳見：https://creativecommons.org/licenses/by/4.0/
+  </p>
+  <p xml:lang="en">
+    The TEI XML data in this repository is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+    You may share and adapt the material with proper attribution to Xiang Wei.
+    See: https://creativecommons.org/licenses/by/4.0/
+  </p>
+</availability>
     </publicationStmt>
 
     <notesStmt>
