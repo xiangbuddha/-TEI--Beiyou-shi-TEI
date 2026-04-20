@@ -20,17 +20,17 @@
       <pubPlace xml:lang="en">Philadelphia, Pennsylvania, USA</pubPlace>
       <date when="2025">2025</date>
       <availability status="free">
-  <p xml:lang="zh-Hant">
-    本 TEI XML 數據以 Creative Commons Attribution 4.0 International (CC BY 4.0) 授權釋出。
-    使用者可自由分享與改作，但須標明作者魏翔（Xiang Wei）。
-    詳見：https://creativecommons.org/licenses/by/4.0/
-  </p>
-  <p xml:lang="en">
-    The TEI XML data in this repository is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
-    You may share and adapt the material with proper attribution to Xiang Wei.
-    See: https://creativecommons.org/licenses/by/4.0/
-  </p>
-</availability>
+        <p xml:lang="zh-Hant">
+          本 TEI XML 數據以 Creative Commons Attribution 4.0 International (CC BY 4.0) 授權釋出。
+          使用者可自由分享與改作，但須標明作者魏翔（Xiang Wei）。
+          詳見：https://creativecommons.org/licenses/by/4.0/
+        </p>
+        <p xml:lang="en">
+          The TEI XML data in this repository is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+          You may share and adapt the material with proper attribution to Xiang Wei.
+          See: https://creativecommons.org/licenses/by/4.0/
+        </p>
+      </availability>
     </publicationStmt>
 
     <notesStmt>
@@ -695,12 +695,891 @@
     <change when="2025-11-01" who="#Xiang" xml:lang="en">Initial TEI encoding</change>
   </revisionDesc>
 </teiHeader>
-  <standOff>
-    <linkGrp xml:id="lg_poem_ordering" type="poem-ordering" targFunc="source target">
-      <desc xml:lang="zh-Hant">詩作對齊（佔位示例）。後續將逐首加入跨版本對齊 link。</desc>
-      <desc xml:lang="en">Poem alignment (placeholder). Links will be added poem-by-poem.</desc>
-      <link xml:id="lnk_by317_self" target="#by317 #by317"/>
-    </linkGrp>
+  <standOff xml:id="sna" type="socialNetwork">
+    <listPerson>
+      <person xml:id="Chushi_fanqi">
+        <persName>楚石梵琦</persName>
+        <idno type="authority">A001082</idno>
+      </person>
+    </listPerson>
+    <listPerson>
+      <person xml:id="Guo_jizhou">
+        <persName>郭冀州</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>"冀州"為官職名,具體姓名待考證。</desc>
+        </state>
+      </person>
+    </listPerson>
+    
+    <listRelation type="author-centered">
+      <relation xml:id="rel_Guo_jizhou"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Guo_jizhou"
+        source="#by019"
+        cert="high">
+        <desc></desc>
+      </relation>
+    </listRelation>
+    
+    <listPerson>
+      <person xml:id="Wu_seng" role="collective">
+        <persName>吳僧</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+        <note>見by015，是《北遊詩》中最早出現的交遊。吳僧為楚石送別某吳地的僧人返回家鄉。具體人物待考。</note>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Wu_seng"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Wu_seng"
+        source="#by015"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Sidibala">
+        <persName>Sidibala</persName>
+        <idno type="authority">A006670</idno>
+        <sex value="M">男</sex>
+        <occupation>emperor</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+  <relation xml:id="rel_Sidibala"
+    name="mourned_for"
+    type="textual"
+    active="#Chushi_fanqi"
+    passive="#Sidibala"
+    source="#by020 #by021"
+    cert="high">
+    <desc>楚石至大都後英宗已崩，未相見；楚石作詩哀悼之。</desc>
+  </relation>
+</listRelation>
+
+  <listPerson>
+    <person xml:id="Yu_ji">
+      <persName>虞集</persName>
+      <persName type="alias" source="#by079">虞伯生</persName>
+      <idno type="authority">A008211</idno>
+      <sex value="M">男</sex>
+      <occupation>government official</occupation>
+    </person>
+  </listPerson>
+  <listRelation type="author-centered">
+    <relation xml:id="rel_Yu_ji"
+      name="addressed_to"
+      type="social"
+      active="#Chushi_fanqi"
+      passive="#Yu_ji"
+      source="#by022 #by079 #by080 #by166"
+      cert="high">
+      <desc></desc>
+    </relation>
+  </listRelation>  
+<listPerson>
+  <person xml:id="Hong_situ" >
+    <persName>洪司徒</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+    <state type="identification" ana="uncertain">
+      <desc>"司徒"為官職名,具體姓名待考證。</desc>
+    </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Hong_situ"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Hong_situ"
+        source="#by024"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+ 
+    <listPerson>
+      <person xml:id="Lü_rixin" >
+        <persName>呂日新</persName>
+        <persName type="alias" source="#by043">呂改之</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>呂日新別名見於 #by043，具體資料仍待考。</desc>
+        </state>
+    </person>
+      
+      <person xml:id="Jia_andao">
+        <persName>家安道</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>家安道具體資料待考</desc>
+        </state>
+      </person>
+</listPerson>
+<listRelation type="author-centered">
+  <relation xml:id="rel_Lü_rixin"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Lü_rixin"
+        source="#by025 #by042 #by043 #by167 #by168 #by183 #by189 #by267 #by278 #by279 #by280 #by313"
+        cert="high">
+        <desc></desc>
+    </relation>
+  <relation xml:id="rel_Jia_andao"
+    name="addressed_to"
+    type="social"
+    active="#Chushi_fanqi"
+    passive="#Jia_andao"
+    source="#by025 #by041"
+    cert="high">
+    <desc></desc>
+  </relation>
+</listRelation>
+    <listRelation type="peer-to-peer">
+      <relation xml:id="rel_Lü_Jia_acquainted"
+        name="acquainted_with"
+        type="social"
+        mutual="#Lü_rixin #Jia_andao"
+        source="#by025"
+        cert="medium">
+        <desc>二人同時出現於楚石贈詩 by025 中,推測彼此相識。</desc>
+      </relation>
+    </listRelation>
+    
+    <listPerson>
+      <person xml:id="Wu_zhenren">
+        <persName>吳真人</persName>
+        <sex value="M">男</sex>
+        <occupation>Daoist Priest</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>"真人"對道士的尊稱,具體姓名待考證。</desc>
+        </state>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+  <relation xml:id="rel_Wu_zhenren"
+      name="addressed_to"
+      type="social"
+        active="#Chushi_fanqi"
+        passive="#Wu_zhenren"
+        source="#by026"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Yesün_Temür">
+        <persName>Yesün-Temür</persName>
+        <idno type="authority">A006671</idno>
+        <sex value="M">男</sex>
+        <occupation>emperor</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+  <relation xml:id="rel_Yesün_Temür"
+      name="addressed_to"
+      type="social"
+        active="#Chushi_fanqi"
+        passive="#Yesün_Temür"
+        source="#by027 #by028 #by032 #by038 #by153"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="xifan_yuanshuai" role="collective">
+        <persName>西番元帥</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <note>"西番“指元末時期生活在岷縣、臨潭的十八個藏族部落。</note>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_xifan_yuanshuai"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#xifan_yuanshuai"
+        source="#by029"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Deng_wenyuan">
+        <persName>鄧文原</persName>
+        <persName type="alias" source="#by069">鄧善之</persName>
+        <idno type="authrity">A008213</idno>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+    </person>
+        <person xml:id="Zhao_mengfu">
+          <persName>趙孟頫</persName>
+          <idno type="authority">A004030</idno>
+          <sex value="M">男</sex>
+          <occupation>government official</occupation>
+        </person>
+      <person xml:id="Yuan_jue">
+        <persName>袁桷</persName>
+        <persName type="alias" source="#by069">袁伯長</persName>
+        <idno type="authrity">A008210</idno>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+      </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Deng_wenyuan"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Deng_wenyuan"
+        source="#by016 #by069"
+        cert="high">
+        <desc></desc>
+    </relation>
+  
+  <relation xml:id="rel_Zhao_mengfu"
+    name="mentioned"
+    type="textual"
+    active="#Chushi_fanqi"
+    passive="#Zhao_mengfu"
+    source="#by016"
+    cert="high">
+    <desc>趙孟頫已經於1322年去世，故而楚石北上二人無法見面。</desc>
+  </relation>
+  
+  <listRelation type="peer-to-peer">
+    <relation xml:id="rel_Deng_Yuan_acquainted"
+      name="acquainted_with"
+      type="social"
+      mutual="#Deng_wenyuan #Yuan_jue"
+      source="#by069"
+      cert="high">
+      <desc>見楚石序記錄“善之謂予曰：袁伯長學士在京師累歲，不肯取鄉士。今年得程端禮兄弟，人亦不以我為私。”推測彼此相識。</desc>
+    </relation>
+  </listRelation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="imperial_envoy" role="collective">
+        <persName>皇帝使者</persName>
+        <sex value="Unknown">未知</sex>
+        <occupation>government official</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+  <relation xml:id="rel_imperial_envoy"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#imperial_envoy"
+        source="#by030"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+   <listPerson>
+     <person xml:id="Sheng_an">
+       <persName>聖安</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+       <state type="identification" ana="uncertain">
+         <desc>“聖安“具體人物資料待考</desc>
+       </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Sheng_an"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Sheng_an"
+        source="#by031"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Yunshan">
+        <persName>雲山</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+        <state type="identification" ana="uncertain" >
+          <desc>“雲山”具體人物待考證</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Yunshan"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Yunshan"
+        source="#by036"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="guoshi" role="collective">
+        <persName>國師</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_guoshi"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#guoshi"
+        source="#by039 #by081 #by082"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Hao_jizhou">
+        <persName>郝冀州</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>“冀州”為官職名，詳細資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+  <relation xml:id="rel_Hao_jizhou"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Hao_jizhou"
+        source="#by042 #by043"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Wuguang">
+        <persName>悟光</persName>
+        <persName type="alias" source="#by044">光雪窗</persName>
+        <persName type="alias" source="#by171">雪窗</persName>
+        <idno type="authority">A007296</idno>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    </person>
+    <person xml:id="Wei_yetang">
+      <persName>魏野塘</persName>
+      <sex value="M">男</sex>
+      <occupation>Literati</occupation>
+      <state type="identification" ana="uncertain">
+        <desc>
+          具體人物資料待考
+        </desc>
+      </state>
+    </person>
+      <person xml:id="Huashan_yin">
+        <persName>華山隱</persName>
+        <persName type="alias" source="#by314">華真人</persName>
+        <sex value="M">男</sex>
+        <occupation>Daoist Priest</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>
+            具體人物資料待考
+          </desc>
+        </state>
+      </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Wuguang"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Wuguang"
+        source="#by044 #by045 #by162 #by163 #by171 #by285 #by288 #by291 #by292 #by312 #by314 "
+        cert="high">
+        <desc></desc>
+    </relation>
+  <relation xml:id="rel_Wei_yetang"
+    name="addressed_to"
+    type="social"
+    active="#Chushi_fanqi"
+    passive="#Wei_yetang"
+    source="#by285 "
+    cert="high">
+    <desc></desc>
+  </relation>
+  <relation xml:id="rel_Huashan_yin"
+    name="addressed_to"
+    type="social"
+    active="#Chushi_fanqi"
+    passive="#Huashan_yin"
+    source="#by288 #by190 #by281 "
+    cert="high">
+    <desc></desc>
+  </relation>
+</listRelation>
+    
+  <listRelation type="peer-to-peer">
+    <relation xml:id="rel_Wu_Wei_acquainted"
+      name="acquainted_with"
+      type="social"
+      mutual="#Wuguang #Wei_yetang"
+      source="#by285"
+      cert="high">
+      <desc>悟光與楚石同拜訪魏野塘，見#by285</desc>
+    </relation>
+    <relation xml:id="rel_Huashan_Wu_acquainted"
+      name="acquainted_with"
+      type="social"
+      mutual="#Wuguang #Huashan_yin"
+      source="#by288"
+      cert="medium">
+      <desc>二人同時出現於楚石贈詩 by288 中,推測彼此相識。</desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="cong_tidian">
+        <persName>聰提點</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>“提點”為官職，人物具體資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_cong_tidian"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#cong_tidian"
+        source="#by046"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="nobleman" role="collective">
+        <persName>諸王</persName>
+        <sex value="M">男</sex>
+        <occupation>royal member</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+  <relation xml:id="rel_nobleman"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#nobleman"
+        source="#by048"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="literati" role="collective">
+        <persName>學士</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_literati"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#literati"
+        source="#by049 #by050 #by065"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    <listPerson>
+      <person xml:id="Kheshig" role="collective">
+        <persName>Kheshig</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+  <relation xml:id="rel_Kheshig"
+        name="adderssed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Kheshig"
+        source="#by055"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    <listPerson>
+      <person xml:id="Zhang_shangshu">
+        <persName>張尚書</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>“尚書”為官職名稱，人物具體資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Zhang_shangshu"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Zhang_shangshu"
+        source="#by055"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="the_monk" role="collective">
+        <persName>某僧</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_the_monk"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#the_monk"
+        source="#by057"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Wang_shijun">
+        <persName>王使君</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>“使君”為官職名。人物具體資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Wang_shijun"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Wang_shijun"
+        source="#by058"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Qiu_jinshi">
+        <persName>丘進士</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>人物具體資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Qiu_jinshi"
+        name="addressed_to"
+        type="social"
+         active="#Chushi_fanqi"
+        passive="#Qiu_jinshi"
+        source="#by059"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+   
+    <listPerson>
+      <person xml:id="Zhang_kezheng">
+        <persName>張克正</persName>
+        <sex value="M">男</sex>
+        <occupation>unknown</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>目前尚無除卻姓名外具體人物資料，初步判斷應為錢塘人，具體資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+    <listRelation type="author-centered">
+      <relation xml:id="rel_Zhang_kezheng"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Zhang_kezheng"
+        source="#by060"
+        cert="high">
+        <desc></desc>
+      </relation>
+    </listRelation>
+    
+    <listPerson>
+      <person xml:id="Kai_shi">
+        <persName>鍇法師</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>具體資料待考，初步判斷曾扈從泰定帝</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Kai_shi"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Kai_shi"
+        source="#by078"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+
+    <listPerson>
+      <person xml:id="Zhiquan">
+        <persName>智詮</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>具體人物資料待考</desc>
+        </state>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Zhiquan"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Zhiquan"
+        source="#by073"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Han_zhizhong">
+        <persName>韓執中</persName>
+        <sex value="M">男</sex>
+        <occupation>unknown</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>目前無除姓名外具體人物資料，初步考察應為錢塘人，具體資料待考。</desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Han_zhizhong"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Han_zhizhong"
+        source="#by074"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Jiuquan_taishou">
+        <persName>酒泉太守</persName>
+        <sex value="M">男</sex>
+        <occupation>government official</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>
+            1323 年左右並無正式的酒泉太守；當地正式行政區是肅州路。若要找相當於地方長官的人，應看肅州路達魯花赤／總管系統。就現有公開可檢材料，只能確定此職當時由阿沙後裔家族世襲，具體到 1323 年是哪一位，暫時不能確證；較可能的候選人是第五代的貫努普或令只沙。
+          </desc>
+        </state>
+    </person>
+</listPerson>
+
+<listRelation type="author-centered">
+    <relation xml:id="rel_Jiuquan_taishou"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Jiuquan_taishou"
+        source="#by100"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Xingxiu">
+        <persName>行秀</persName>
+        <persName type="alias" source="#by169">報恩</persName>
+        <idno type="authority">A000408</idno>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Xingxiu"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Xingxiu"
+        source="#by169"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+<listPerson>
+  <person xml:id="Shipu">
+    <persName>釋普</persName>
+    <persName type="alias" source="#by172">大雲</persName>
+    <idno type="authority">561064</idno>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    <note>經檢索歷代古籍與相關專題數據庫比對，詩中所提及的「大雲」，其身份可初步推定為《明畫錄》所載的僧人釋普。據該書卷六記載，釋普自號大雲，早年曾師事趙孟頫習畫；又考楚石梵琦與趙孟頫本有交遊往來，二者時代、交遊圈高度重合，故詩中「大雲」當即釋普。
+    </note>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Shipu"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Shipu"
+        source="#by172 #by173"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    <listPerson>
+      <person xml:id="Wang_lianshi">
+        <persName>王錬師</persName>
+        <sex value="M">男</sex>
+        <occupation>Daoist Priest</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>具體人物資料待考。“錬師”為道教稱呼</desc>
+        </state>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Wang_lianshi"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Wang_lianshi"
+        source="#by175"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Hu_daoren">
+        <persName>胡道人</persName>
+        <sex value="M">男</sex>
+        <occupation>Daoist Priest</occupation>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Hu_daoren"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Hu_daoren"
+        source="#by191"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+    <listPerson>
+      <person xml:id="Binghe">
+        <persName>冰壑</persName>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+        <state type="identification" ana="uncertain">
+          <desc>具體人物資料待考，初步推斷祖籍為象山，<persName key="A004699">雪岩祖欽</persName>之弟子</desc>
+        </state>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Binghe"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Binghe"
+        source="#by271"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
+    
+  <listPerson>
+    <person xml:id="Shi_jueen">
+      <persName>釋覺恩</persName>
+      <persName type="alias" source="#by303">斷江</persName>
+      <idno type="authority">113421</idno>
+        <sex value="M">男</sex>
+        <occupation>Buddhist Monk</occupation>
+    </person>
+</listPerson>
+<listRelation type="author-centered">
+    <relation xml:id="rel_Shi_jueen"
+        name="addressed_to"
+        type="social"
+        active="#Chushi_fanqi"
+        passive="#Shi_jueen"
+        source="#by303 #by312"
+        cert="high">
+        <desc></desc>
+    </relation>
+</listRelation>
   </standOff>
   <text>
     <front>
@@ -709,230 +1588,230 @@
         
         <p>
           <app>
-            <lem wit="#GX">皇帝端居穆清<pc resp="#Xiang" ana="#punct-added">，</pc>念四海兵爭<pc resp="#Xiang"
-                ana="#punct-added">，</pc>將卒民庶多殁於非命<pc resp="#Xiang" ana="#punct-added">，</pc>精爽無依<pc
+            <lem wit="#GX">皇帝端居穆清念四海兵爭<pc resp="#Xiang"
+                ana="#punct-added">，</pc>將卒民庶多殁於非命精爽無依<pc
                 resp="#Xiang" ana="#punct-added">，</pc>非佛世尊不足以度之<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>惟漢武元年秋九月<pc resp="#Xiang" ana="#punct-added">，</pc>詔江南大浮屠十餘人於蔣山禪寺作大法會<pc
+                >。</pc>惟漢武元年秋九月詔江南大浮屠十餘人於蔣山禪寺作大法會<pc
                 resp="#Xiang" ana="#punct-added">，</pc>時楚石禪師實與其列<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師升座説法<pc resp="#Xiang" ana="#punct-added">，</pc>以聳人天龍鬼之聽<pc resp="#Xiang"
-                ana="#punct-added">。</pc>竣事<pc resp="#Xiang" ana="#punct-added">，</pc>近臣入奏<pc
+                >。</pc>師升座説法以聳人天龍鬼之聽<pc resp="#Xiang"
+                ana="#punct-added">。</pc>竣事近臣入奏<pc
                 resp="#Xiang" ana="#punct-added">，</pc>上大悦<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>二年春三月<pc resp="#Xiang" ana="#punct-added">，</pc>復用元年故事<pc resp="#Xiang"
-                ana="#punct-added">，</pc>召師説法如初<pc resp="#Xiang" ana="#punct-added">，</pc>錫燕文樓下<pc
+                >。</pc>二年春三月復用元年故事<pc resp="#Xiang"
+                ana="#punct-added">，</pc>召師説法如初錫燕文樓下<pc
                 resp="#Xiang" ana="#punct-added">，</pc>親承顧問<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>暨還<pc resp="#Xiang" ana="#punct-added">，</pc>出内府白金以賜<pc resp="#Xiang"
+                >。</pc>暨還出内府白金以賜<pc resp="#Xiang"
                 ana="#punct-added">。</pc>三年之秋<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>上以鬼神情狀幽微難測<pc resp="#Xiang" ana="#punct-added">，</pc>意遺經當有明文<pc resp="#Xiang"
+                >，</pc>上以鬼神情狀幽微難測意遺經當有明文<pc resp="#Xiang"
                 ana="#punct-added">，</pc>妙柬僧中通三藏之説者問焉<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師以夢堂噩公<pc resp="#Xiang" ana="#punct-added">、</pc>行中仁公等應召而至<pc resp="#Xiang"
-                ana="#punct-added">，</pc>館于大天界寺<pc resp="#Xiang" ana="#punct-added">，</pc>上命儀曹勞之<pc
+                >。</pc>師以夢堂噩公行中仁公等應召而至<pc resp="#Xiang"
+                ana="#punct-added">，</pc>館于大天界寺上命儀曹勞之<pc
                 resp="#Xiang" ana="#punct-added">。</pc>既而援㩀經論成書<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>將入朝敷奏<pc resp="#Xiang" ana="#punct-added">，</pc>師忽示微疾<pc resp="#Xiang"
-                ana="#punct-added">。</pc>越四日<pc resp="#Xiang" ana="#punct-added">，</pc>趣左右具浴更衣<pc
+                >，</pc>將入朝敷奏師忽示微疾<pc resp="#Xiang"
+                ana="#punct-added">。</pc>越四日趣左右具浴更衣<pc
                 resp="#Xiang" ana="#punct-added">，</pc>索筆書偈曰<pc resp="#Xiang" ana="#punct-added"
-                >：</pc><pc resp="#Xiang" ana="#punct-added">“</pc>真性圓明<pc resp="#Xiang"
-                ana="#punct-added">，</pc>本無生㓕<pc resp="#Xiang" ana="#punct-added">。</pc>木馬夜鳴<pc
+                >：</pc>真性圓明<pc resp="#Xiang"
+                ana="#punct-added">，</pc>本無生㓕木馬夜鳴<pc
                 resp="#Xiang" ana="#punct-added">，</pc>西方日出<pc resp="#Xiang" ana="#punct-added"
-                >。</pc><pc resp="#Xiang" ana="#punct-added">”</pc>書畢<pc resp="#Xiang"
-                ana="#punct-added">，</pc>謂夢堂曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc
+                >。</pc>書畢<pc resp="#Xiang"
+                ana="#punct-added">，</pc>謂夢堂曰<pc
                 resp="#Xiang" ana="#punct-added">“</pc>師兄<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>我將去矣<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang"
-                ana="#punct-added">”</pc>夢堂曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc
+                >，</pc>我將去矣<pc resp="#Xiang"
+                ana="#punct-added">”</pc>夢堂曰<pc
                 resp="#Xiang" ana="#punct-added">“</pc>子去何之<pc resp="#Xiang" ana="#punct-added"
-                >？</pc><pc resp="#Xiang" ana="#punct-added">”</pc>師曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">“</pc>西方爾<pc
+                >？</pc>師曰<pc resp="#Xiang"
+                ana="#punct-added">：</pc>西方爾<pc
                 resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>夢堂曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang"
-                ana="#punct-added">“</pc>西方有佛<pc resp="#Xiang" ana="#punct-added">，</pc>東方無佛耶<pc
+                >”</pc>夢堂曰<pc resp="#Xiang"
+                ana="#punct-added">“</pc>西方有佛東方無佛耶<pc
                 resp="#Xiang" ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>師厲聲一喝<pc resp="#Xiang" ana="#punct-added">，</pc>泊然而化<pc resp="#Xiang"
+                >”</pc>師厲聲一喝泊然而化<pc resp="#Xiang"
                 ana="#punct-added">，</pc>時七月二十六日也<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>天界住持西白金公<pc resp="#Xiang" ana="#punct-added">，</pc>法門猶子也<pc resp="#Xiang"
-                ana="#punct-added">，</pc>爲治後事<pc resp="#Xiang" ana="#punct-added">，</pc>無不盡禮<pc
+                >。</pc>天界住持西白金公法門猶子也<pc resp="#Xiang"
+                ana="#punct-added">，</pc>爲治後事無不盡禮<pc
                 resp="#Xiang" ana="#punct-added">。</pc>時制火葬有禁<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>禮部以聞<pc resp="#Xiang" ana="#punct-added">，</pc>上特命從其教<pc resp="#Xiang"
-                ana="#punct-added">。</pc>茶毗之餘<pc resp="#Xiang" ana="#punct-added">，</pc>齒牙舌根數珠咸不壞<pc
+                >，</pc>禮部以聞上特命從其教<pc resp="#Xiang"
+                ana="#punct-added">。</pc>茶毗之餘齒牙舌根數珠咸不壞<pc
                 resp="#Xiang" ana="#punct-added">，</pc>設利羅粘綴遺骨<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>纍纍然如珠<pc resp="#Xiang" ana="#punct-added">。</pc>其弟子文晟奉骨及諸不壞者歸于海鹽<pc
+                >，</pc>纍纍然如珠其弟子文晟奉骨及諸不壞者歸于海鹽<pc
                 resp="#Xiang" ana="#punct-added">，</pc>卜以八月二十八日建塔於天寧永祚禪寺葬焉<pc resp="#Xiang"
                 ana="#punct-added">。</pc>嗣法上首景瓛復偕文晟以仁公所造行狀來徴銘<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>仁公博通内外典<pc resp="#Xiang" ana="#punct-added">，</pc>文辭簡奥<pc resp="#Xiang"
-                ana="#punct-added">，</pc>有西漢風<pc resp="#Xiang" ana="#punct-added">，</pc>其言當可信弗誣<pc
+                >。</pc>仁公博通内外典文辭簡奥<pc resp="#Xiang"
+                ana="#punct-added">，</pc>有西漢風其言當可信弗誣<pc
                 resp="#Xiang" ana="#punct-added">。</pc>謹按狀<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>師諱𣑽琦<pc resp="#Xiang" ana="#punct-added">，</pc>楚石其字也<pc resp="#Xiang"
-                ana="#punct-added">，</pc>小字曇耀<pc resp="#Xiang" ana="#punct-added">，</pc>明州象山人<pc
+                >，</pc>師諱𣑽琦楚石其字也<pc resp="#Xiang"
+                ana="#punct-added">，</pc>小字曇耀明州象山人<pc
                 resp="#Xiang" ana="#punct-added">，</pc>姓朱氏<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>父杲毋張氏<pc resp="#Xiang" ana="#punct-added">，</pc>張夢日墮懷而生師<pc resp="#Xiang"
-                ana="#punct-added">。</pc>方在襁褓中<pc resp="#Xiang" ana="#punct-added">，</pc>有神僧摩其頂曰<pc
+                >。</pc>父杲毋張氏張夢日墮懷而生師<pc resp="#Xiang"
+                ana="#punct-added">。</pc>方在襁褓中有神僧摩其頂曰<pc
                 resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added"
-                >“</pc>此佛曰也<pc resp="#Xiang" ana="#punct-added">，</pc>他時能照燭昏衢乎<pc resp="#Xiang"
-                ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added">”</pc>人因名之爲曇曜云<pc
+                >“</pc>此佛曰也他時能照燭昏衢乎<pc resp="#Xiang"
+                ana="#punct-added">？</pc>人因名之爲曇曜云<pc
                 resp="#Xiang" ana="#punct-added">。</pc>年七歲<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>靈性潁發<pc resp="#Xiang" ana="#punct-added">，</pc>讀書即了大義<pc resp="#Xiang"
-                ana="#punct-added">。</pc>或問所嗜何言<pc resp="#Xiang" ana="#punct-added">，</pc>即應聲曰<pc
+                >，</pc>靈性潁發讀書即了大義<pc resp="#Xiang"
+                ana="#punct-added">。</pc>或問所嗜何言即應聲曰<pc
                 resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added"
-                >“</pc>君子喻於義<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang"
-                ana="#punct-added">”</pc>至於屬句倣書<pc resp="#Xiang" ana="#punct-added">，</pc>皆度越餘子<pc
+                >“</pc>君子喻於義<pc resp="#Xiang"
+                ana="#punct-added">”</pc>至於屬句倣書皆度越餘子<pc
                 resp="#Xiang" ana="#punct-added">，</pc>遠近號爲奇童<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>九歲棄俗入永祚<pc resp="#Xiang" ana="#punct-added">，</pc>受經於訥翁謨師<pc resp="#Xiang"
-                ana="#punct-added">，</pc>尋依晋翁詢師於湖之崇恩<pc resp="#Xiang" ana="#punct-added">。</pc>詢師<pc
+                >。</pc>九歲棄俗入永祚受經於訥翁謨師<pc resp="#Xiang"
+                ana="#punct-added">，</pc>尋依晋翁詢師於湖之崇恩詢師<pc
                 resp="#Xiang" ana="#punct-added">，</pc>師之從族祖也<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>趙魏公見師器之<pc resp="#Xiang" ana="#punct-added">，</pc>爲鬻僧牒<pc resp="#Xiang"
-                ana="#punct-added">，</pc>得薙染爲沙門<pc resp="#Xiang" ana="#punct-added">。</pc>繼往杭之昭慶<pc
+                >。</pc>趙魏公見師器之爲鬻僧牒<pc resp="#Xiang"
+                ana="#punct-added">，</pc>得薙染爲沙門繼往杭之昭慶<pc
                 resp="#Xiang" ana="#punct-added">，</pc>受具足戒<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>年已十有六矣<pc resp="#Xiang" ana="#punct-added">。</pc>詢師遷住道場<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師爲侍者<pc resp="#Xiang" ana="#punct-added">。</pc>居亡何<pc
+                >，</pc>年已十有六矣詢師遷住道場<pc resp="#Xiang"
+                ana="#punct-added">，</pc>師爲侍者居亡何<pc
                 resp="#Xiang" ana="#punct-added">，</pc>命司藏室<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>閲首楞嚴經<pc resp="#Xiang" ana="#punct-added">，</pc>至<pc resp="#Xiang"
-                ana="#punct-added">“</pc>緣見因明<pc resp="#Xiang" ana="#punct-added">，</pc>暗成無見<pc
+                >，</pc>閲首楞嚴經至<pc resp="#Xiang"
+                ana="#punct-added">“</pc>緣見因明暗成無見<pc
                 resp="#Xiang" ana="#punct-added">”</pc>處<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>恍然有省<pc resp="#Xiang" ana="#punct-added">。</pc>歷覽群書<pc resp="#Xiang"
-                ana="#punct-added">，</pc>不假師授<pc resp="#Xiang" ana="#punct-added">，</pc>文句自通<pc
+                >，</pc>恍然有省歷覽群書<pc resp="#Xiang"
+                ana="#punct-added">，</pc>不假師授文句自通<pc
                 resp="#Xiang" ana="#punct-added">。</pc>然膠於名相<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>未能釋去縳<pc resp="#Xiang" ana="#punct-added">。</pc>聞元叟端公倡道雙徑<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師往問云<pc resp="#Xiang" ana="#punct-added">：</pc><pc
+                >，</pc>未能釋去縳聞元叟端公倡道雙徑<pc resp="#Xiang"
+                ana="#punct-added">，</pc>師往問云<pc
                 resp="#Xiang" ana="#punct-added">“</pc>言發非聲<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>色前不物<pc resp="#Xiang" ana="#punct-added">，</pc>其意何如<pc resp="#Xiang"
-                ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added">”</pc>元叟就以師語詰之<pc
+                >，</pc>色前不物其意何如<pc resp="#Xiang"
+                ana="#punct-added">？</pc>元叟就以師語詰之<pc
                 resp="#Xiang" ana="#punct-added">，</pc>師方擬議欲答<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>師叱之使出<pc resp="#Xiang" ana="#punct-added">。</pc>自是群疑塞胸<pc resp="#Xiang"
+                >，</pc>師叱之使出自是群疑塞胸<pc resp="#Xiang"
                 ana="#punct-added">，</pc>如填鉅石<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>會元英宗詔粉黄金爲泥<pc resp="#Xiang" ana="#punct-added">，</pc>書大藏經<pc resp="#Xiang"
-                ana="#punct-added">，</pc>有司以師喜書<pc resp="#Xiang" ana="#punct-added">，</pc>選上燕都<pc
+                >。</pc>會元英宗詔粉黄金爲泥書大藏經<pc resp="#Xiang"
+                ana="#punct-added">，</pc>有司以師喜書選上燕都<pc
                 resp="#Xiang" ana="#punct-added">。</pc>一夕<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>聞西城樓鼓動<pc resp="#Xiang" ana="#punct-added">，</pc>汗如雨下<pc resp="#Xiang"
-                ana="#punct-added">，</pc>拊几笑曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc
+                >，</pc>聞西城樓鼓動汗如雨下<pc resp="#Xiang"
+                ana="#punct-added">，</pc>拊几笑曰<pc
                 resp="#Xiang" ana="#punct-added">“</pc>徑山鼻孔<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>今日入吾手矣<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang"
-                ana="#punct-added">”</pc>因成一偈<pc resp="#Xiang" ana="#punct-added">，</pc>有<pc
+                >，</pc>今日入吾手矣<pc resp="#Xiang"
+                ana="#punct-added">”</pc>因成一偈有<pc
                 resp="#Xiang" ana="#punct-added">“</pc>拾得紅爐一點雪<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>却是黄河六月冰<pc resp="#Xiang" ana="#punct-added">”</pc>之句<pc resp="#Xiang"
-                ana="#punct-added">。</pc>翩然南旋<pc resp="#Xiang" ana="#punct-added">，</pc>再入雙徑<pc
+                >，</pc>却是黄河六月冰之句<pc resp="#Xiang"
+                ana="#punct-added">。</pc>翩然南旋再入雙徑<pc
                 resp="#Xiang" ana="#punct-added">。</pc>元叟見師氣貌充然<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>謂曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang"
-                ana="#punct-added">“</pc>西來密意<pc resp="#Xiang" ana="#punct-added">，</pc>喜子得之矣<pc
+                >，</pc>謂曰<pc resp="#Xiang"
+                ana="#punct-added">“</pc>西來密意喜子得之矣<pc
                 resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>遽處以第一<pc resp="#Xiang" ana="#punct-added">、</pc>第二座<pc resp="#Xiang"
-                ana="#punct-added">，</pc>且言妙喜大法<pc resp="#Xiang" ana="#punct-added">，</pc>盡在於師<pc
+                >”</pc>遽處以第一第二座<pc resp="#Xiang"
+                ana="#punct-added">，</pc>且言妙喜大法盡在於師<pc
                 resp="#Xiang" ana="#punct-added">，</pc>有來參叩者<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>多今師辨决之<pc resp="#Xiang" ana="#punct-added">。</pc>元泰定中<pc resp="#Xiang"
+                >，</pc>多今師辨决之元泰定中<pc resp="#Xiang"
                 ana="#punct-added">，</pc>行宣政院稔師之名<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>命出世海鹽之福臻<pc resp="#Xiang" ana="#punct-added">，</pc>遂升主永祚<pc resp="#Xiang"
-                ana="#punct-added">。</pc>永師受經之地<pc resp="#Xiang" ana="#punct-added">，</pc>爲創大寶閣<pc
+                >，</pc>命出世海鹽之福臻遂升主永祚<pc resp="#Xiang"
+                ana="#punct-added">。</pc>永師受經之地爲創大寶閣<pc
                 resp="#Xiang" ana="#punct-added">，</pc>範銅鑄賢劫千佛<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>而毗盧遮那及文殊師利<pc resp="#Xiang" ana="#punct-added">、</pc>普賢<pc resp="#Xiang"
+                >，</pc>而毗盧遮那及文殊師利普賢<pc resp="#Xiang"
                 ana="#punct-added">、</pc>千手眼觀音諸像並寘其中<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>復造塔婆七級<pc resp="#Xiang" ana="#punct-added">，</pc>崇二百四十餘尺<pc resp="#Xiang"
-                ana="#punct-added">。</pc>功垂就<pc resp="#Xiang" ana="#punct-added">，</pc>勢偏將壓<pc
+                >。</pc>復造塔婆七級崇二百四十餘尺<pc resp="#Xiang"
+                ana="#punct-added">。</pc>功垂就勢偏將壓<pc
                 resp="#Xiang" ana="#punct-added">，</pc>師禱之<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>夜乃大雨風<pc resp="#Xiang" ana="#punct-added">，</pc>居氓聞鬼神相語曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">“</pc>天寧塔偏<pc
+                >，</pc>夜乃大雨風居氓聞鬼神相語曰<pc resp="#Xiang"
+                ana="#punct-added">：</pc>天寧塔偏<pc
                 resp="#Xiang" ana="#punct-added">，</pc>亟往救之<pc resp="#Xiang" ana="#punct-added"
-                >。</pc><pc resp="#Xiang" ana="#punct-added">”</pc>遲明<pc resp="#Xiang"
-                ana="#punct-added">，</pc>塔正如初<pc resp="#Xiang" ana="#punct-added">。</pc>遷杭之報國<pc
+                >。</pc>遲明<pc resp="#Xiang"
+                ana="#punct-added">，</pc>塔正如初遷杭之報國<pc
                 resp="#Xiang" ana="#punct-added">，</pc>轉嘉興之本覺<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>更搆萬佛閣九楹間<pc resp="#Xiang" ana="#punct-added">，</pc>宏偉壯麗<pc resp="#Xiang"
+                >，</pc>更搆萬佛閣九楹間宏偉壯麗<pc resp="#Xiang"
                 ana="#punct-added">，</pc>儼如天宫下移人世<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>帝師嘉其行業<pc resp="#Xiang" ana="#punct-added">，</pc>賜以<pc resp="#Xiang"
-                ana="#punct-added">“</pc>佛日普照慧辨禪師<pc resp="#Xiang" ana="#punct-added">”</pc>之號<pc
+                >。</pc>帝師嘉其行業賜以<pc resp="#Xiang"
+                ana="#punct-added">“</pc>佛日普照慧辨禪師之號<pc
                 resp="#Xiang" ana="#punct-added">。</pc>佛日頗符昔日神僧之言<pc resp="#Xiang"
-                ana="#punct-added">，</pc>識者異焉<pc resp="#Xiang" ana="#punct-added">。</pc>會報恩光孝虚席<pc
+                ana="#punct-added">，</pc>識者異焉會報恩光孝虚席<pc
                 resp="#Xiang" ana="#punct-added">，</pc>僉謂報恩一郡巨刹<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>非師莫能居之<pc resp="#Xiang" ana="#punct-added">。</pc>師勉徇衆請而往<pc resp="#Xiang"
-                ana="#punct-added">，</pc>尋退隱永祚<pc resp="#Xiang" ana="#punct-added">，</pc>築西齋爲終焉之計<pc
+                >，</pc>非師莫能居之師勉徇衆請而往<pc resp="#Xiang"
+                ana="#punct-added">，</pc>尋退隱永祚築西齋爲終焉之計<pc
                 resp="#Xiang" ana="#punct-added">。</pc>至正癸卯<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>州大夫强師主其寺事<pc resp="#Xiang" ana="#punct-added">。</pc>時塔燬于兵<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師重成之<pc resp="#Xiang" ana="#punct-added">。</pc>景瓛爲鑄寶壺冠于顛<pc
+                >，</pc>州大夫强師主其寺事時塔燬于兵<pc resp="#Xiang"
+                ana="#punct-added">，</pc>師重成之景瓛爲鑄寶壺冠于顛<pc
                 resp="#Xiang" ana="#punct-added">，</pc>感天花異香之祥<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師舉景瓛爲代<pc resp="#Xiang" ana="#punct-added">，</pc>復歸老干西齋云<pc resp="#Xiang"
-                ana="#punct-added">。</pc>師爲人形軀短小<pc resp="#Xiang" ana="#punct-added">，</pc>而神觀精朗<pc
+                >。</pc>師舉景瓛爲代復歸老干西齋云<pc resp="#Xiang"
+                ana="#punct-added">。</pc>師爲人形軀短小而神觀精朗<pc
                 resp="#Xiang" ana="#punct-added">，</pc>舉明正法<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>滂沛演迤<pc resp="#Xiang" ana="#punct-added">，</pc>有不知其所窮<pc resp="#Xiang"
-                ana="#punct-added">。</pc>凡所涖之處<pc resp="#Xiang" ana="#punct-added">，</pc>黑白嚮慕<pc
+                >，</pc>滂沛演迤有不知其所窮<pc resp="#Xiang"
+                ana="#punct-added">。</pc>凡所涖之處黑白嚮慕<pc
                 resp="#Xiang" ana="#punct-added">，</pc>如水歸壑<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>一彈指間<pc resp="#Xiang" ana="#punct-added">，</pc>涌殿飛樓<pc resp="#Xiang"
-                ana="#punct-added">，</pc>上插雲際<pc resp="#Xiang" ana="#punct-added">，</pc>未嘗見師有非<pc
+                >。</pc>一彈指間涌殿飛樓<pc resp="#Xiang"
+                ana="#punct-added">，</pc>上插雲際未嘗見師有非<pc
                 resp="#Xiang" ana="#punct-added">。</pc>君子謂師縱横自如<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>應物無迹<pc resp="#Xiang" ana="#punct-added">，</pc>山川出雲<pc resp="#Xiang"
-                ana="#punct-added">，</pc>雷蟠電掣<pc resp="#Xiang" ana="#punct-added">，</pc>神功收斂<pc
+                >，</pc>應物無迹山川出雲<pc resp="#Xiang"
+                ana="#punct-added">，</pc>雷蟠電掣神功收斂<pc
                 resp="#Xiang" ana="#punct-added">，</pc>寂莫無聲<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>由是内而燕齊秦楚<pc resp="#Xiang" ana="#punct-added">，</pc>外而日本高句麗<pc resp="#Xiang"
-                ana="#punct-added">，</pc>咨决心要<pc resp="#Xiang" ana="#punct-added">，</pc>奔走座下<pc
+                >。</pc>由是内而燕齊秦楚外而日本高句麗<pc resp="#Xiang"
+                ana="#punct-added">，</pc>咨决心要奔走座下<pc
                 resp="#Xiang" ana="#punct-added">。</pc>得師片言<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>裝潢襲藏<pc resp="#Xiang" ana="#punct-added">，</pc>不翅拱璧<pc resp="#Xiang"
+                >，</pc>裝潢襲藏不翅拱璧<pc resp="#Xiang"
                 ana="#punct-added">。</pc>師可謂無愧妙喜諸孫者矣<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師世壽七十五<pc resp="#Xiang" ana="#punct-added">，</pc>僧臘六十三<pc resp="#Xiang"
-                ana="#punct-added">。</pc>得法者曰祖光<pc resp="#Xiang" ana="#punct-added">，</pc>曰景瓛<pc
+                >。</pc>師世壽七十五僧臘六十三<pc resp="#Xiang"
+                ana="#punct-added">。</pc>得法者曰祖光曰景瓛<pc
                 resp="#Xiang" ana="#punct-added">，</pc>受度者曰明誠<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>曰正定等<pc resp="#Xiang" ana="#punct-added">。</pc>其説法機用<pc resp="#Xiang"
-                ana="#punct-added">，</pc>則見於六會語<pc resp="#Xiang" ana="#punct-added">；</pc>其游戲翰墨<pc
+                >，</pc>曰正定等其説法機用<pc resp="#Xiang"
+                ana="#punct-added">，</pc>則見於六會語其游戲翰墨<pc
                 resp="#Xiang" ana="#punct-added">，</pc>則見於和天台三聖及永明壽<pc resp="#Xiang"
-                ana="#punct-added">、</pc>陶潜<pc resp="#Xiang" ana="#punct-added">、</pc>林逋諸作<pc
+                ana="#punct-added">、</pc>陶潜林逋諸作<pc
                 resp="#Xiang" ana="#punct-added">。</pc>别有淨土詩<pc resp="#Xiang" ana="#punct-added"
-                >、</pc>慈氏上生偈<pc resp="#Xiang" ana="#punct-added">，</pc>北游<pc resp="#Xiang"
-                ana="#punct-added">、</pc>鳳山<pc resp="#Xiang" ana="#punct-added">、</pc>西齋三集<pc
+                >、</pc>慈氏上生偈北游<pc resp="#Xiang"
+                ana="#punct-added">、</pc>鳳山西齋三集<pc
                 resp="#Xiang" ana="#punct-added">，</pc>通合若干卷<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>並傳干世<pc resp="#Xiang" ana="#punct-added">。</pc>予慕師之道甚久<pc resp="#Xiang"
-                ana="#punct-added">，</pc>近獲執手護龍河上<pc resp="#Xiang" ana="#punct-added">，</pc>相與談玄<pc
+                >，</pc>並傳干世予慕師之道甚久<pc resp="#Xiang"
+                ana="#punct-added">，</pc>近獲執手護龍河上相與談玄<pc
                 resp="#Xiang" ana="#punct-added">，</pc>因出賸語一編求正<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師覽已<pc resp="#Xiang" ana="#punct-added">，</pc>歎曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">“</pc>不意儒者所造直至於此<pc
+                >。</pc>師覽已歎曰<pc resp="#Xiang"
+                ana="#punct-added">：</pc>不意儒者所造直至於此<pc
                 resp="#Xiang" ana="#punct-added">，</pc>善自護持<pc resp="#Xiang" ana="#punct-added"
-                >。</pc><pc resp="#Xiang" ana="#punct-added">”</pc>師之善誘<pc resp="#Xiang"
-                ana="#punct-added">，</pc>推此一端<pc resp="#Xiang" ana="#punct-added">，</pc>亦可槩見<pc
+                >。</pc>師之善誘<pc resp="#Xiang"
+                ana="#punct-added">，</pc>推此一端亦可槩見<pc
                 resp="#Xiang" ana="#punct-added">。</pc>及聞師殁<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>與國史危公哀悼不自勝<pc resp="#Xiang" ana="#punct-added">。</pc>危公亦深知師者也<pc
+                >，</pc>與國史危公哀悼不自勝危公亦深知師者也<pc
                 resp="#Xiang" ana="#punct-added">。</pc> 銘曰<pc resp="#Xiang" ana="#punct-added"
                 >：</pc>
-              <seg type="l" n="1">大鑒密㫖餘十傳<pc resp="#Xiang" ana="#punct-added">，</pc>妙喜起蹴龍象筵<pc
+              <seg type="l" n="1">大鑒密㫖餘十傳妙喜起蹴龍象筵<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="2">有如大將據中堅<pc resp="#Xiang" ana="#punct-added">，</pc>銕卒十萬佩櫜鞬<pc
+              <seg type="l" n="2">有如大將據中堅銕卒十萬佩櫜鞬<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="3">或觸之者命髮懸<pc resp="#Xiang" ana="#punct-added">，</pc>誰歟五世稱象賢<pc
+              <seg type="l" n="3">或觸之者命髮懸誰歟五世稱象賢<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="4">佛日曉出瀛海𤲬<pc resp="#Xiang" ana="#punct-added">，</pc>紅𦦨閃閃行中邊<pc
+              <seg type="l" n="4">佛日曉出瀛海𤲬紅𦦨閃閃行中邊<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="5">流光所至無幽玄<pc resp="#Xiang" ana="#punct-added">，</pc>憶初飛錫來北燕<pc
+              <seg type="l" n="5">流光所至無幽玄憶初飛錫來北燕<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="6">彤樓畫鼓金星纏<pc resp="#Xiang" ana="#punct-added">，</pc>一擊三際皆廓然<pc
+              <seg type="l" n="6">彤樓畫鼓金星纏一擊三際皆廓然<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="7">火中新敷清浄蓮<pc resp="#Xiang" ana="#punct-added">，</pc>紺色㴠空絶蔓牽<pc
+              <seg type="l" n="7">火中新敷清浄蓮紺色㴠空絶蔓牽<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="8">自兹口噴百丈泉<pc resp="#Xiang" ana="#punct-added">，</pc>洗滌五濁離腥羶<pc
+              <seg type="l" n="8">自兹口噴百丈泉洗滌五濁離腥羶<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="9">内而諸夏外朝鮮<pc resp="#Xiang" ana="#punct-added">，</pc>紛紛來者人駕肩<pc
+              <seg type="l" n="9">内而諸夏外朝鮮紛紛來者人駕肩<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="10">示以實相非空言<pc resp="#Xiang" ana="#punct-added">，</pc>塔廟赫赩名山川<pc
+              <seg type="l" n="10">示以實相非空言塔廟赫赩名山川<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="11">一佛能變萬與千<pc resp="#Xiang" ana="#punct-added">，</pc>會萬歸一道則全<pc
+              <seg type="l" n="11">一佛能變萬與千會萬歸一道則全<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="12">不識誣爲有漏緣<pc resp="#Xiang" ana="#punct-added">，</pc>帝敕中使來傳宣<pc
+              <seg type="l" n="12">不識誣爲有漏緣帝敕中使來傳宣<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="13">鍾山説法超沉緜<pc resp="#Xiang" ana="#punct-added">，</pc>萬人瞻依曲刃拳<pc
+              <seg type="l" n="13">鍾山説法超沉緜萬人瞻依曲刃拳<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="14">一朝入滅同蜕蟬<pc resp="#Xiang" ana="#punct-added">，</pc>西方彈指即現前<pc
+              <seg type="l" n="14">一朝入滅同蜕蟬西方彈指即現前<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="15">白玉樓閣琉璃田<pc resp="#Xiang" ana="#punct-added">，</pc>金鈴寶樹演真詮<pc
+              <seg type="l" n="15">白玉樓閣琉璃田金鈴寶樹演真詮<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="16">師之往矣神弗遷<pc resp="#Xiang" ana="#punct-added">，</pc>寂光常定無偏圓<pc
+              <seg type="l" n="16">師之往矣神弗遷寂光常定無偏圓<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
               <lb/>
-              <seg type="l" n="17">我作銘詩翠琰鐫<pc resp="#Xiang" ana="#punct-added">，</pc>昭朗盛烈垂年年<pc
+              <seg type="l" n="17">我作銘詩翠琰鐫昭朗盛烈垂年年<pc
                   resp="#Xiang" ana="#punct-added">。</pc></seg>
             </lem>
             
@@ -1496,8 +2375,8 @@
         <head>荊門</head>
           <note type="editorial" resp="#Xiang" ana="#editorial-note" target="by011_head">
           <ref target="#Bao">吳、鮑注</ref>云遍稽地理圖志運河沿途未見<mentioned>荊門</mentioned>，疑係<mentioned>荊河</mentioned>；又據詩中<mentioned>杏子</mentioned>語，以<placeName type="location">滕州</placeName>產杏，遂指<placeName type="location">荊門</placeName>即<placeName type="location">滕州</placeName><placeName type="river">荊河</placeName>。斯言大謬。
-            按<date>元代</date>輿圖，今<placeName type="location">山東</placeName><placeName type="location">聊城</placeName>境實有驛名<pc resp="#Xiang" ana="#punct-added">「</pc>荊門站<pc resp="#Xiang" ana="#punct-added">」</pc>者；考<persName>楚石</persName>北行路程，確經<placeName type="location">聊城</placeName>、<placeName type="location">臨清</placeName>，地理吻合。
-              且<bibl><title>永樂大典</title></bibl>載<orgName>山東東西道宣慰司</orgName>所轄站凡四十三，<pc resp="#Xiang" ana="#punct-added">「</pc>荊門水站<pc resp="#Xiang" ana="#punct-added">」</pc>赫然在列。 <ref target="#Bao">吳、鮑</ref>考之未詳而妄改，非是。 </note>
+            按<date>元代</date>輿圖，今<placeName type="location">山東</placeName><placeName type="location">聊城</placeName>境實有驛名荊門站者；考<persName>楚石</persName>北行路程，確經<placeName type="location">聊城</placeName>、<placeName type="location">臨清</placeName>，地理吻合。
+              且<bibl><title>永樂大典</title></bibl>載<orgName>山東東西道宣慰司</orgName>所轄站凡四十三，荊門水站赫然在列。 <ref target="#Bao">吳、鮑</ref>考之未詳而妄改，非是。 </note>
   
         <lg>
           <l>
@@ -1656,7 +2535,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">但吟吾亦愛吾盧 </lem>
+              <lem wit="#GX">但吟吾亦愛吾庐 </lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -1671,7 +2550,7 @@
         <lg>
           <l>
             <app>
-              <lem wit="#GX">吾盧正在白雲邊 </lem>
+              <lem wit="#GX">吾庐正在白雲邊 </lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -1728,7 +2607,7 @@
         </lg>
       </div>
       <div xml:id="by015" type="poem">
-        <head>通州之南<pc resp="#Xiang" ana="#punct-added">，</pc>彌望北沙壟丘墟<pc resp="#Xiang" ana="#punct-added">，</pc>與中原異矣<pc resp="#Xiang" ana="#punct-added">。</pc>因僧還吳<pc resp="#Xiang" ana="#punct-added">，</pc>於此送之<pc resp="#Xiang" ana="#punct-added">。</pc></head>
+        <head>通州之南彌望北沙壟丘墟與中原異矣因僧還吳於此送之</head>
         <lg>
           <l>
             <app>
@@ -1800,7 +2679,7 @@
           <title type="main">初入經筵呈諸友三首</title>
           <num value="1">一</num>
         </head>
-        <p> 並序<pc resp="#Xiang" ana="#punct-added">：</pc><persName role="emperor">世祖皇帝</persName>混一天下<pc resp="#Xiang" ana="#punct-added">，</pc>崇重佛教<pc resp="#Xiang" ana="#punct-added">，</pc>古所未有<pc resp="#Xiang" ana="#punct-added">。</pc>泥金染碧<pc resp="#Xiang" ana="#punct-added">，</pc>書<term type="buddhist">佛祖菩薩羅漢</term>之語滿<title type="collection">一大藏</title><pc resp="#Xiang" ana="#punct-added">。</pc>由是聖子神孫世世尊之<pc resp="#Xiang" ana="#punct-added">，</pc>甚盛事也<pc resp="#Xiang" ana="#punct-added">。</pc><persName role="official">趙孟頫</persName><pc resp="#Xiang" ana="#punct-added">、</pc><persName role="official">鄧文原</persName><pc resp="#Xiang" ana="#punct-added">，</pc>聞入選仔肩<pc resp="#Xiang" ana="#punct-added">。</pc><persName role="emperor">皇帝</persName>即位之<date>三年</date><pc resp="#Xiang" ana="#punct-added">，</pc>詔改<placeName type="temple">五花觀</placeName>為<placeName type="temple">壽安山寺</placeName><pc resp="#Xiang" ana="#punct-added">，</pc>選<placeName type="location">東南</placeName>善書者書經以鎮之<pc resp="#Xiang" ana="#punct-added">。</pc>三百餘人<pc resp="#Xiang" ana="#punct-added">，</pc>予亦預焉<pc resp="#Xiang" ana="#punct-added">，</pc>賦詩呈友<pc resp="#Xiang" ana="#punct-added">。</pc>
+        <p> 並序<persName role="emperor">世祖皇帝</persName>混一天下崇重佛教古所未有泥金染碧書<term type="buddhist">佛祖菩薩羅漢</term>之語滿<title type="collection">一大藏</title>由是聖子神孫世世尊之甚盛事也<persName role="official">趙孟頫</persName><persName role="official">鄧文原</persName>聞入選仔肩<persName role="emperor">皇帝</persName>即位之<date>三年</date>詔改<placeName type="temple">五花觀</placeName>為<placeName type="temple">壽安山寺</placeName>選<placeName type="location">東南</placeName>善書者書經以鎮之三百餘人予亦預焉賦詩呈友
         </p>
         <lg>
           <l>
@@ -1989,17 +2868,18 @@
           </l>
         </lg>
       </div>
+      
       <div xml:id="by019" type="poem">
         <head xml:id="by019_head">
-          <title type="main">南城郭冀州<pc resp="#Xiang" ana="#punct-added">，</pc>在南方時<pc resp="#Xiang" ana="#punct-added">，</pc>予尚小<pc resp="#Xiang" ana="#punct-added">，</pc>撫若己子<pc resp="#Xiang" ana="#punct-added">，</pc>常受其家供養<pc resp="#Xiang" ana="#punct-added">。</pc>今天八十餘矣<pc resp="#Xiang" ana="#punct-added">，</pc>強建如五六十人<pc resp="#Xiang" ana="#punct-added">。</pc>至京往見以詩</title>
+          <title type="main">南城郭冀州在南方時予尚小撫若己子常受其家供養今天八十餘矣強建如五六十人至京往見以詩</title>
           <app>
             <lem wit="#GX">贄</lem>
             <rdg wit="#ZQ">讚</rdg>
             <rdg wit="#MY" ana="#agree"/>
           </app>
-          <seg>云<pc resp="#Xiang" ana="#punct-added">。</pc></seg>
+          <seg>云</seg>
         </head>
-        <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by019_head"> 按<persName ref="#楚石">楚石</persName>嘗受其供養<pc resp="#Xiang" ana="#punct-added">，</pc>且其人為長者<pc resp="#Xiang" ana="#punct-added">，</pc>故今從<ref target="#GX">古香樓本</ref>題<pc resp="#Xiang" ana="#punct-added">。</pc> 又<pc resp="#Xiang" ana="#punct-added">「</pc><q>贄</q><pc resp="#Xiang" ana="#punct-added">」</pc>者<pc resp="#Xiang" ana="#punct-added">，</pc>禮贈也<pc resp="#Xiang" ana="#punct-added">。</pc>
+        <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by019_head"> 按<persName ref="#楚石">楚石</persName>嘗受其供養且其人為長者故今從<ref target="#GX">古香樓本</ref>題 又<q>贄</q>者禮贈也
         </note>
         <lg>
           <l>
@@ -2746,7 +3626,7 @@
         </lg>
       </div>
       <div xml:id="by031" type="poem">
-        <head>贈聖長安長老從雲山</head>
+        <head>贈聖安長老從雲山</head>
         <lg>
           <l>
             <app>
@@ -3087,9 +3967,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">御柳萬條垂</lem>
+              <lem wit="#GX">御柳萬條棲</lem>
               <rdg wit="#ZQ" ana="#agree"/>
-              <rdg wit="#MY">御條萬條齊</rdg>
+              <rdg wit="#MY" ana="#agree"/>
             </app>
           </l>
           <l>
@@ -3429,7 +4309,7 @@
       </div>
       <div xml:id="by042" type="poem">
         <head>
-          <title type="main">余寓萬寶坊凡三閱月<pc resp="#Xiang" ana="#punct-added">，</pc>郝冀州延入南城彌陀寺<pc resp="#Xiang" ana="#punct-added">，</pc>禪誦焉<pc resp="#Xiang" ana="#punct-added">，</pc>寄呂改之二首</title>
+          <title type="main">余寓萬寶坊凡三閱月郝冀州延入南城彌陀寺禪誦焉寄呂改之二首</title>
           <num value="1">一</num></head>
         <lg>
           <l>
@@ -3492,7 +4372,7 @@
       </div>
       <div xml:id="by043" type="poem">
         <head>
-          <title type="main">余寓萬寶坊凡三閱月<pc resp="#Xiang" ana="#punct-added">，</pc>郝冀州延入南城彌陀寺<pc resp="#Xiang" ana="#punct-added">，</pc>禪誦焉<pc resp="#Xiang" ana="#punct-added">，</pc>寄呂改之二首</title>
+          <title type="main">余寓萬寶坊凡三閱月郝冀州延入南城彌陀寺禪誦焉寄呂改之二首</title>
           <num value="2">二</num>
         </head>
         <lg>
@@ -5129,9 +6009,9 @@
             <sic>天曆三年</sic>
             <corr resp="#Xiang">至治三年</corr>
           </choice>
-          <date>甲子</date>春<pc resp="#Xiang" ana="#punct-added">，</pc><persName role="official" key="Deng_Wenyuan">鄧公善之</persName>任<roleName>國子祭酒</roleName><pc resp="#Xiang" ana="#punct-added">，</pc>試<orgName type="gov">禮部</orgName>進士<pc resp="#Xiang" ana="#punct-added">，</pc>甚公<pc resp="#Xiang" ana="#punct-added">。</pc><persName role="official">善之</persName>謂予曰<pc resp="#Xiang" ana="#punct-added">：</pc>
-          <pc resp="#Xiang" ana="#punct-added">「</pc><persName role="official" key="Yuan_Jue">袁伯長</persName>學士在<placeName type="location">京師</placeName>累歲<pc resp="#Xiang" ana="#punct-added">，</pc>不肯取鄉士<pc resp="#Xiang" ana="#punct-added">。</pc>今年得<persName role="official">程端禮</persName>兄弟<pc resp="#Xiang" ana="#punct-added">，</pc>人亦不以我為私<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added">」</pc>
-            余聞之喜<pc resp="#Xiang" ana="#punct-added">，</pc>因謝<pc resp="#Xiang" ana="#punct-added">。</pc>
+          <date>甲子</date>春<persName role="official" key="Deng_Wenyuan">鄧公善之</persName>任<roleName>國子祭酒</roleName>試<orgName type="gov">禮部</orgName>進士甚公<persName role="official">善之</persName>謂予曰
+          <persName role="official" key="Yuan_Jue">袁伯長</persName>學士在<placeName type="location">京師</placeName>累歲不肯取鄉士今年得<persName role="official">程端禮</persName>兄弟人亦不以我為私
+            余聞之喜因謝
         </head>
         
         <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by069_head">此詩題紀年，<ref target="#GX">古香樓本</ref>題作<mentioned>天曆三年</mentioned>，<ref target="#ZQ">振綺本</ref>則作<mentioned>天曆二年</mentioned>，<ref target="#MY">眠雲精舍本</ref>亦作<mentioned>天曆三年</mentioned>。然二說俱可疑。按<persName>鄧文原</persName>卒於<date>天曆元年</date>，則題所繫時，斷不容在<date>天曆二年</date>、<date>三年</date>。此「天曆」二字，蓋傳寫之訛，誤以<mentioned>至治</mentioned>為<mentioned>天曆</mentioned>耳。又按<bibl><title>元史</title></bibl>，<persName>鄧文原</persName>於<date>至治三年</date>兼<roleName>國子祭酒</roleName>。若題改作<mentioned>至治三年</mentioned>，則與史實相合。且題中及<persName>程端禮</persName>、<persName>程端學</persName>兄弟，<date>泰定元年</date>登進士第，其時在<persName>鄧文原</persName><date>至治三年</date>任職之後，亦與<persName>楚石</persName>寓<placeName type="location">大都</placeName>之歲月相參合，可為旁證。綜是觀之，此詩正紀年當為<mentioned>至治三年</mentioned>。<ref target="#GX">古香樓本</ref>雖存「三年」之數，而年號訛；<ref target="#ZQ">振綺堂本</ref>則年號、年份俱訛。</note>
@@ -5405,7 +6285,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">睡遲忽聞山鳥啼</lem>
+              <lem wit="#GX">睡起忽聞山鳥啼</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -5729,21 +6609,21 @@
               <rdg wit="#MY">山間雲蓋翠為層</rdg>
             </app>
             <note type="editorial" resp="#Xiang" ana="#editorial-note">
-              <pc resp="#Xiang" ana="#punct-added">「</pc>山間雲 <app>
+              山間雲 <app>
                 <lem wit="#GX">畫</lem>
                 <rdg wit="#ZQ">𥁞</rdg>
                 <rdg wit="#Bao #Yu" cause="misidentified">尽</rdg>
                 <rdg wit="#MY" ana="#agree"/>
-              </app> 翠為層<pc resp="#Xiang" ana="#punct-added">」</pc>句<pc resp="#Xiang"
+              </app> 翠為層句<pc resp="#Xiang"
                 ana="#punct-added">。</pc>
-              <mentioned>畫</mentioned>字<pc resp="#Xiang" ana="#punct-added">，</pc><ref target="#GX"
-                >古香樓本</ref>作<mentioned>画</mentioned><pc resp="#Xiang" ana="#punct-added">，</pc><ref
+              <mentioned>畫</mentioned>字<ref target="#GX"
+                >古香樓本</ref>作<mentioned>画</mentioned><ref
                 target="#ZQ">振綺堂本</ref>則作其異體字<mentioned>𥁞</mentioned><pc resp="#Xiang"
                 ana="#punct-added">。</pc> 然查<ref target="#Bao">吳定中、鮑翔麟校注本</ref>及<ref target="#Yu"
                 >于德隆點校本</ref>等現代整理本<pc resp="#Xiang" ana="#punct-added"
                 >，</pc>編者皆未能辨識<mentioned>𥁞</mentioned>字<pc resp="#Xiang" ana="#punct-added"
                 >，</pc>疑因形近而誤識為<mentioned>尽</mentioned><pc resp="#Xiang" ana="#punct-added"
-                >，</pc>遂致排印訛誤<pc resp="#Xiang" ana="#punct-added">。</pc>
+                >，</pc>遂致排印訛誤
                 按<mentioned>𥁞</mentioned>實為<mentioned>畫</mentioned>之異體<pc resp="#Xiang"
                 ana="#punct-added">，</pc>非<mentioned>盡</mentioned>、<mentioned>尽</mentioned>字<pc
                 resp="#Xiang" ana="#punct-added">，</pc>本處徑改並予辨正<pc resp="#Xiang" ana="#punct-added"
@@ -5950,7 +6830,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">盡放眠傻細肋羊</lem>
+              <lem wit="#GX">盡放眠沙細肋羊</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -6447,7 +7327,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">南來客子倦客臨</lem>
+              <lem wit="#GX">南來客子倦登臨</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -7456,7 +8336,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">看山駐馬過</lem>
+              <lem wit="#GX">看山駐馬撾</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -7602,7 +8482,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">山後開闢有</lem>
+              <lem wit="#GX">山從開闢有</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -7678,7 +8558,7 @@
               <rdg wit="#MY" ana="#agree"/>
             </app>
             <note type="editorial" resp="#Xiang" ana="#editorial-note">
-              <bibl><title>楚石北遊詩</title></bibl><pc resp="#Xiang" ana="#punct-added">（</pc><ref target="#Bao">鮑本</ref><pc resp="#Xiang" ana="#punct-added">）</pc>及<bibl><title>楚石全集</title></bibl><pc resp="#Xiang" ana="#punct-added">（</pc><ref target="#Yu">余本</ref><pc resp="#Xiang" ana="#punct-added">）</pc>等今人本<pc resp="#Xiang" ana="#punct-added">，</pc>皆作<q><pc resp="#Xiang" ana="#punct-added">「</pc>中天雨露匀<pc resp="#Xiang" ana="#punct-added">」</pc></q><pc resp="#Xiang" ana="#punct-added">。</pc> 按<ref target="#GX">古香樓</ref><pc resp="#Xiang" ana="#punct-added">、</pc><ref target="#ZQ">振綺堂</ref><pc resp="#Xiang" ana="#punct-added">、</pc><ref target="#MY">眠雲精舍</ref>諸抄本與<bibl><title>明詩綜</title></bibl>早期稿<pc resp="#Xiang" ana="#punct-added">（</pc>或抄<pc resp="#Xiang" ana="#punct-added">）</pc>校之<pc resp="#Xiang" ana="#punct-added">，</pc>並作<q><pc resp="#Xiang" ana="#punct-added">「</pc>中天雨露均<pc resp="#Xiang" ana="#punct-added">」</pc></q><pc resp="#Xiang" ana="#punct-added">。</pc> 疑今本整理時誤植<pc resp="#Xiang" ana="#punct-added">，</pc>或錄入之訛<pc resp="#Xiang" ana="#punct-added">。</pc>
+              <bibl><title>楚石北遊詩</title></bibl><ref target="#Bao">鮑本</ref>及<bibl><title>楚石全集</title></bibl><ref target="#Yu">余本</ref>等今人本皆作<q>中天雨露匀</q> 按<ref target="#GX">古香樓</ref><ref target="#ZQ">振綺堂</ref><ref target="#MY">眠雲精舍</ref>諸抄本與<bibl><title>明詩綜</title></bibl>早期稿或抄校之並作<q>中天雨露均</q> 疑今本整理時誤植或錄入之訛
             </note></l>
           <l>
             <app>
@@ -8055,15 +8935,15 @@
               <rdg wit="#ZQ">月屋間蜉蟻</rdg>
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                <pc resp="#Xiang" ana="#punct-added">「</pc>
+                
                 <app>
                   <lem wit="#GX #MY">閒</lem>
                   <rdg wit="#ZQ">間</rdg>
                 </app>
-                <pc resp="#Xiang" ana="#punct-added">」</pc>字<pc resp="#Xiang" ana="#punct-added">。</pc>
+                字
                 <lb/>
-                <ref target="#GX">古香樓本</ref><pc resp="#Xiang" ana="#punct-added">、</pc><ref target="#MY">眠雲精舍本</ref>作<mentioned>閒</mentioned><pc resp="#Xiang" ana="#punct-added">；</pc><ref target="#ZQ">振綺堂本</ref>作<mentioned>間</mentioned><pc resp="#Xiang" ana="#punct-added">。</pc> 按<pc resp="#Xiang" ana="#punct-added">：</pc><mentioned>閒</mentioned>古通<mentioned>間</mentioned><pc resp="#Xiang" ana="#punct-added">，</pc>義無別<pc resp="#Xiang" ana="#punct-added">，</pc>當以同字處理<pc resp="#Xiang" ana="#punct-added">。</pc>
-                <bibl><title>楚石北遊詩</title></bibl><pc resp="#Xiang" ana="#punct-added">（</pc><ref target="#Bao">吳、鮑注</ref><pc resp="#Xiang" ana="#punct-added">）</pc>未審通假之義<pc resp="#Xiang" ana="#punct-added">，</pc>徑視為異文出校<pc resp="#Xiang" ana="#punct-added">，</pc>非是<pc resp="#Xiang" ana="#punct-added">。</pc>今正之<pc resp="#Xiang" ana="#punct-added">。</pc>
+                <ref target="#GX">古香樓本</ref><ref target="#MY">眠雲精舍本</ref>作<mentioned>閒</mentioned><ref target="#ZQ">振綺堂本</ref>作<mentioned>間</mentioned> 按<mentioned>閒</mentioned>古通<mentioned>間</mentioned>義無別當以同字處理
+                <bibl><title>楚石北遊詩</title></bibl><ref target="#Bao">吳、鮑注</ref>未審通假之義徑視為異文出校非是今正之
               </note>
             </app></l>
           <l>
@@ -8881,7 +9761,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">塵d中逆旅亭</lem>
+              <lem wit="#GX">塵中逆旅亭</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -9699,7 +10579,7 @@
                 <mentioned>怱</mentioned>乃<mentioned>葱</mentioned>之異體，古今字書多載，非俗訛也。 <ref target="#ZQ">振綺堂本</ref>作<mentioned>忽</mentioned>， <ref target="#Bao">鮑</ref>、<ref target="#Yu">余</ref>不察，以為訛字而輒改，遂指<ref target="#ZQ">振綺堂本</ref><mentioned>忽</mentioned>為誤。
                   然詳其字形，<mentioned>怱</mentioned>與<mentioned>忽</mentioned>相近，傳寫易混；且文義當指蔥蒜辛香之屬，作<mentioned>葱／怱</mentioned>乃順，作<mentioned>忽</mentioned>則義乖而不通。
                   故知<ref target="#ZQ">振綺堂本</ref>非必誤，特<mentioned>怱</mentioned>字未識而致其失耳。
-                  今校以<mentioned>怱</mentioned>為正，並釋其為<mentioned>葱</mentioned>異體，以正<ref target="#Bao">鮑</ref>、<ref target="#Yu">余</ref>之誤斷<pc resp="#Xiang" ana="#punct-added">。</pc>
+                  今校以<mentioned>怱</mentioned>為正，並釋其為<mentioned>葱</mentioned>異體，以正<ref target="#Bao">鮑</ref>、<ref target="#Yu">余</ref>之誤斷
               </p>
             </note></l>
           <l>
@@ -10465,7 +11345,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">馮驩彈鋏豈無盧</lem>
+              <lem wit="#GX">馮驩彈鋏豈無庐</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -10540,7 +11420,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">曉色已瞳矓</lem>
+              <lem wit="#GX">曉色已瞳朧</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -11180,7 +12060,7 @@
         <lg>
           <l>
             <app>
-              <lem wit="#GX">雪晴泥滓尚掩車</lem>
+              <lem wit="#GX">雪晴泥滓尚淹車</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -11351,7 +12231,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">轉覺方山是後生</lem>
+              <lem wit="#GX">轉覺方山是後身</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -12114,8 +12994,8 @@
       </div>
       <div xml:id="by179" type="poem">
         <head>
-          <date>宋時</date><pc resp="#Xiang" ana="#punct-added">，</pc><persName>和魯</persName>有<title>觀畫鷹獵兔</title>之詩曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc> 雖是丹青物<pc resp="#Xiang" ana="#punct-added">，</pc>沉吟亦可傷<pc resp="#Xiang" ana="#punct-added">。</pc>君誇鷹眼疾<pc resp="#Xiang" ana="#punct-added">，</pc>我憫兔心忙<pc resp="#Xiang" ana="#punct-added">。</pc>豈動騷人興<pc resp="#Xiang" ana="#punct-added">，</pc>惟增獵客狂<pc resp="#Xiang" ana="#punct-added">。</pc>鮫綃百餘尺<pc resp="#Xiang" ana="#punct-added">，</pc>爭及製衣裳<pc resp="#Xiang" ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added">」</pc>
-          <persName role="official">范文正公</persName>嘆曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc>真仁人之言<pc resp="#Xiang" ana="#punct-added">！</pc><pc resp="#Xiang" ana="#punct-added">」</pc>畫鷹尚且為戒<pc resp="#Xiang" ana="#punct-added">，</pc>而況蓄真鷹<pc resp="#Xiang" ana="#punct-added">，</pc>日斃禽鳥乎<pc resp="#Xiang" ana="#punct-added">？</pc>余於<placeName type="location">京師</placeName>見蓄鷹者<pc resp="#Xiang" ana="#punct-added">，</pc>作詩二首<pc resp="#Xiang" ana="#punct-added">，</pc>以為戒焉<pc resp="#Xiang" ana="#punct-added">。</pc>
+          <date>宋時</date><persName>和魯</persName>有<title>觀畫鷹獵兔</title>之詩曰 雖是丹青物沉吟亦可傷君誇鷹眼疾我憫兔心忙豈動騷人興惟增獵客狂鮫綃百餘尺爭及製衣裳
+          <persName role="official">范文正公</persName>嘆曰真仁人之言畫鷹尚且為戒而況蓄真鷹日斃禽鳥乎余於<placeName type="location">京師</placeName>見蓄鷹者作詩二首以為戒焉
           <num value="1">一</num>
         </head>
         <lg>
@@ -12179,8 +13059,8 @@
       </div>
       <div xml:id="by180" type="poem">
         <head>
-          <date>宋時</date><pc resp="#Xiang" ana="#punct-added">，</pc><persName>和魯</persName>有<title>觀畫鷹獵兔</title>之詩曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc> 雖是丹青物<pc resp="#Xiang" ana="#punct-added">，</pc>沉吟亦可傷<pc resp="#Xiang" ana="#punct-added">。</pc>君誇鷹眼疾<pc resp="#Xiang" ana="#punct-added">，</pc>我憫兔心忙<pc resp="#Xiang" ana="#punct-added">。</pc>豈動騷人興<pc resp="#Xiang" ana="#punct-added">，</pc>惟增獵客狂<pc resp="#Xiang" ana="#punct-added">。</pc> 鮫綃百餘尺<pc resp="#Xiang" ana="#punct-added">，</pc>爭及製衣裳<pc resp="#Xiang" ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added">」</pc>
-          <persName role="official">范文正公</persName>嘆曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc>真仁人之言<pc resp="#Xiang" ana="#punct-added">！</pc><pc resp="#Xiang" ana="#punct-added">」</pc>畫鷹尚且為戒<pc resp="#Xiang" ana="#punct-added">，</pc>而況蓄真鷹<pc resp="#Xiang" ana="#punct-added">，</pc>日斃禽鳥乎<pc resp="#Xiang" ana="#punct-added">？</pc>余於<placeName type="location">京師</placeName>見蓄鷹者<pc resp="#Xiang" ana="#punct-added">，</pc>作詩二首<pc resp="#Xiang" ana="#punct-added">，</pc>以為戒焉<pc resp="#Xiang" ana="#punct-added">。</pc>
+          <date>宋時</date><persName>和魯</persName>有<title>觀畫鷹獵兔</title>之詩曰 雖是丹青物沉吟亦可傷君誇鷹眼疾我憫兔心忙豈動騷人興惟增獵客狂 鮫綃百餘尺爭及製衣裳
+          <persName role="official">范文正公</persName>嘆曰真仁人之言畫鷹尚且為戒而況蓄真鷹日斃禽鳥乎余於<placeName type="location">京師</placeName>見蓄鷹者作詩二首以為戒焉
           <num value="2">二</num>
         </head>
         <lg>
@@ -12289,7 +13169,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">須知一點籠古今</lem>
+              <lem wit="#GX">須知一點籠今古</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -12306,15 +13186,15 @@
       <div xml:id="by182" type="poem">
         <head>
           <title type="main">
-            <placeName type="location">京城</placeName>南北不同人家僧舍多用石炭<pc resp="#Xiang" ana="#punct-added">。</pc>
-            其性惡動而喜靜<pc resp="#Xiang" ana="#punct-added">，</pc>
+            <placeName type="location">京城</placeName>南北不同人家僧舍多用石炭
+            其性惡動而喜靜
             <app>
               <lem wit="#GX">愈掁撥愈不發輝</lem>
               <rdg wit="#ZQ">愈振撥愈不發揮</rdg>
               <rdg wit="#MY">愈振撥愈不發輝</rdg>
             </app>
-            <pc resp="#Xiang" ana="#punct-added">。</pc>
-            但緩緩待之則自然熾耳<pc resp="#Xiang" ana="#punct-added">。</pc>
+            
+            但緩緩待之則自然熾耳
           </title>
         </head>
         <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by182_head" >
@@ -12392,7 +13272,7 @@
       <div xml:id="by183" type="poem">
         <head>賭栗</head>
         <p>
-          序<pc resp="#Xiang" ana="#punct-added">：</pc><date>秋冬之交</date><pc resp="#Xiang" ana="#punct-added">，</pc><placeName type="location">京師</placeName>小兒在在搏拳賭栗<pc resp="#Xiang" ana="#punct-added">。</pc>栗顆小而味甚甜<pc resp="#Xiang" ana="#punct-added">，</pc>食之宜人<pc resp="#Xiang" ana="#punct-added">。</pc>其法<pc resp="#Xiang" ana="#punct-added">：</pc>先令賭客就其柳筐取栗多少握拳<pc resp="#Xiang" ana="#punct-added">，</pc>令小兒返質其數<pc resp="#Xiang" ana="#punct-added">。</pc>客負則隨數償鈔<pc resp="#Xiang" ana="#punct-added">，</pc>小兒負則數栗與客<pc resp="#Xiang" ana="#punct-added">。</pc>吾友<persName role="friend">呂日新</persName>獨善其事<pc resp="#Xiang" ana="#punct-added">，</pc>出輒盈袖而返<pc resp="#Xiang" ana="#punct-added">。</pc>余戲之曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc>損人益己<pc resp="#Xiang" ana="#punct-added">，</pc>豈君子之道哉<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added">」</pc>
+          序<date>秋冬之交</date><placeName type="location">京師</placeName>小兒在在搏拳賭栗栗顆小而味甚甜食之宜人其法先令賭客就其柳筐取栗多少握拳令小兒返質其數客負則隨數償鈔小兒負則數栗與客吾友<persName role="addressed_to">呂日新</persName>獨善其事出輒盈袖而返余戲之曰損人益己豈君子之道哉
         </p>
         <lg>
           <l>
@@ -12709,7 +13589,7 @@
       </div>
       <div xml:id="by188" type="poem">
         <head>園陵</head>
-        <p> 序<pc resp="#Xiang" ana="#punct-added">：</pc><date>漢氏</date>之法<pc resp="#Xiang" ana="#punct-added">。</pc>人君在位<pc resp="#Xiang" ana="#punct-added">，</pc>三分天下貢賦<pc resp="#Xiang" ana="#punct-added">，</pc>一分入山陵<pc resp="#Xiang" ana="#punct-added">。</pc><persName>武帝</persName>歷年長久<pc resp="#Xiang" ana="#punct-added">，</pc>比葬陵中<pc resp="#Xiang" ana="#punct-added">，</pc>不復容物<pc resp="#Xiang" ana="#punct-added">。</pc><persName>霍光</persName>暗於大體<pc resp="#Xiang" ana="#punct-added">，</pc>奢侈過度<pc resp="#Xiang" ana="#punct-added">。</pc>其後<persName>更始</persName>之敗<pc resp="#Xiang" ana="#punct-added">，</pc>赤眉賊入<placeName type="location">長安</placeName><pc resp="#Xiang" ana="#punct-added">，</pc>破<placeName type="location">茂陵</placeName>取物<pc resp="#Xiang" ana="#punct-added">，</pc>猶不能盡。賊師<persName>樊崈</persName>發掘諸陵<pc resp="#Xiang" ana="#punct-added">，</pc>取其寶貨<pc resp="#Xiang" ana="#punct-added">；</pc>凡所發有玉柙殯者<pc resp="#Xiang" ana="#punct-added">，</pc>聞如生<pc resp="#Xiang" ana="#punct-added">，</pc>故得恣行淫穢<pc resp="#Xiang" ana="#punct-added">。</pc>惟<persName>文帝</persName><placeName type="location">灞陵</placeName>獨完<pc resp="#Xiang" ana="#punct-added">。</pc><persName>光武</persName>目擊其事<pc resp="#Xiang" ana="#punct-added">，</pc>猶不能改<pc resp="#Xiang" ana="#punct-added">。</pc>初作<placeName type="location">夀陵</placeName><pc resp="#Xiang" ana="#punct-added">，</pc><roleName>將作大匠</roleName><persName>竇融</persName>即上言<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc>園陵廣袤<pc resp="#Xiang" ana="#punct-added">，</pc>無所用<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added">」</pc><persName>光武</persName>曰<pc resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added">「</pc>古者帝王之葬<pc resp="#Xiang" ana="#punct-added">，</pc>皆陶人瓦器<pc resp="#Xiang" ana="#punct-added">、</pc>木車茆馬<pc resp="#Xiang" ana="#punct-added">，</pc>使後代之人不知其處<pc resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added">」</pc>雖有此語<pc resp="#Xiang" ana="#punct-added">，</pc>而所作<placeName type="location">壽陵</placeName>亦二三頃城<pc resp="#Xiang" ana="#punct-added">，</pc>何益於後<pc resp="#Xiang" ana="#punct-added">？</pc>至<date>唐</date><date>宋</date>諸陵<pc resp="#Xiang" ana="#punct-added">，</pc>皆不免於發掘<pc resp="#Xiang" ana="#punct-added">，</pc>豈不痛哉<pc resp="#Xiang" ana="#punct-added">！</pc><date>國朝</date>之制<pc resp="#Xiang" ana="#punct-added">，</pc>最為深密<pc resp="#Xiang" ana="#punct-added">；</pc>既葬<pc resp="#Xiang" ana="#punct-added">，</pc>人莫知其方<pc resp="#Xiang" ana="#punct-added">，</pc>與古帝王何遠之有<pc resp="#Xiang" ana="#punct-added">。</pc>
+        <p> 序<date>漢氏</date>之法人君在位三分天下貢賦一分入山陵<persName>武帝</persName>歷年長久比葬陵中不復容物<persName>霍光</persName>暗於大體奢侈過度其後<persName>更始</persName>之敗赤眉賊入<placeName type="location">長安</placeName>破<placeName type="location">茂陵</placeName>取物猶不能盡。賊師<persName>樊崈</persName>發掘諸陵取其寶貨凡所發有玉柙殯者聞如生故得恣行淫穢惟<persName>文帝</persName><placeName type="location">灞陵</placeName>獨完<persName>光武</persName>目擊其事猶不能改初作<placeName type="location">夀陵</placeName><roleName>將作大匠</roleName><persName>竇融</persName>即上言園陵廣袤無所用<persName>光武</persName>曰古者帝王之葬皆陶人瓦器木車茆馬使後代之人不知其處雖有此語而所作<placeName type="location">壽陵</placeName>亦二三頃城何益於後至<date>唐</date><date>宋</date>諸陵皆不免於發掘豈不痛哉<date>國朝</date>之制最為深密既葬人莫知其方與古帝王何遠之有
         </p>
         <lg>
           <l>
@@ -14207,7 +15087,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">好種荷花三十傾</lem>
+              <lem wit="#GX">好種荷花三十頃</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -15675,17 +16555,17 @@
         <head>
           <app>
             <lem wit="#ZQ">
-              <title>君子交行</title>贈<persName role="friend">呂日新</persName><pc resp="#Xiang" ana="#punct-added">。</pc>
-              <persName>日新</persName>與余相知最早<pc resp="#Xiang" ana="#punct-added">，</pc>
-              先後來<placeName type="location">京師</placeName><pc resp="#Xiang" ana="#punct-added">，</pc>
-              作<title>君子交行</title>贈之<pc resp="#Xiang" ana="#punct-added">。</pc>
+              <title>君子交行</title>贈<persName role="addressed_to">呂日新</persName>
+              <persName>日新</persName>與余相知最早
+              先後來<placeName type="location">京師</placeName>
+              作<title>君子交行</title>贈之
             </lem>
             
             <rdg wit="#GX">
-              <title>君子交行</title>贈<persName>日新</persName><pc resp="#Xiang" ana="#punct-added">。</pc>
-              <persName>日新</persName>與余相知最早<pc resp="#Xiang" ana="#punct-added">，</pc>
-              先後來<placeName type="location">京師</placeName><pc resp="#Xiang" ana="#punct-added">，</pc>
-              作<title>君子交行</title>贈之<pc resp="#Xiang" ana="#punct-added">。</pc>
+              <title>君子交行</title>贈<persName>日新</persName>
+              <persName>日新</persName>與余相知最早
+              先後來<placeName type="location">京師</placeName>
+              作<title>君子交行</title>贈之
             </rdg>
             
             <rdg wit="#MY" ana="#agree"/>
@@ -16089,7 +16969,7 @@
       </div>
       <div xml:id="by271" type="poem">
         <head>徒步行贈晉冰壑並序</head>
-        <p> 序<pc resp="#Xiang" ana="#punct-added">：</pc><persName role="monk">冰壑</persName><pc
+        <p> 序<persName role="monk">冰壑</persName><pc
             resp="#Xiang" ana="#punct-added">，</pc><placeName type="location">象山</placeName>人<pc
             resp="#Xiang" ana="#punct-added">。</pc>見 <app>
             <lem wit="#GX"><persName key="A004699" role="monk">雪岩</persName></lem>
@@ -16099,11 +16979,11 @@
           <note type="editorial" resp="#Xiang" ana="#editorial-note">
             <ref target="#ZQ">振綺堂本</ref>作<mentioned>雲岩</mentioned>，誤。此處實指<persName key="A004699"
               >雪岩祖欽</persName>禪師，故從<ref target="#GX">古香樓本</ref>。 </note>有悟入處<pc resp="#Xiang"
-            ana="#punct-added">，</pc>出世最早<pc resp="#Xiang" ana="#punct-added">。</pc>常以<pc
+            ana="#punct-added">，</pc>出世最早常以<pc
             resp="#Xiang" ana="#punct-added">「</pc>一個胡蘆懷兩家<pc resp="#Xiang" ana="#punct-added"
-            >」</pc>之語示衆<pc resp="#Xiang" ana="#punct-added">。</pc>之語示衆<pc resp="#Xiang"
+            >」</pc>之語示衆之語示衆<pc resp="#Xiang"
             ana="#punct-added">。</pc>初住<placeName type="location">蘇</placeName>之<placeName
-            type="temple">靈巖</placeName><pc resp="#Xiang" ana="#punct-added">，</pc>又住<placeName
+            type="temple">靈巖</placeName>又住<placeName
             type="location">秀</placeName>之<placeName type="temple">能仁</placeName><pc resp="#Xiang"
             ana="#punct-added">、</pc><placeName type="location">明</placeName>之 <app>
             <lem wit="#GX"><placeName type="temple">育王</placeName></lem>
@@ -16116,9 +16996,9 @@
           <date>大德</date>間<pc resp="#Xiang" ana="#punct-added"
             >，</pc>奉詔旨任<roleName>常德路僧錄</roleName><pc resp="#Xiang" ana="#punct-added"
             >。</pc>往來<placeName type="location">京師</placeName>五十餘年<pc resp="#Xiang"
-            ana="#punct-added">。</pc>年八十<pc resp="#Xiang" ana="#punct-added">，</pc>以余同里<pc
+            ana="#punct-added">。</pc>年八十以余同里<pc
             resp="#Xiang" ana="#punct-added">，</pc>遙至館舍<pc resp="#Xiang" ana="#punct-added"
-            >，</pc>談桑梓之樂<pc resp="#Xiang" ana="#punct-added">，</pc>為賦此行<pc resp="#Xiang"
+            >，</pc>談桑梓之樂為賦此行<pc resp="#Xiang"
             ana="#punct-added">。</pc>
         </p>
         <lg>
@@ -16783,20 +17663,20 @@
               <p>此處<ref target="#GX">古香樓本</ref>作<ref target="#tok_by274_l12_yan"
                     ><mentioned>煙</mentioned></ref><pc resp="#Xiang" ana="#punct-added"
                   >，</pc>振綺堂本與眠雲精舍本作<ref target="#tok_by274_l12_xiang"
-                  ><mentioned>香</mentioned></ref><pc resp="#Xiang" ana="#punct-added">，</pc><ref
-                  target="#Bao">鮑</ref><pc resp="#Xiang" ana="#punct-added">、</pc><ref target="#Yu"
+                  ><mentioned>香</mentioned></ref><ref
+                  target="#Bao">鮑</ref><ref target="#Yu"
                   >余</ref>本亦從<mentioned>香</mentioned><pc resp="#Xiang" ana="#punct-added"
                   >。</pc>然按文勢與事理<pc resp="#Xiang" ana="#punct-added"
                   >，</pc><mentioned>香</mentioned>殊不近情<pc resp="#Xiang" ana="#punct-added"
-                  >。</pc>蓋此段言益火煮筍<pc resp="#Xiang" ana="#punct-added">，</pc>火勢既盛<pc resp="#Xiang"
-                  ana="#punct-added">，</pc>理應炊煙充室<pc resp="#Xiang" ana="#punct-added">，</pc>非香氣可得<pc
+                  >。</pc>蓋此段言益火煮筍火勢既盛<pc resp="#Xiang"
+                  ana="#punct-added">，</pc>理應炊煙充室非香氣可得<pc
                   resp="#Xiang" ana="#punct-added">；</pc>且下句方言加鹽調味<pc resp="#Xiang"
-                  ana="#punct-added">，</pc>未調之前<pc resp="#Xiang" ana="#punct-added">，</pc>何香之有<pc
+                  ana="#punct-added">，</pc>未調之前何香之有<pc
                   resp="#Xiang" ana="#punct-added">？</pc>故今從<ref target="#GX">古香樓本</ref>作<ref
                   target="#tok_by274_l12_yan"><mentioned>煙</mentioned></ref><pc resp="#Xiang"
                   ana="#punct-added">，</pc>以協情狀<pc resp="#Xiang" ana="#punct-added"
                   >；</pc>而諸本作<mentioned>香</mentioned>者<pc resp="#Xiang" ana="#punct-added"
-                  >，</pc>疑傳寫之誤耳<pc resp="#Xiang" ana="#punct-added">。</pc></p>
+                  >，</pc>疑傳寫之誤耳</p>
             </note></l>
           <l>
             <app>
@@ -18006,8 +18886,8 @@
       </div>
       <div xml:id="by284" type="poem">
         <head>宋江分贓臺</head>
-        <p>序<pc resp="#Xiang" ana="#punct-added">：</pc> 宋徽宗時<pc resp="#Xiang" ana="#punct-added">，</pc> 大盜三十六人同日拜官<pc resp="#Xiang" ana="#punct-added">。</pc> 間<pc resp="#Xiang" ana="#punct-added">《</pc>李若水詩集<pc resp="#Xiang" ana="#punct-added">》</pc>
-          <pc resp="#Xiang" ana="#punct-added">，</pc> 在梁山泊中<pc resp="#Xiang" ana="#punct-added">。</pc>
+        <p>序 宋徽宗時 大盜三十六人同日拜官 間李若水詩集
+           在梁山泊中
         </p>
         <lg>
           <l>
@@ -18043,22 +18923,22 @@
       <div xml:id="by285" type="poem">
         <head>過東昌</head>
         <p>
-          序<pc resp="#Xiang" ana="#punct-added">：</pc>
-          東昌城南<pc resp="#Xiang" ana="#punct-added">，</pc>
-          有隱君子魏野塘者<pc resp="#Xiang" ana="#punct-added">，</pc>
-          能范土作博山爐<pc resp="#Xiang" ana="#punct-added">。</pc>
-          輕巧有制度<pc resp="#Xiang" ana="#punct-added">，</pc>
-          南北人多取之<pc resp="#Xiang" ana="#punct-added">。</pc>
-          與光雪窗至其家<pc resp="#Xiang" ana="#punct-added">，</pc>
-          魏喜甚<pc resp="#Xiang" ana="#punct-added">，</pc>
-          特薄其價<pc resp="#Xiang" ana="#punct-added">。</pc>
+          序
+          東昌城南
+          有隱君子魏野塘者
+          能范土作博山爐
+          輕巧有制度
+          南北人多取之
+          與光雪窗至其家
+          魏喜甚
+          特薄其價
           余
           <app>
             <lem wit="#ZQ">酬</lem>
             <rdg wit="#GX">訓</rdg>
             <rdg wit="#MY">訓</rdg>
           </app>
-          一絕<pc resp="#Xiang" ana="#punct-added">。</pc>
+          一絕
         </p>
         
         <lg>
@@ -18224,11 +19104,11 @@
         </lg>
       </div>
       <div xml:id="by288" type="poem">
-        <head>曉過呂梁洪<pc resp="#Xiang" ana="#punct-added">，</pc>新水灌河<pc resp="#Xiang" ana="#punct-added">，</pc>兩<app>
+        <head>曉過呂梁洪新水灌河兩<app>
             <lem wit="#ZQ">涯</lem>
             <rdg wit="#GX">淮</rdg>
             <rdg wit="#MY" ana="#agree"/>
-          </app>之間<pc resp="#Xiang" ana="#punct-added">，</pc>艤舟無數<pc resp="#Xiang" ana="#punct-added">。</pc>呈華山隱<pc resp="#Xiang" ana="#punct-added">，</pc>光雪窗<pc resp="#Xiang" ana="#punct-added">。</pc>
+          </app>之間艤舟無數呈華山隱光雪窗
         </head>
         
         <lg>
@@ -18313,81 +19193,81 @@
               <rdg wit="#ZQ">太子身令為國本</rdg>
               <rdg wit="#MY">太子身令為國本</rdg>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                <p> 右詩<pc resp="#Xiang" ana="#punct-added">「</pc>太子身<mentioned>令</mentioned>為國本<pc
+                <p> 右詩太子身<mentioned>令</mentioned>為國本<pc
                     resp="#Xiang" ana="#punct-added">」</pc>句<pc resp="#Xiang" ana="#punct-added"
                     >，</pc><mentioned>令</mentioned>字當為<mentioned>今</mentioned>之形訛<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>說如左<pc resp="#Xiang" ana="#punct-added">：</pc>
-                    蓋此句為律詩頷聯出句<pc resp="#Xiang" ana="#punct-added">，</pc>對句以<pc resp="#Xiang"
-                    ana="#punct-added">「</pc>君王到手擇留封<pc resp="#Xiang" ana="#punct-added">」</pc>相匹<pc
+                    ana="#punct-added">，</pc>說如左
+                    蓋此句為律詩頷聯出句對句以<pc resp="#Xiang"
+                    ana="#punct-added">「</pc>君王到手擇留封相匹<pc
                     resp="#Xiang" ana="#punct-added">。</pc>近體律句以二二三分節為正體<pc resp="#Xiang"
                     ana="#punct-added">，</pc>上下句須詞性對品<pc resp="#Xiang" ana="#punct-added"
-                    >、</pc>結構相應<pc resp="#Xiang" ana="#punct-added">、</pc>平仄相對<pc resp="#Xiang"
-                    ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added">「</pc>太子<pc
+                    >、</pc>結構相應平仄相對<pc resp="#Xiang"
+                    ana="#punct-added">。</pc>太子<pc
                     resp="#Xiang" ana="#punct-added">」</pc>與<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>君王<pc resp="#Xiang" ana="#punct-added">」</pc><pc resp="#Xiang"
-                    ana="#punct-added">，</pc>皆皇室尊稱<pc resp="#Xiang" ana="#punct-added">，</pc>名詞對舉<pc
+                    >「</pc>君王<pc resp="#Xiang"
+                    ana="#punct-added">，</pc>皆皇室尊稱名詞對舉<pc
                     resp="#Xiang" ana="#punct-added">，</pc>體制森然<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc><pc resp="#Xiang" ana="#punct-added">「</pc>身<mentioned>今</mentioned><pc
+                    >；</pc>身<mentioned>今</mentioned><pc
                     resp="#Xiang" ana="#punct-added">」</pc>與<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>到手<pc resp="#Xiang" ana="#punct-added">」</pc><pc resp="#Xiang"
+                    >「</pc>到手<pc resp="#Xiang"
                     ana="#punct-added">，</pc>
-                  <pc resp="#Xiang" ana="#punct-added">「</pc>身<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc><pc resp="#Xiang" ana="#punct-added">「</pc>手<pc resp="#Xiang"
+                  身<pc resp="#Xiang" ana="#punct-added"
+                    >」</pc>手<pc resp="#Xiang"
                     ana="#punct-added">」</pc>同為體物名詞<pc resp="#Xiang" ana="#punct-added"
                     >，</pc>屬小類工對<pc resp="#Xiang" ana="#punct-added"
                     >，</pc><mentioned>今</mentioned>為時間副詞<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>狀已然之態<pc resp="#Xiang" ana="#punct-added">，</pc><pc resp="#Xiang"
-                    ana="#punct-added">「</pc>到<pc resp="#Xiang" ana="#punct-added">」</pc>動詞副詞化<pc
+                    >，</pc>狀已然之態<pc resp="#Xiang"
+                    ana="#punct-added">「</pc>到動詞副詞化<pc
                     resp="#Xiang" ana="#punct-added">，</pc>表事功之成<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>副詞相對<pc resp="#Xiang" ana="#punct-added">，</pc>句法一揆<pc resp="#Xiang"
-                    ana="#punct-added">；</pc>末三字<pc resp="#Xiang" ana="#punct-added">「</pc>為國本<pc
+                    >，</pc>副詞相對句法一揆<pc resp="#Xiang"
+                    ana="#punct-added">；</pc>末三字為國本<pc
                     resp="#Xiang" ana="#punct-added">」</pc><pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>擇留封<pc resp="#Xiang" ana="#punct-added">」</pc><pc resp="#Xiang"
-                    ana="#punct-added">，</pc>皆動賓結構<pc resp="#Xiang" ana="#punct-added">，</pc>
-                    對仗圓合<pc resp="#Xiang" ana="#punct-added">。</pc>若作<mentioned>令</mentioned>字<pc
+                    >「</pc>擇留封<pc resp="#Xiang"
+                    ana="#punct-added">，</pc>皆動賓結構
+                    對仗圓合若作<mentioned>令</mentioned>字<pc
                     resp="#Xiang" ana="#punct-added">，</pc>則為使令動詞<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>與對句<pc resp="#Xiang" ana="#punct-added">「</pc>手<pc
+                    ana="#punct-added">，</pc>與對句手<pc
                     resp="#Xiang" ana="#punct-added">」</pc>之名詞詞性舛馳<pc resp="#Xiang"
                     ana="#punct-added">，</pc>節奏點平仄失對<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>律體規矩盡失<pc resp="#Xiang" ana="#punct-added">，</pc> 斷非詩人本貌<pc resp="#Xiang"
+                    >，</pc>律體規矩盡失 斷非詩人本貌<pc resp="#Xiang"
                     ana="#punct-added">。</pc>
                     況<mentioned>今</mentioned>與<mentioned>令</mentioned>字形僅差一筆<pc resp="#Xiang"
                     ana="#punct-added">，</pc>刻本<pc resp="#Xiang" ana="#punct-added"
-                    >、</pc>抄本手寫傳抄之際<pc resp="#Xiang" ana="#punct-added">，</pc>極易互訛<pc resp="#Xiang"
+                    >、</pc>抄本手寫傳抄之際極易互訛<pc resp="#Xiang"
                     ana="#punct-added">，</pc>此古典文獻校勘中至為常見之形近致誤案例也<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>復考唐宋元三代詩家遺篇<pc resp="#Xiang" ana="#punct-added">，</pc>
-                  <pc resp="#Xiang" ana="#punct-added">「</pc>身<mentioned>今</mentioned><pc
+                    ana="#punct-added">。</pc>復考唐宋元三代詩家遺篇
+                  身<mentioned>今</mentioned><pc
                     resp="#Xiang" ana="#punct-added">」</pc>乃習見之固定語式<pc resp="#Xiang"
                     ana="#punct-added">，</pc>僅<title>全元詩</title>所錄<pc resp="#Xiang"
                     ana="#punct-added">，</pc><pc resp="#Xiang" ana="#punct-added"
                     >「</pc>身<mentioned>今</mentioned><pc resp="#Xiang" ana="#punct-added"
-                    >」</pc>入律句者便有數十例<pc resp="#Xiang" ana="#punct-added">，</pc>語義皆為<pc resp="#Xiang"
-                    ana="#punct-added">「</pc>其身今者<pc resp="#Xiang" ana="#punct-added">、</pc>自身如今」<pc
+                    >」</pc>入律句者便有數十例語義皆為<pc resp="#Xiang"
+                    ana="#punct-added">「</pc>其身今者自身如今」<pc
                     resp="#Xiang" ana="#punct-added">，</pc> 圓通穩愜<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>反觀<pc resp="#Xiang" ana="#punct-added">「</pc>身<mentioned>令</mentioned><pc
+                    >；</pc>反觀身<mentioned>令</mentioned><pc
                     resp="#Xiang" ana="#punct-added">」</pc>一語<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>遍檢歷代律詩<pc resp="#Xiang" ana="#punct-added">，</pc> 無一例合規之對仗用例<pc
+                    >，</pc>遍檢歷代律詩 無一例合規之對仗用例<pc
                     resp="#Xiang" ana="#punct-added">，</pc>其為後世傳抄誤寫<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>斷然可知<pc resp="#Xiang" ana="#punct-added">。</pc>
-                    更以詩旨核之<pc resp="#Xiang" ana="#punct-added">，</pc>此篇詠張良式定策安邦<pc resp="#Xiang"
+                    ana="#punct-added">，</pc>斷然可知
+                    更以詩旨核之此篇詠張良式定策安邦<pc resp="#Xiang"
                     ana="#punct-added">、</pc>功成身退之臣<pc resp="#Xiang" ana="#punct-added"
-                    >。</pc>前四句一氣貫注<pc resp="#Xiang" ana="#punct-added">，</pc>皆頌其不世勛業<pc
+                    >。</pc>前四句一氣貫注皆頌其不世勛業<pc
                     resp="#Xiang" ana="#punct-added">：</pc>首二句言其補袞安邦<pc resp="#Xiang"
                     ana="#punct-added">，</pc> 勛勒鼎鐘<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>此二句言其定儲固國<pc resp="#Xiang" ana="#punct-added">，</pc> 輔主定業<pc
+                    >；</pc>此二句言其定儲固國 輔主定業<pc
                     resp="#Xiang" ana="#punct-added">。</pc>作<pc resp="#Xiang" ana="#punct-added"
                     >「</pc>太子身<mentioned>今</mentioned>為國本<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc><pc resp="#Xiang" ana="#punct-added">，</pc>為社稷根本<pc resp="#Xiang"
+                    >」</pc>為社稷根本<pc resp="#Xiang"
                     ana="#punct-added">，</pc>暗寫功臣定儲安邦之力<pc resp="#Xiang" ana="#punct-added"
                     >，</pc>脈絡一以貫之<pc resp="#Xiang" ana="#punct-added"
                     >；</pc>若作<mentioned>令</mentioned>字<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>則語義扞格難通<pc resp="#Xiang" ana="#punct-added">，</pc> 且泯沒功臣定策之功<pc
+                    >，</pc>則語義扞格難通 且泯沒功臣定策之功<pc
                     resp="#Xiang" ana="#punct-added">，</pc>乖違全篇詠頌之旨<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>據此<pc resp="#Xiang" ana="#punct-added">，</pc>
+                    ana="#punct-added">。</pc>據此
                   <mentioned>令</mentioned>字必為<mentioned>今</mentioned>之形訛<pc resp="#Xiang"
                     ana="#punct-added">，</pc> 此句當正作<pc resp="#Xiang" ana="#punct-added"
                     >「</pc>太子身<mentioned>今</mentioned>為國本<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc><pc resp="#Xiang" ana="#punct-added">。</pc>
+                    >」</pc>
                 </p>
               </note>
             </app></l>
@@ -18623,7 +19503,7 @@
       <div xml:id="by293" type="poem">
         <head>
           <title type="main">
-            出京<pc resp="#Xiang" ana="#punct-added">，</pc>附山中隱舟<pc resp="#Xiang" ana="#punct-added">，</pc>無他書<pc resp="#Xiang" ana="#punct-added">，</pc>但是一部<title type="sutra" ana="#buddhist-sutra">華嚴經</title>而已<pc resp="#Xiang" ana="#punct-added">。</pc>以詩美之<pc resp="#Xiang" ana="#punct-added">。</pc>
+            出京附山中隱舟無他書但是一部<title type="sutra" ana="#buddhist-sutra">華嚴經</title>而已以詩美之
           </title>
           <num value="1">一</num>
         </head>
@@ -18689,7 +19569,7 @@
       <div xml:id="by294" type="poem">
         <head>
           <title type="main">
-            出京<pc resp="#Xiang" ana="#punct-added">，</pc>附山中隱舟<pc resp="#Xiang" ana="#punct-added">，</pc>無他書<pc resp="#Xiang" ana="#punct-added">，</pc>但是一部<title type="sutra" ana="#buddhist-sutra">華嚴經</title>而已<pc resp="#Xiang" ana="#punct-added">。</pc>以詩美之<pc resp="#Xiang" ana="#punct-added">。</pc>
+            出京附山中隱舟無他書但是一部<title type="sutra" ana="#buddhist-sutra">華嚴經</title>而已以詩美之
           </title>
           <num value="2">二</num>
         </head>
@@ -18754,7 +19634,7 @@
         </lg>
       </div>
       <div xml:id="by295" type="poem">
-        <head>山隱授業<pc resp="#Xiang" ana="#punct-added">，</pc>無錫州洞觀虛<pc resp="#Xiang" ana="#punct-added">。</pc>因北歸觴客<pc resp="#Xiang" ana="#punct-added">，</pc>遂留數日<pc resp="#Xiang" ana="#punct-added">。</pc></head>
+        <head>山隱授業無錫州洞觀虛因北歸觴客遂留數日</head>
         <lg>
           <l>
             <app>
@@ -18829,7 +19709,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">何許流來滿石紅</lem>
+              <lem wit="#GX">何許流來滿石矼 </lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -18853,7 +19733,7 @@
               <rdg wit="#ZQ">因僧俗象心俱淨</rdg>
               <rdg wit="#MY">因僧浴像心俱靜</rdg>
               <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by296_l5">
-                <p><ref target="#Bao">鮑本</ref>云<pc resp="#Xiang" ana="#punct-added">：</pc>此處惟<ref
+                <p><ref target="#Bao">鮑本</ref>云此處惟<ref
                     target="#GX">古香樓本</ref>作<mentioned
                     corresp="#by296_l5_yuxiang #by296_l5_yuxiang_end">浴像</mentioned><pc
                     resp="#Xiang" ana="#punct-added">，</pc>
@@ -20123,11 +21003,11 @@
     </l>
     <l>
             <app>
-              <lem wit="#GX">瓊島遙聞萬歲深</lem>
+              <lem wit="#MY">瓊島遙聞萬歲聲</lem>
               <rdg wit="#ZQ">
                 <gap reason="illegible" quantity="7" unit="character"/>
               </rdg>
-              <rdg wit="#MY">瓊鳥遙聞萬歲深</rdg>
+              <rdg wit="#GX">瓊鳥遙聞萬歲深</rdg>
             </app>
           </l>
     <l>
