@@ -294,6 +294,66 @@
           .damage { color: #c00000; font-size: 0.85em; }
           .gaiji { border-bottom: 1px dotted #17a2b8; cursor: help; }
           .punct { color: #555; }
+
+          /* 募刻名錄：保留原頁六欄資訊，但改為適合橫排網頁閱讀的卡片式版面 */
+          .donor-list {
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+            gap:12px;
+            margin:16px 0 8px 0;
+            width:100%;
+          }
+          .donor-column {
+            display:block;
+            box-sizing:border-box;
+            border:1px solid #ddd;
+            border-radius:8px;
+            background:#fff;
+            padding:10px 12px;
+          }
+          .donor-column-label {
+            display:block;
+            margin-bottom:6px;
+            padding-bottom:4px;
+            border-bottom:1px solid #eee;
+            color:#666;
+            font-size:16pt;
+          }
+          .donor-entry {
+            display:flex;
+            justify-content:space-between;
+            align-items:baseline;
+            gap:12px;
+            padding:2px 0;
+          }
+          .donor-entry-main { min-width:4em; }
+          .donor-entry-meta {
+            color:#8f365f;
+            font-size:0.78em;
+            white-space:nowrap;
+            text-align:right;
+          }
+          .donor-column-affiliation {
+            display:block;
+            color:#666;
+            font-size:0.8em;
+            margin:0 0 4px 0;
+          }
+          .donor-column-shared {
+            display:block;
+            margin-top:6px;
+            padding-top:5px;
+            border-top:1px dashed #ddd;
+            color:#8f365f;
+            font-size:0.78em;
+          }
+          .layout-note {
+            display:inline !important;
+            margin:0 !important;
+            padding:0 !important;
+            color:inherit;
+            font-size:inherit;
+          }
         ]]></style>
 
         <script type="text/javascript"><![CDATA[
@@ -693,7 +753,7 @@
               </div>
 
               <div class="checkrow">
-                <label><input type="checkbox" id="showEdits"/> 顯示編者校改</label>
+                <label><input type="checkbox" id="showEdits" checked="checked"/> 顯示編者校改</label>
               </div>
             </div>
 
@@ -751,7 +811,36 @@
   <xsl:template match="tei:front">
     <div class="front" style="margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; background: #fffcf0; border-radius: 8px;">
       <h2 style="margin-top:0; font-size:20pt; border-bottom:1px solid #ddd; padding-bottom:5px;">序文</h2>
-      <xsl:apply-templates/>
+
+      <!--
+        序文在 TEI 中有巢狀 div。這裡一律按文檔順序攤平成獨立區塊，
+        避免第 3–6 篇被視為第 2 篇的內層內容。
+      -->
+      <xsl:for-each select=".//tei:div[@type='preface']">
+        <xsl:variable name="prefWits">
+          <xsl:if test="tei:head//tei:lem[contains(@wit,'#GX')] or tei:head//tei:rdg[contains(@wit,'#GX') and not(contains(@ana,'#unattested'))]">GX </xsl:if>
+          <xsl:if test="tei:head//tei:lem[contains(@wit,'#MY')] or tei:head//tei:rdg[contains(@wit,'#MY') and not(contains(@ana,'#unattested'))]">MY </xsl:if>
+          <xsl:if test="tei:head//tei:lem[contains(@wit,'#ZQ')] or tei:head//tei:rdg[contains(@wit,'#ZQ') and not(contains(@ana,'#unattested'))]">ZQ </xsl:if>
+        </xsl:variable>
+
+        <div class="preface-item" style="margin:18px 0 26px 0; padding-bottom:18px; border-bottom:1px dashed #ccc;">
+          <div class="preface-title" style="font-size:var(--main-font-size); font-weight:700; margin-bottom:4px;">
+            <xsl:apply-templates select="tei:head/node()"/>
+          </div>
+
+          <xsl:if test="string-length(normalize-space(string($prefWits))) &gt; 0">
+            <div class="preface-witness" style="font-size:18pt; color:#666; margin-bottom:10px;">
+              <xsl:text>見於：</xsl:text>
+              <xsl:call-template name="wit-label-list">
+                <xsl:with-param name="wits" select="string($prefWits)"/>
+              </xsl:call-template>
+            </div>
+          </xsl:if>
+
+          <!-- 只處理本序自己的段落，巢狀序由外層 for-each 另行輸出，避免重複。 -->
+          <xsl:apply-templates select="tei:p"/>
+        </div>
+      </xsl:for-each>
     </div>
   </xsl:template>
 
@@ -865,7 +954,7 @@
 
   <xsl:template match="tei:head//tei:app">
     <xsl:variable name="lemText" select="normalize-space(string(tei:lem))"/>
-    <xsl:variable name="hasDiff" select="count(tei:rdg[not(contains(@ana, '#agree')) and normalize-space(string(.)) != $lemText])"/>
+    <xsl:variable name="hasDiff" select="count(tei:rdg[not(contains(@ana, '#agree')) and not(contains(@ana, '#unattested')) and normalize-space(string(.)) != $lemText])"/>
 
     <span class="app">
       <xsl:attribute name="data-hasdiff">
@@ -926,6 +1015,7 @@
 
           <xsl:for-each select="tei:rdg[
               not(contains(@ana, '#agree')) and
+              not(contains(@ana, '#unattested')) and
               normalize-space(string(.)) != $lemText and
               generate-id() = generate-id(
                 key('kRdgText', concat(generate-id(..), '|', normalize-space(string(.))))[1]
@@ -1003,6 +1093,71 @@
     <div class="trailer">
       <xsl:apply-templates/>
     </div>
+  </xsl:template>
+
+  <!--
+    募刻名錄的版面標記屬於原本抄本的版面資訊，不是編者校記。
+    因此不使用 critnote，也不受「顯示注釋」開關控制。
+  -->
+  <xsl:template match="tei:seg[@type='donorList']">
+    <span class="donor-list">
+      <xsl:apply-templates select="tei:seg[@type='donorColumn']"/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@type='donorColumn']">
+    <span class="donor-column">
+      <span class="donor-column-label">
+        <xsl:text>第 </xsl:text><xsl:value-of select="@n"/><xsl:text> 欄</xsl:text>
+      </span>
+      <xsl:apply-templates/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@type='donorEntry']">
+    <span class="donor-entry">
+      <span class="donor-entry-main">
+        <xsl:apply-templates select="tei:persName | tei:orgName"/>
+      </span>
+      <xsl:if test="tei:seg[@type='donation'] or tei:note[@type='donation'] or tei:seg[@type='publication']">
+        <span class="donor-entry-meta">
+          <xsl:for-each select="tei:seg[@type='donation'] | tei:note[@type='donation'] | tei:seg[@type='publication']">
+            <xsl:if test="position() &gt; 1"><xsl:text>／</xsl:text></xsl:if>
+            <xsl:apply-templates select="."/>
+          </xsl:for-each>
+        </span>
+      </xsl:if>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@type='donation' and @subtype='shared']">
+    <span class="donor-column-shared"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@type='donorColumn']/tei:note[@type='affiliation']" priority="2">
+    <span class="donor-column-affiliation"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:seg[@type='donorColumn']/tei:note[@type='donation']" priority="2">
+    <span class="donor-column-shared"><xsl:apply-templates/></span>
+  </xsl:template>
+
+  <xsl:template match="tei:note[@type='donation' or @type='affiliation']">
+    <span class="layout-note">
+      <xsl:if test="@place">
+        <xsl:attribute name="title">
+          <xsl:text>原頁位置：</xsl:text>
+          <xsl:choose>
+            <xsl:when test="@place='right'">右</xsl:when>
+            <xsl:when test="@place='left'">左</xsl:when>
+            <xsl:when test="@place='above'">上</xsl:when>
+            <xsl:when test="@place='below'">下</xsl:when>
+            <xsl:otherwise><xsl:value-of select="@place"/></xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:apply-templates/>
+    </span>
   </xsl:template>
 
   <xsl:template match="tei:note">
@@ -1128,9 +1283,8 @@
   </xsl:template>
 
   <xsl:template match="tei:choice[tei:orig and tei:reg]">
-    <span class="choice">
-      <span class="sic"><xsl:apply-templates select="tei:orig/node()"/></span>
-      <span class="corr"><xsl:apply-templates select="tei:reg/node()"/></span>
+    <span class="choice normalization">
+      <span class="reg"><xsl:apply-templates select="tei:reg/node()"/></span>
     </span>
   </xsl:template>
 
