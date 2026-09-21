@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
   type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="tei-local.css"?>
 <?xml-stylesheet type="text/xsl" href="beiyoushi overview.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
@@ -746,7 +745,7 @@
     </relation>
 </listRelation>
     
-    <listPerson>
+<listPerson>
       <person xml:id="Sidibala">
         <persName>Sidibala</persName>
         <idno type="authority">A006670</idno>
@@ -1047,7 +1046,7 @@
     </relation>
 </listRelation>
     
-    <listPerson>
+<listPerson>
       <person xml:id="guoshi" role="collective">
         <persName>國師</persName>
         <sex value="M">男</sex>
@@ -1477,7 +1476,7 @@
 </listRelation>
 <listPerson>
   <person xml:id="Shipu">
-    <persName>釋普</persName>
+    <persName key="561064">釋普</persName>
     <persName type="alias" source="#by172">大雲</persName>
     <idno type="authority">561064</idno>
         <sex value="M">男</sex>
@@ -1583,244 +1582,305 @@
   </standOff>
   <text>
     <front>
-      <div type="preface" xml:id="pf_taming" ana="#paratext">
-        <head>佛日普照慧辨禪師塔銘</head>
+      <div type="preface"
+        n="1"
+        xml:id="pf_taming"
+        xml:lang="lzh"
+        ana="#paratext">
+        
+        <head>
+          <app>
+            <lem wit="#GX">佛日普照慧辨禪師塔銘</lem>
+            <rdg wit="#MY" ana="#agree"/>
+            <rdg wit="#ZQ" ana="#unattested"/>
+          </app>
+        </head>
         
         <p>
           <app>
-            <lem wit="#GX">皇帝端居穆清念四海兵爭<pc resp="#Xiang"
-                ana="#punct-added">，</pc>將卒民庶多殁於非命精爽無依<pc
-                resp="#Xiang" ana="#punct-added">，</pc>非佛世尊不足以度之<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>惟漢武元年秋九月詔江南大浮屠十餘人於蔣山禪寺作大法會<pc
-                resp="#Xiang" ana="#punct-added">，</pc>時楚石禪師實與其列<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師升座説法以聳人天龍鬼之聽<pc resp="#Xiang"
-                ana="#punct-added">。</pc>竣事近臣入奏<pc
-                resp="#Xiang" ana="#punct-added">，</pc>上大悦<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>二年春三月復用元年故事<pc resp="#Xiang"
-                ana="#punct-added">，</pc>召師説法如初錫燕文樓下<pc
-                resp="#Xiang" ana="#punct-added">，</pc>親承顧問<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>暨還出内府白金以賜<pc resp="#Xiang"
-                ana="#punct-added">。</pc>三年之秋<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>上以鬼神情狀幽微難測意遺經當有明文<pc resp="#Xiang"
-                ana="#punct-added">，</pc>妙柬僧中通三藏之説者問焉<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師以夢堂噩公行中仁公等應召而至<pc resp="#Xiang"
-                ana="#punct-added">，</pc>館于大天界寺上命儀曹勞之<pc
-                resp="#Xiang" ana="#punct-added">。</pc>既而援㩀經論成書<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>將入朝敷奏師忽示微疾<pc resp="#Xiang"
-                ana="#punct-added">。</pc>越四日趣左右具浴更衣<pc
-                resp="#Xiang" ana="#punct-added">，</pc>索筆書偈曰<pc resp="#Xiang" ana="#punct-added"
-                >：</pc>真性圓明<pc resp="#Xiang"
-                ana="#punct-added">，</pc>本無生㓕木馬夜鳴<pc
-                resp="#Xiang" ana="#punct-added">，</pc>西方日出<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>書畢<pc resp="#Xiang"
-                ana="#punct-added">，</pc>謂夢堂曰<pc
-                resp="#Xiang" ana="#punct-added">“</pc>師兄<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>我將去矣<pc resp="#Xiang"
-                ana="#punct-added">”</pc>夢堂曰<pc
-                resp="#Xiang" ana="#punct-added">“</pc>子去何之<pc resp="#Xiang" ana="#punct-added"
-                >？</pc>師曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc>西方爾<pc
-                resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>夢堂曰<pc resp="#Xiang"
-                ana="#punct-added">“</pc>西方有佛東方無佛耶<pc
-                resp="#Xiang" ana="#punct-added">？</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>師厲聲一喝泊然而化<pc resp="#Xiang"
-                ana="#punct-added">，</pc>時七月二十六日也<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>天界住持西白金公法門猶子也<pc resp="#Xiang"
-                ana="#punct-added">，</pc>爲治後事無不盡禮<pc
-                resp="#Xiang" ana="#punct-added">。</pc>時制火葬有禁<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>禮部以聞上特命從其教<pc resp="#Xiang"
-                ana="#punct-added">。</pc>茶毗之餘齒牙舌根數珠咸不壞<pc
-                resp="#Xiang" ana="#punct-added">，</pc>設利羅粘綴遺骨<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>纍纍然如珠其弟子文晟奉骨及諸不壞者歸于海鹽<pc
-                resp="#Xiang" ana="#punct-added">，</pc>卜以八月二十八日建塔於天寧永祚禪寺葬焉<pc resp="#Xiang"
-                ana="#punct-added">。</pc>嗣法上首景瓛復偕文晟以仁公所造行狀來徴銘<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>仁公博通内外典文辭簡奥<pc resp="#Xiang"
-                ana="#punct-added">，</pc>有西漢風其言當可信弗誣<pc
-                resp="#Xiang" ana="#punct-added">。</pc>謹按狀<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>師諱𣑽琦楚石其字也<pc resp="#Xiang"
-                ana="#punct-added">，</pc>小字曇耀明州象山人<pc
-                resp="#Xiang" ana="#punct-added">，</pc>姓朱氏<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>父杲毋張氏張夢日墮懷而生師<pc resp="#Xiang"
-                ana="#punct-added">。</pc>方在襁褓中有神僧摩其頂曰<pc
-                resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added"
-                >“</pc>此佛曰也他時能照燭昏衢乎<pc resp="#Xiang"
-                ana="#punct-added">？</pc>人因名之爲曇曜云<pc
-                resp="#Xiang" ana="#punct-added">。</pc>年七歲<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>靈性潁發讀書即了大義<pc resp="#Xiang"
-                ana="#punct-added">。</pc>或問所嗜何言即應聲曰<pc
-                resp="#Xiang" ana="#punct-added">：</pc><pc resp="#Xiang" ana="#punct-added"
-                >“</pc>君子喻於義<pc resp="#Xiang"
-                ana="#punct-added">”</pc>至於屬句倣書皆度越餘子<pc
-                resp="#Xiang" ana="#punct-added">，</pc>遠近號爲奇童<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>九歲棄俗入永祚受經於訥翁謨師<pc resp="#Xiang"
-                ana="#punct-added">，</pc>尋依晋翁詢師於湖之崇恩詢師<pc
-                resp="#Xiang" ana="#punct-added">，</pc>師之從族祖也<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>趙魏公見師器之爲鬻僧牒<pc resp="#Xiang"
-                ana="#punct-added">，</pc>得薙染爲沙門繼往杭之昭慶<pc
-                resp="#Xiang" ana="#punct-added">，</pc>受具足戒<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>年已十有六矣詢師遷住道場<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師爲侍者居亡何<pc
-                resp="#Xiang" ana="#punct-added">，</pc>命司藏室<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>閲首楞嚴經至<pc resp="#Xiang"
-                ana="#punct-added">“</pc>緣見因明暗成無見<pc
-                resp="#Xiang" ana="#punct-added">”</pc>處<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>恍然有省歷覽群書<pc resp="#Xiang"
-                ana="#punct-added">，</pc>不假師授文句自通<pc
-                resp="#Xiang" ana="#punct-added">。</pc>然膠於名相<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>未能釋去縳聞元叟端公倡道雙徑<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師往問云<pc
-                resp="#Xiang" ana="#punct-added">“</pc>言發非聲<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>色前不物其意何如<pc resp="#Xiang"
-                ana="#punct-added">？</pc>元叟就以師語詰之<pc
-                resp="#Xiang" ana="#punct-added">，</pc>師方擬議欲答<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>師叱之使出自是群疑塞胸<pc resp="#Xiang"
-                ana="#punct-added">，</pc>如填鉅石<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>會元英宗詔粉黄金爲泥書大藏經<pc resp="#Xiang"
-                ana="#punct-added">，</pc>有司以師喜書選上燕都<pc
-                resp="#Xiang" ana="#punct-added">。</pc>一夕<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>聞西城樓鼓動汗如雨下<pc resp="#Xiang"
-                ana="#punct-added">，</pc>拊几笑曰<pc
-                resp="#Xiang" ana="#punct-added">“</pc>徑山鼻孔<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>今日入吾手矣<pc resp="#Xiang"
-                ana="#punct-added">”</pc>因成一偈有<pc
-                resp="#Xiang" ana="#punct-added">“</pc>拾得紅爐一點雪<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>却是黄河六月冰之句<pc resp="#Xiang"
-                ana="#punct-added">。</pc>翩然南旋再入雙徑<pc
-                resp="#Xiang" ana="#punct-added">。</pc>元叟見師氣貌充然<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>謂曰<pc resp="#Xiang"
-                ana="#punct-added">“</pc>西來密意喜子得之矣<pc
-                resp="#Xiang" ana="#punct-added">。</pc><pc resp="#Xiang" ana="#punct-added"
-                >”</pc>遽處以第一第二座<pc resp="#Xiang"
-                ana="#punct-added">，</pc>且言妙喜大法盡在於師<pc
-                resp="#Xiang" ana="#punct-added">，</pc>有來參叩者<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>多今師辨决之元泰定中<pc resp="#Xiang"
-                ana="#punct-added">，</pc>行宣政院稔師之名<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>命出世海鹽之福臻遂升主永祚<pc resp="#Xiang"
-                ana="#punct-added">。</pc>永師受經之地爲創大寶閣<pc
-                resp="#Xiang" ana="#punct-added">，</pc>範銅鑄賢劫千佛<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>而毗盧遮那及文殊師利普賢<pc resp="#Xiang"
-                ana="#punct-added">、</pc>千手眼觀音諸像並寘其中<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>復造塔婆七級崇二百四十餘尺<pc resp="#Xiang"
-                ana="#punct-added">。</pc>功垂就勢偏將壓<pc
-                resp="#Xiang" ana="#punct-added">，</pc>師禱之<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>夜乃大雨風居氓聞鬼神相語曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc>天寧塔偏<pc
-                resp="#Xiang" ana="#punct-added">，</pc>亟往救之<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>遲明<pc resp="#Xiang"
-                ana="#punct-added">，</pc>塔正如初遷杭之報國<pc
-                resp="#Xiang" ana="#punct-added">，</pc>轉嘉興之本覺<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>更搆萬佛閣九楹間宏偉壯麗<pc resp="#Xiang"
-                ana="#punct-added">，</pc>儼如天宫下移人世<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>帝師嘉其行業賜以<pc resp="#Xiang"
-                ana="#punct-added">“</pc>佛日普照慧辨禪師之號<pc
-                resp="#Xiang" ana="#punct-added">。</pc>佛日頗符昔日神僧之言<pc resp="#Xiang"
-                ana="#punct-added">，</pc>識者異焉會報恩光孝虚席<pc
-                resp="#Xiang" ana="#punct-added">，</pc>僉謂報恩一郡巨刹<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>非師莫能居之師勉徇衆請而往<pc resp="#Xiang"
-                ana="#punct-added">，</pc>尋退隱永祚築西齋爲終焉之計<pc
-                resp="#Xiang" ana="#punct-added">。</pc>至正癸卯<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>州大夫强師主其寺事時塔燬于兵<pc resp="#Xiang"
-                ana="#punct-added">，</pc>師重成之景瓛爲鑄寶壺冠于顛<pc
-                resp="#Xiang" ana="#punct-added">，</pc>感天花異香之祥<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師舉景瓛爲代復歸老干西齋云<pc resp="#Xiang"
-                ana="#punct-added">。</pc>師爲人形軀短小而神觀精朗<pc
-                resp="#Xiang" ana="#punct-added">，</pc>舉明正法<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>滂沛演迤有不知其所窮<pc resp="#Xiang"
-                ana="#punct-added">。</pc>凡所涖之處黑白嚮慕<pc
-                resp="#Xiang" ana="#punct-added">，</pc>如水歸壑<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>一彈指間涌殿飛樓<pc resp="#Xiang"
-                ana="#punct-added">，</pc>上插雲際未嘗見師有非<pc
-                resp="#Xiang" ana="#punct-added">。</pc>君子謂師縱横自如<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>應物無迹山川出雲<pc resp="#Xiang"
-                ana="#punct-added">，</pc>雷蟠電掣神功收斂<pc
-                resp="#Xiang" ana="#punct-added">，</pc>寂莫無聲<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>由是内而燕齊秦楚外而日本高句麗<pc resp="#Xiang"
-                ana="#punct-added">，</pc>咨决心要奔走座下<pc
-                resp="#Xiang" ana="#punct-added">。</pc>得師片言<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>裝潢襲藏不翅拱璧<pc resp="#Xiang"
-                ana="#punct-added">。</pc>師可謂無愧妙喜諸孫者矣<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師世壽七十五僧臘六十三<pc resp="#Xiang"
-                ana="#punct-added">。</pc>得法者曰祖光曰景瓛<pc
-                resp="#Xiang" ana="#punct-added">，</pc>受度者曰明誠<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>曰正定等其説法機用<pc resp="#Xiang"
-                ana="#punct-added">，</pc>則見於六會語其游戲翰墨<pc
-                resp="#Xiang" ana="#punct-added">，</pc>則見於和天台三聖及永明壽<pc resp="#Xiang"
-                ana="#punct-added">、</pc>陶潜林逋諸作<pc
-                resp="#Xiang" ana="#punct-added">。</pc>别有淨土詩<pc resp="#Xiang" ana="#punct-added"
-                >、</pc>慈氏上生偈北游<pc resp="#Xiang"
-                ana="#punct-added">、</pc>鳳山西齋三集<pc
-                resp="#Xiang" ana="#punct-added">，</pc>通合若干卷<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>並傳干世予慕師之道甚久<pc resp="#Xiang"
-                ana="#punct-added">，</pc>近獲執手護龍河上相與談玄<pc
-                resp="#Xiang" ana="#punct-added">，</pc>因出賸語一編求正<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師覽已歎曰<pc resp="#Xiang"
-                ana="#punct-added">：</pc>不意儒者所造直至於此<pc
-                resp="#Xiang" ana="#punct-added">，</pc>善自護持<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>師之善誘<pc resp="#Xiang"
-                ana="#punct-added">，</pc>推此一端亦可槩見<pc
-                resp="#Xiang" ana="#punct-added">。</pc>及聞師殁<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>與國史危公哀悼不自勝危公亦深知師者也<pc
-                resp="#Xiang" ana="#punct-added">。</pc> 銘曰<pc resp="#Xiang" ana="#punct-added"
-                >：</pc>
-              <seg type="l" n="1">大鑒密㫖餘十傳妙喜起蹴龍象筵<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+            <lem wit="#GX">皇帝端居穆清念四海兵爭，將卒民庶多殁於非命精爽無依，非佛世尊不足以度之。惟漢武元年秋九月詔江南大浮屠十餘人於蔣山禪寺作大法會，時楚石禪師實與其列。師升座説法以聳人天龍鬼之聽。竣事近臣入奏，上大悦。二年春三月復用元年故事，召師説法如初錫燕文樓下，親承顧問。暨還出内府白金以賜。三年之秋，上以鬼神情狀幽微難測意遺經當有明文，妙柬僧中通三藏之説者問焉。師以夢堂噩公行中仁公等應召而至，館于大天界寺上命儀曹勞之。既而援㩀經論成書，將入朝敷奏師忽示微疾。越四日趣左右具浴更衣，索筆書偈曰：真性圓明，本無生㓕木馬夜鳴，西方日出。書畢，謂夢堂曰“師兄，我將去矣”夢堂曰“子去何之？師曰：西方爾。”夢堂曰“西方有佛東方無佛耶？”師厲聲一喝泊然而化，時七月二十六日也。天界住持西白金公法門猶子也，爲治後事無不盡禮。時制火葬有禁，禮部以聞上特命從其教。茶毗之餘齒牙舌根數珠咸不壞，設利羅粘綴遺骨，纍纍然如珠其弟子文晟奉骨及諸不壞者歸于海鹽，卜以八月二十八日建塔於天寧永祚禪寺葬焉。嗣法上首景瓛復偕文晟以仁公所造行狀來徴銘。仁公博通内外典文辭簡奥，有西漢風其言當可信弗誣。謹按狀，師諱𣑽琦楚石其字也，小字曇耀明州象山人，姓朱氏。父杲毋張氏張夢日墮懷而生師。方在襁褓中有神僧摩其頂曰：“此佛曰也他時能照燭昏衢乎？人因名之爲曇曜云。年七歲，靈性潁發讀書即了大義。或問所嗜何言即應聲曰：“君子喻於義”至於屬句倣書皆度越餘子，遠近號爲奇童。九歲棄俗入永祚受經於訥翁謨師，尋依晋翁詢師於湖之崇恩詢師，師之從族祖也。趙魏公見師器之爲鬻僧牒，得薙染爲沙門繼往杭之昭慶，受具足戒，年已十有六矣詢師遷住道場，師爲侍者居亡何，命司藏室，閲首楞嚴經至“緣見因明暗成無見”處，恍然有省歷覽群書，不假師授文句自通。然膠於名相，未能釋去縳聞元叟端公倡道雙徑，師往問云“言發非聲，色前不物其意何如？元叟就以師語詰之，師方擬議欲答，師叱之使出自是群疑塞胸，如填鉅石。會元英宗詔粉黄金爲泥書大藏經，有司以師喜書選上燕都。一夕，聞西城樓鼓動汗如雨下，拊几笑曰“徑山鼻孔，今日入吾手矣”因成一偈有“拾得紅爐一點雪，却是黄河六月冰之句。翩然南旋再入雙徑。元叟見師氣貌充然，謂曰“西來密意喜子得之矣。”遽處以第一第二座，且言妙喜大法盡在於師，有來參叩者，多今師辨决之元泰定中，行宣政院稔師之名，命出世海鹽之福臻遂升主永祚。永師受經之地爲創大寶閣，範銅鑄賢劫千佛，而毗盧遮那及文殊師利普賢、千手眼觀音諸像並寘其中。復造塔婆七級崇二百四十餘尺。功垂就勢偏將壓，師禱之，夜乃大雨風居氓聞鬼神相語曰：天寧塔偏，亟往救之。遲明，塔正如初遷杭之報國，轉嘉興之本覺，更搆萬佛閣九楹間宏偉壯麗，儼如天宫下移人世。帝師嘉其行業賜以“佛日普照慧辨禪師之號。佛日頗符昔日神僧之言，識者異焉會報恩光孝虚席，僉謂報恩一郡巨刹，非師莫能居之師勉徇衆請而往，尋退隱永祚築西齋爲終焉之計。至正癸卯，州大夫强師主其寺事時塔燬于兵，師重成之景瓛爲鑄寶壺冠于顛，感天花異香之祥。師舉景瓛爲代復歸老干西齋云。師爲人形軀短小而神觀精朗，舉明正法，滂沛演迤有不知其所窮。凡所涖之處黑白嚮慕，如水歸壑。一彈指間涌殿飛樓，上插雲際未嘗見師有非。君子謂師縱横自如，應物無迹山川出雲，雷蟠電掣神功收斂，寂莫無聲。由是内而燕齊秦楚外而日本高句麗，咨决心要奔走座下。得師片言，裝潢襲藏不翅拱璧。師可謂無愧妙喜諸孫者矣。師世壽七十五僧臘六十三。得法者曰祖光曰景瓛，受度者曰明誠，曰正定等其説法機用，則見於六會語其游戲翰墨，則見於和天台三聖及永明壽、陶潜林逋諸作。别有淨土詩、慈氏上生偈北游、鳳山西齋三集，通合若干卷，並傳干世予慕師之道甚久，近獲執手護龍河上相與談玄，因出賸語一編求正。師覽已歎曰：不意儒者所造直至於此，善自護持。師之善誘，推此一端亦可槩見。及聞師殁，與國史危公哀悼不自勝危公亦深知師者也。 銘曰：
+              <seg type="l" n="1">大鑒密㫖餘十傳妙喜起蹴龍象筵。</seg>
               <lb/>
-              <seg type="l" n="2">有如大將據中堅銕卒十萬佩櫜鞬<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="2">有如大將據中堅銕卒十萬佩櫜鞬。</seg>
               <lb/>
-              <seg type="l" n="3">或觸之者命髮懸誰歟五世稱象賢<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="3">或觸之者命髮懸誰歟五世稱象賢。</seg>
               <lb/>
-              <seg type="l" n="4">佛日曉出瀛海𤲬紅𦦨閃閃行中邊<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="4">佛日曉出瀛海𤲬紅𦦨閃閃行中邊。</seg>
               <lb/>
-              <seg type="l" n="5">流光所至無幽玄憶初飛錫來北燕<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="5">流光所至無幽玄憶初飛錫來北燕。</seg>
               <lb/>
-              <seg type="l" n="6">彤樓畫鼓金星纏一擊三際皆廓然<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="6">彤樓畫鼓金星纏一擊三際皆廓然。</seg>
               <lb/>
-              <seg type="l" n="7">火中新敷清浄蓮紺色㴠空絶蔓牽<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="7">火中新敷清浄蓮紺色㴠空絶蔓牽。</seg>
               <lb/>
-              <seg type="l" n="8">自兹口噴百丈泉洗滌五濁離腥羶<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="8">自兹口噴百丈泉洗滌五濁離腥羶。</seg>
               <lb/>
-              <seg type="l" n="9">内而諸夏外朝鮮紛紛來者人駕肩<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="9">内而諸夏外朝鮮紛紛來者人駕肩。</seg>
               <lb/>
-              <seg type="l" n="10">示以實相非空言塔廟赫赩名山川<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="10">示以實相非空言塔廟赫赩名山川。</seg>
               <lb/>
-              <seg type="l" n="11">一佛能變萬與千會萬歸一道則全<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="11">一佛能變萬與千會萬歸一道則全。</seg>
               <lb/>
-              <seg type="l" n="12">不識誣爲有漏緣帝敕中使來傳宣<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="12">不識誣爲有漏緣帝敕中使來傳宣。</seg>
               <lb/>
-              <seg type="l" n="13">鍾山説法超沉緜萬人瞻依曲刃拳<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="13">鍾山説法超沉緜萬人瞻依曲刃拳。</seg>
               <lb/>
-              <seg type="l" n="14">一朝入滅同蜕蟬西方彈指即現前<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="14">一朝入滅同蜕蟬西方彈指即現前。</seg>
               <lb/>
-              <seg type="l" n="15">白玉樓閣琉璃田金鈴寶樹演真詮<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="15">白玉樓閣琉璃田金鈴寶樹演真詮。</seg>
               <lb/>
-              <seg type="l" n="16">師之往矣神弗遷寂光常定無偏圓<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="16">師之往矣神弗遷寂光常定無偏圓。</seg>
               <lb/>
-              <seg type="l" n="17">我作銘詩翠琰鐫昭朗盛烈垂年年<pc
-                  resp="#Xiang" ana="#punct-added">。</pc></seg>
+              <seg type="l" n="17">我作銘詩翠琰鐫昭朗盛烈垂年年。</seg>
             </lem>
             
             <rdg wit="#MY" ana="#agree"/>
             <rdg wit="#ZQ" ana="#unattested"/>
           </app>
         </p>
+        
       </div>
+      
+      <div type="preface"
+        n="2"
+        xml:id="pf_mingxiu"
+        xml:lang="lzh"
+        ana="#paratext">
+        
+        <head>
+          <app>
+            <lem wit="#ZQ">楚石大師北遊詩序</lem>
+            <rdg wit="#GX" ana="#unattested"/>
+            <rdg wit="#MY" ana="#unattested"/>
+          </app>
+        </head>
+         
+        <p>
+          <app>
+            <lem wit="#ZQ"
+                >宗門老宿能立言立教而凌厲萬古不泯者，非卓越才識不能成。莫大之事功由唐宋至我大明，翊道倡文之家代不乏人。若名動仁主，行滿道場，特立獨行，莫如我楚石老師。楚石生四明象山，九齡來天寧，受法於訥翁謨師。成大因果，建大基業。文章戒律，光照五山。嘗被高帝之召講經南都，發秘開幽俾後學之所歸向。大江以南，皆沾其膏馥而挹其清華者，不啻幾百人。隱製奧作千篇萬章，當天兵剿逆胡元，革命奔走，道途散落，人世惜無完書。西齋舊閣簡得刊本語錄、北遊抄本。語錄已行世，抄本則未有知者。秀忝承衣缽，有愧貽謀，敬繕鋟梓，慾圖永傳。雖不能如中峰繼師之華躅，聊盡為弟子之銖寸，亦非自高門戶，粉飾悅人。然內學之精微，外文之雄渾，開履歷之詳，金華宋太史嘗銘於前，吳門姚少師傳於後。後為楚石法胤者，能入秀之勤懇嗣而為之，豈懼楚石之命不傳。木之易朽也哉，謹志以聞。歲正德旃蒙大淵獻春三月，望九世孫<persName>明秀</persName>拜書。</lem>
+            <rdg wit="#GX" ana="#unattested"/>
+            <rdg wit="#MY" ana="#unattested"/>
+          </app>
+        </p>
+        <div type="preface"
+          n="3"
+          xml:id="pf_jinyuan_biansheng"
+          xml:lang="lzh"
+          ana="#paratext">
+          <head>
+            <app>
+              <lem wit="#ZQ">楚石大師北遊詩序</lem>
+              <rdg wit="#GX" ana="#unattested"/>
+              <rdg wit="#MY" ana="#unattested"/>
+            </app>
+          </head>
+          <p>
+            <app>
+              <lem wit="#ZQ"
+                >桑門能詩者，回明楚石師為今湖海首稱。余嘗訪之於秦谿別墅得所示。北遊詩集，凡絕句五七言律彌三百餘首。蓋在昔至治癸亥甲子之歲，北留京都時所作也。故凡京華之事，燕灤之風，物囊收稾積莫非隹詠。今觀其什則雄渾而蒼古，淵泳而典雅。厭飲百家，淬礪杜氏，煒煒乎若埋豐城之寶劍而光有不能掩焉者也。雖古有惠休、齊已、靈澈、道潛之徒，恐莫能窺其奧。蓋以師之高明敏達窮書瞻學其于是遊也。則又歷覽乎泰山之高，黃河之深，長江大海之宗會而秀氣毓蘊納乎胸中。及抵于京師，則其耳目之接固又極其大者，可知已夫京師乃天下之大都會。天子之居在焉宮城之偉冠乎。四海人物之殊聚乎。萬國而朝廷之上禮樂儀衛之盛，宗廟之美，百官之富，乃天下之極觀者也。是以日益乎所見凡所與交接談論，又皆王公縉紳，文章道德之士日益乎所聞，故其詞章氣象，奮然傑出為大朝之風雅而相與，時合盛者，焉或曰師之宗以禪默。其入定之事為道之方也，而師之定力精確不撓于物，觸境洞然，莫非妙道，蓋存心而為禪，發言而為詩，非二理也。然其所以訪覽今古，吟賞風月，乃其遊嬉三昧耳。奚可與不知不知者道哉。師平生所為詩文若干卷已流於世。此《北遊詩》之集，蓋以觀光勝事，故特為首末以記，予因讀其集，歎其為人而其言可服。若此予之言，雖不足為世重輕，然古人有兒童誦君寔走卒知司馬蓋公論也。請為師誦之以書于卷首。金囦卞勝謹序。</lem>
+            </app>
+          </p>
+        </div>       
+        
+        <div type="preface"
+          n="4"
+          xml:id="Anonymous"
+          xml:lang="lzh"
+          ana="#paratext">
+          
+          <head>
+            <app>
+              <lem wit="#ZQ">重修釋迦如來真身設立寶塔頌<hi rend="smaller">附錄</hi></lem>              <rdg wit="#GX" ana="#unattested"/>
+              <rdg wit="#MY" ana="#agree"/>
+            </app>
+          </head>
+          <p>
+            <app>
+              <lem wit="#MY"
+                >諸佛如來出現於世，莫不皆示八種之相。從初降神、誕生，乃至出家、修道、降魔、成佛、轉法輪，最後入涅槃，碎紫金軀爲八萬四千舍利，使天人龍鬼造塔供養，罪滅福生，終在菩提。我本師釋迦牟尼如來，此云能仁寂默，當現在賢劫第四佛，住兜率天，爲護明大士滿足天尊。四千歲補處時至，於是下生迦維羅衛國淨飯王宮，乘日象入摩耶夫人胎，十月滿足，從右脅而誕。當東震旦國。周昭王二十四年甲寅歲四月八日也。至四十二年二月八日，遊四門，踰城出家，時年十九。歷試邪法，摧伏外道。穆王三年癸未歲二月八日，明星現時成道。爲憍陳如等五人轉四諦法輪，皆證道果。住世説法四十九年。後告上首神足摩訶迦葉云：吾以清淨法眼，涅槃妙心，實相無相微妙法門分付於汝。汝當護持。并敕阿難副貳傳化，無令斷絶。又付金縷僧伽梨衣，轉授慈氏。付囑訖，卽於熙連河側娑羅雙樹間，右脅累足，泊然而逝。實穆王五十二年壬申歲二月十五日也。闍維火滅，八王共分舍利歸國建塔，競留供養。滅度一百年，有王名阿育，此云無憂。取諸塔中所有舍利八萬四千顆，造八萬四千塔。閻浮聚落滿一億家者。耶舍尊者遣鬼神以一塔鎮之。按宣律師感通錄：震旦塔凡十三所，劉薩訶所禮者，獨明州阿育王寺。舍利光明特盛，至誠祈禱，必彰感焉。梵琦生緣象山，九歲出家，便聞建塔功德最大，往往默感於心。天曆元年戊辰歲二月三日，住持海鹽州天寧永祚禪寺，時年三十四。壬申歲，建千佛閣。元統二年甲戍歲，夢龍王獻寶，因募塔緣，檀施日臻。後至元二年丙子歲春，龍化蜿蜒之形於丈室，五彩畢備。四方來觀之，凡兩月而去。及塔成復來，隱見非一，至今祀爲應夢龍王。夏填築塔基。三年丁丑歲九月二十三日子時，起手建塔，至辛巳歲奏功。凡七層八面，高二十四丈，莊嚴綺麗，見者皆悦。越十二年，兵興，己亥秋，失寶瓶，計白金二百兩。當是時，謝事嘉禾天寧，結菴閑居。衆請再領寺事，乃造鍮石寶瓶，取至正二十四年甲辰秋九月二十四日，奉瓶修塔，天雨寶花。明年乙巳歲七月，泥蓋方畢。自丁丑至乙巳，凡二十有九年矣。梵琦年七十，瞻禮旋繞，歡喜踊躍，百拜稽首而説頌言：<seg type="l" n="1">如來舍利無有邊，</seg>
+                <lb/>
+                <seg type="l" n="2">不啻八萬四千顆。</seg>
+                <lb/>
+                <seg type="l" n="3">天上人間所造塔，</seg>
+                <lb/>
+                <seg type="l" n="4">其數過於恒河沙。</seg>
+                <lb/>
+                <seg type="l" n="5">金銀真珠與琉璃，</seg>
+                <lb/>
+                <seg type="l" n="6">車渠琥珀及瑪瑙。</seg>
+                <lb/>
+                <seg type="l" n="7">或用玻璃水晶等，</seg>
+                <lb/>
+                <seg type="l" n="8">并黑沈水赤栴檀。</seg>
+                <lb/>
+                <seg type="l" n="9">種種雕鏤巧嚴飾，</seg>
+                <lb/>
+                <seg type="l" n="10">所獲妙果不思議。</seg>
+                <lb/>
+                <seg type="l" n="11">或奉一花供一香，</seg>
+                <lb/>
+                <seg type="l" n="12">或但低頭合指爪。</seg>
+                <lb/>
+                <seg type="l" n="13">或繞一帀禮一拜，</seg>
+                <lb/>
+                <seg type="l" n="14">莫不皆坐菩提場。</seg>
+                <lb/>
+                <seg type="l" n="15">或以香水洒其地，</seg>
+                <lb/>
+                <seg type="l" n="16">或磨香泥塗其壁。</seg>
+                <lb/>
+                <seg type="l" n="17">或燒油燈作光曜，</seg>
+                <lb/>
+                <seg type="l" n="18">無有不圓佛智者。</seg>
+                <lb/>
+                <seg type="l" n="19">已去釋迦滅度久，</seg>
+                <lb/>
+                <seg type="l" n="20">塔爲第一之福田。</seg>
+                <lb/>
+                <seg type="l" n="21">盤如棗葉刹如鍼，</seg>
+                <lb/>
+                <seg type="l" n="22">其影巍然至梵世。</seg>
+                <lb/>
+                <seg type="l" n="23">譬如虚空平等入，</seg>
+                <lb/>
+                <seg type="l" n="24">不離塵隙芥子孔。</seg>
+                <lb/>
+                <seg type="l" n="25">我今興建大浮圖，</seg>
+                <lb/>
+                <seg type="l" n="26">亦有先佛真身住。</seg>
+                <lb/>
+                <seg type="l" n="27">廣博嚴麗包法界，</seg>
+                <lb/>
+                <seg type="l" n="28">一切如來處其中。</seg>
+                <lb/>
+                <seg type="l" n="29">諸大菩薩及聲聞，</seg>
+                <lb/>
+                <seg type="l" n="30">莫不俱來受供養。</seg>
+                <lb/>
+                <seg type="l" n="31">天龍八部咸訶護，</seg>
+                <lb/>
+                <seg type="l" n="32">凡有目者悉觀瞻。</seg>
+                <lb/>
+                <seg type="l" n="33">明月寶珠置其頂，</seg>
+                <lb/>
+                <seg type="l" n="34">寶篋真言實其腹。</seg>
+                <lb/>
+                <seg type="l" n="35">入夜銀缸射星斗，</seg>
+                <lb/>
+                <seg type="l" n="36">熾然花開天樹王，</seg>
+                <lb/>
+                <seg type="l" n="37">八角風鈴演妙音，</seg>
+                <lb/>
+                <seg type="l" n="38">七層欄楯共圍繞，</seg>
+                <lb/>
+                <seg type="l" n="39">普爲衆生作饒益。</seg>
+                <lb/>
+                <seg type="l" n="40">功德高厚若須彌，</seg>
+                <lb/>
+                <seg type="l" n="41">亦如大海納百川，</seg>
+                <lb/>
+                <seg type="l" n="42">亘古亘今鎮長在。</seg>
+                <lb/>
+                <seg type="l" n="43">願共法界諸含識，</seg>
+                <lb/>
+                <seg type="l" n="44">同得往生極樂國。</seg></lem>
+            </app>
+          </p>
+        </div>      
+        <div type="preface"
+          n="5"
+          xml:lang="lzh"
+          ana="#paratext">
+          
+          <head>
+            <app>
+              <lem wit="#MY">募刻楚石大師詩引</lem>
+              <rdg wit="#GX" ana="#unattested"/>
+              <rdg wit="#ZQ" ana="#unattested"/>
+            </app>
+          </head>
+          <p>
+            <app>
+              <lem wit="#MY">
+                海內以詩名家者，如金沙玉屑，不可枚舉。唐宋以上，徵不敢論。即我朝，自太祖高皇帝御製詩，天籟成章，與古人自然合符，不假雕琢，雲錦煥發，望而知其為帝王口吻。此時名公巨儒、高人老宿，一時並出。其中十大高僧，名灌遐邇，惟楚石大師與吾鹽最為有緣。建塔鎮海，波臣避迹。上自士紳，下及村夫牧豎，莫不知頂禮大師威德，莫不知大師有詩；而問其詩何如，則寂然也。今歲仲春望日，徵與二三友人為郊外遊，歸時醉臥舟次，夢遊大浮圖之上，而先君與叔遂丘公在焉，憑欄仰望。北則風霾蔽天，南則滔滔大水，晶光浮蕩，足浮心悸。叔遂笑指曰：“此皆詩料，何以懼為？”徵曰：“恐先生出口，又作罵世料耳。”因迎風長笑，回顧塔間座上有老僧微哂。先君曰：“此楚石大師也。”徵即頂禮。師曰：“子亦知詩耶？”徵曰：“不能，亂道耳。”師曰：“詩如何乃稱佳？”徵曰：“脫胎換骨乃佳。”師曰：“試道汝詩。”即《誦觀胡兒》，詩曰：“白赤眼流黃，拜謁亦飛揚。種羊為話計，依馬作金湯。九邊鐵甲士，若个勝玉墻。”師曰：“可云對景，未見脫胎。”再舉《城北新居》二句曰：“徑寂人從嬾，身閒事亦輕。”并《九華山題太白書院》，詩曰：“宮袍不見綠，杉石野雲殘。”師首許曰：“似近之矣。”因示書一帙曰：“余亦有詩，子欲觀否？”及開卷，則後有數人共來爭看。止記詩題有《上留侯廟》、《上梁山分金臺二首》。徵笑指曰：“師何作此？”師曰：“ 此正余脫胎換骨處也。”不覺驚覺而汗淋淋矣。數日過，念崧表兄於途啟之曰：“聞兄有楚石大師詩，可得一借觀否？”表兄云：“楚石西齋詩已成帙在雲棲。唯北遊詩尚未壽之梓。及觀原卷而前二題宛然在馬徵因焚香頂禮曰：“吾師此詩未得大行於世者，吾鹽人之缺事也。"徵敢一力募成之。今發心繕寫已畢，敢勸同志歡喜。共成不敢作緇流。故套聊書一時緣遇慚語穢佛頭。崇禎十年重午，愚谷居士錢甲徵焚沐和南拜題。助刻諸君，請親題姓氏於左，每葉公費壹錢五分。<cb ed="#MY" n="1"/>
+                <persName>鄭忠材</persName>
+                <seg type="donation">葉<note type="donation" place="right" rend="small">三</note></seg>
+                <persName>錢鼎元</persName>
+                <persName>徐成員</persName>
+                <persName>陳梁</persName>
+                <persName>胡守正</persName>
+                
+                <cb ed="#MY" n="2"/>
+                <persName>錢上錦</persName>
+                <persName>賀萬篇</persName>
+                <persName>錢士開</persName>
+                <persName>錢士洽</persName>
+                <persName>錢士英</persName>
+                
+                <cb ed="#MY" n="3"/>
+                <persName>錢士洪</persName>
+                <persName>錢觀</persName>
+                <persName>錢臨</persName>
+                <persName>俞子龍</persName>
+                <persName>胡嘉賓</persName>
+                
+                <cb ed="#MY" n="4"/>
+                <persName>鄭氏</persName>
+                <persName>劉大許</persName>
+                <persName>劉師明</persName>
+                <persName>劉師安</persName>
+                <seg type="donation">
+                  <note type="donation" place="left" rend="small">葉</note>
+                  <note type="donation" place="right" rend="small">各</note>
+                  一
+                </seg> 
+                
+                <cb ed="#MY" n="5"/>
+                <note type="affiliation" place="above" rend="small">
+                  <orgName>天寧</orgName>
+                </note>
+                <persName>法衡</persName>
+                <persName>善先</persName>
+                <persName>法印</persName>
+                <persName>世慈</persName>
+                <note type="donation" place="below" rend="small">共銀二兩</note>
+                
+                <cb ed="#MY" n="6"/>
+                <persName>錢甲徵</persName>
+                <note type="donation" place="right" rend="small">五葉又</note>
+                <note type="donation" place="left" rend="small">助寫值</note>
+                
+                <persName>劉廣磐</persName>
+                <note type="donation" place="right" rend="small">助銀三</note>
+                <note type="donation" place="left" rend="small">兩二錢</note>
+                
+                <orgName type="temple">雲棲寺</orgName>
+                <seg type="publication">流通</seg></lem>
+            </app>
+          </p>
+        </div> 
+        
+        <div type="preface"
+          n="6"
+          xml:lang="lzh"
+          ana="#paratext">
+          <head>
+            <app>
+              <lem wit="#MY">附錄海鹽天寧永祚禪寺重修釋迦如來真身舍利寶塔記</lem>
+              <rdg wit="#GX" ana="#unattested"/>
+              <rdg wit="#MY" ana="#unattested"/>
+            </app>
+          </head>
+          <p>
+            <app>
+              <lem wit="#MY">在前元時，有大禪師曰楚石，諱梵琦，生於明州，主我天寧永祚禪寺。以文闡教，大振厥宗；四方傾戴，霧滃川注；爰感神龍發祥。於至元辛巳，肇建釋迦如來舍利寶塔於大雄寶殿後。碧瓦朱甍，翬飛霞麗，觀者目眩形奪，儼若兜率天宮之下移、耆闍崛山法華會中寶蓮花座之浮空至也。登其最上，曠焉大觀。維南暨西，沃土極目，嚴城萬爨，鱗次櫛比；縈帶河流，環左繞右；而鯨波萬里，遙從東來，滔日浮天，吐吞外方。俯而鎮之，掌妥鏡澄，永無吪。蓋師之功，於是乎大。後十有二年，癸巳，失其白金寶瓶。師復營之，代以鍮石。天雨寶花，諸載師記，可考也。入國朝永樂、宣德以及成化，觀、偉、寶三師繼而緝之。迄於今，迨六十年矣。嘉靖癸未冬十月，前知邑僧會事曰石門明秀，持行好古，能纘師緒也。他日觀於旗下而歎曰：“榱桷雨矣，欄楯危矣，燈鐸就盡，丹堊弗飾矣。是後師者之恥也，我其圖之。”聚財鳩工，銳志事事，蓋經理者三年，究還疇昔。曰：“廢興相尋，人壽幾何？我弗識之，則後我者誰其嗣矣？”遂求記於穀。穀為記之如右，而告之曰：“師知夫塔乎？蓋寓夫大小之機者也。師之道宗黃檗，夫黃檗者，尚以世尊八斛四斗之金骨非真舍利，而況於貯之之具乎？師能率諸上乘之士於茲，塔前見諸非塔，亦非非塔，乃至見諸非見，亦非非見，使心於虛空等，了不可得也。則聚沙畫地，折一莖草而作佛事，皆足以啟信。又況莊嚴殊勝，以為諸天支提俾貪者，以捨嗔者，以慈癡者，以正聲聞緣覺者，以小果向大則標月之指可少乎哉？夫知塔之可以無修，又知塔之不可以無修，則吾師體道暢法，頓漸之功廣哉大矣。”係之詩曰：“竺宗東漸象逾河，初祖震旦維達磨。嗣泒南北紛以<gap reason="omission" unit="char" quantity="1"/>，臨濟遠紹真無偽。琦翁崛起茂厥柯，日月照耀星辰<gap reason="omission" unit="char" quantity="1"/>。奔走四眾霑滂沱，龍王聽法乘靈鼉。獻珠請塔長眉皤，寶頂七級窮嵯峨。神天受供降群魔，下雨薝蔔諸曼陀。永奠溟渤無揚波，垂二百祀神護訶。倏經三緝曾無何，風雨屢蝕霆軋摩。有偉秀師善吟哦，戚嗟仰視如被痾。覆疏易朽三秋過，金飛玉立燦以瑳。士庶闐隘喧翁婆，上慢者悛忿以和。願示機鋒揮太阿，一斬幻象悟剎那。悉焚白馬舊所馱，阿師福德哪由他。嘉靖五年丙戌春三月，望邑人董穀實甫識。</lem>
+            </app>
+          </p>
+        </div>   
+      </div> 
     </front>
+    
     <body>
       <div xml:id="by001" type="poem">
         <head>曉過西湖</head>
@@ -6614,20 +6674,12 @@
                 <rdg wit="#ZQ">𥁞</rdg>
                 <rdg wit="#Bao #Yu" cause="misidentified">尽</rdg>
                 <rdg wit="#MY" ana="#agree"/>
-              </app> 翠為層句<pc resp="#Xiang"
-                ana="#punct-added">。</pc>
+              </app> 翠為層句。
               <mentioned>畫</mentioned>字<ref target="#GX"
                 >古香樓本</ref>作<mentioned>画</mentioned><ref
-                target="#ZQ">振綺堂本</ref>則作其異體字<mentioned>𥁞</mentioned><pc resp="#Xiang"
-                ana="#punct-added">。</pc> 然查<ref target="#Bao">吳定中、鮑翔麟校注本</ref>及<ref target="#Yu"
-                >于德隆點校本</ref>等現代整理本<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>編者皆未能辨識<mentioned>𥁞</mentioned>字<pc resp="#Xiang" ana="#punct-added"
-                >，</pc>疑因形近而誤識為<mentioned>尽</mentioned><pc resp="#Xiang" ana="#punct-added"
-                >，</pc>遂致排印訛誤
-                按<mentioned>𥁞</mentioned>實為<mentioned>畫</mentioned>之異體<pc resp="#Xiang"
-                ana="#punct-added">，</pc>非<mentioned>盡</mentioned>、<mentioned>尽</mentioned>字<pc
-                resp="#Xiang" ana="#punct-added">，</pc>本處徑改並予辨正<pc resp="#Xiang" ana="#punct-added"
-                >。</pc>
+                target="#ZQ">振綺堂本</ref>則作其異體字<mentioned>𥁞</mentioned>。 然查<ref target="#Bao">吳定中、鮑翔麟校注本</ref>及<ref target="#Yu"
+                >于德隆點校本</ref>等現代整理本，編者皆未能辨識<mentioned>𥁞</mentioned>字，疑因形近而誤識為<mentioned>尽</mentioned>，遂致排印訛誤
+                按<mentioned>𥁞</mentioned>實為<mentioned>畫</mentioned>之異體，非<mentioned>盡</mentioned>、<mentioned>尽</mentioned>字，本處徑改並予辨正。
             </note></l>
           <l>
             <app>
@@ -16969,23 +17021,16 @@
       </div>
       <div xml:id="by271" type="poem">
         <head>徒步行贈晉冰壑並序</head>
-        <p> 序<persName role="monk">冰壑</persName><pc
-            resp="#Xiang" ana="#punct-added">，</pc><placeName type="location">象山</placeName>人<pc
-            resp="#Xiang" ana="#punct-added">。</pc>見 <app>
+        <p> 序<persName role="monk">冰壑</persName>，<placeName type="location">象山</placeName>人。見 <app>
             <lem wit="#GX"><persName key="A004699" role="monk">雪岩</persName></lem>
             <rdg wit="#MY" ana="#agree"/>
             <rdg wit="#ZQ">雲岩</rdg>
           </app>
           <note type="editorial" resp="#Xiang" ana="#editorial-note">
             <ref target="#ZQ">振綺堂本</ref>作<mentioned>雲岩</mentioned>，誤。此處實指<persName key="A004699"
-              >雪岩祖欽</persName>禪師，故從<ref target="#GX">古香樓本</ref>。 </note>有悟入處<pc resp="#Xiang"
-            ana="#punct-added">，</pc>出世最早常以<pc
-            resp="#Xiang" ana="#punct-added">「</pc>一個胡蘆懷兩家<pc resp="#Xiang" ana="#punct-added"
-            >」</pc>之語示衆之語示衆<pc resp="#Xiang"
-            ana="#punct-added">。</pc>初住<placeName type="location">蘇</placeName>之<placeName
+              >雪岩祖欽</persName>禪師，故從<ref target="#GX">古香樓本</ref>。 </note>有悟入處，出世最早常以「一個胡蘆懷兩家」之語示衆之語示衆。初住<placeName type="location">蘇</placeName>之<placeName
             type="temple">靈巖</placeName>又住<placeName
-            type="location">秀</placeName>之<placeName type="temple">能仁</placeName><pc resp="#Xiang"
-            ana="#punct-added">、</pc><placeName type="location">明</placeName>之 <app>
+            type="location">秀</placeName>之<placeName type="temple">能仁</placeName>、<placeName type="location">明</placeName>之 <app>
             <lem wit="#GX"><placeName type="temple">育王</placeName></lem>
             <rdg wit="#MY" ana="#agree"/>
             <rdg wit="#ZQ">盲王</rdg>
@@ -16993,13 +17038,7 @@
           <note type="editorial" resp="#Xiang" ana="#editorial-note">
             <ref target="#ZQ">振綺堂本</ref>作<mentioned>盲王</mentioned>，誤。按此處指<placeName type="temple"
               >阿育王寺</placeName>，現據史實正作<mentioned>育王</mentioned>。 </note>
-          <date>大德</date>間<pc resp="#Xiang" ana="#punct-added"
-            >，</pc>奉詔旨任<roleName>常德路僧錄</roleName><pc resp="#Xiang" ana="#punct-added"
-            >。</pc>往來<placeName type="location">京師</placeName>五十餘年<pc resp="#Xiang"
-            ana="#punct-added">。</pc>年八十以余同里<pc
-            resp="#Xiang" ana="#punct-added">，</pc>遙至館舍<pc resp="#Xiang" ana="#punct-added"
-            >，</pc>談桑梓之樂為賦此行<pc resp="#Xiang"
-            ana="#punct-added">。</pc>
+          <date>大德</date>間，奉詔旨任<roleName>常德路僧錄</roleName>。往來<placeName type="location">京師</placeName>五十餘年。年八十以余同里，遙至館舍，談桑梓之樂為賦此行。
         </p>
         <lg>
           <l>
@@ -17661,22 +17700,11 @@
             </app>
             <note type="editorial" resp="#Xiang" ana="#editorial-note">
               <p>此處<ref target="#GX">古香樓本</ref>作<ref target="#tok_by274_l12_yan"
-                    ><mentioned>煙</mentioned></ref><pc resp="#Xiang" ana="#punct-added"
-                  >，</pc>振綺堂本與眠雲精舍本作<ref target="#tok_by274_l12_xiang"
+                    ><mentioned>煙</mentioned></ref>，振綺堂本與眠雲精舍本作<ref target="#tok_by274_l12_xiang"
                   ><mentioned>香</mentioned></ref><ref
                   target="#Bao">鮑</ref><ref target="#Yu"
-                  >余</ref>本亦從<mentioned>香</mentioned><pc resp="#Xiang" ana="#punct-added"
-                  >。</pc>然按文勢與事理<pc resp="#Xiang" ana="#punct-added"
-                  >，</pc><mentioned>香</mentioned>殊不近情<pc resp="#Xiang" ana="#punct-added"
-                  >。</pc>蓋此段言益火煮筍火勢既盛<pc resp="#Xiang"
-                  ana="#punct-added">，</pc>理應炊煙充室非香氣可得<pc
-                  resp="#Xiang" ana="#punct-added">；</pc>且下句方言加鹽調味<pc resp="#Xiang"
-                  ana="#punct-added">，</pc>未調之前何香之有<pc
-                  resp="#Xiang" ana="#punct-added">？</pc>故今從<ref target="#GX">古香樓本</ref>作<ref
-                  target="#tok_by274_l12_yan"><mentioned>煙</mentioned></ref><pc resp="#Xiang"
-                  ana="#punct-added">，</pc>以協情狀<pc resp="#Xiang" ana="#punct-added"
-                  >；</pc>而諸本作<mentioned>香</mentioned>者<pc resp="#Xiang" ana="#punct-added"
-                  >，</pc>疑傳寫之誤耳</p>
+                  >余</ref>本亦從<mentioned>香</mentioned>。然按文勢與事理，<mentioned>香</mentioned>殊不近情。蓋此段言益火煮筍火勢既盛，理應炊煙充室非香氣可得；且下句方言加鹽調味，未調之前何香之有？故今從<ref target="#GX">古香樓本</ref>作<ref
+                  target="#tok_by274_l12_yan"><mentioned>煙</mentioned></ref>，以協情狀；而諸本作<mentioned>香</mentioned>者，疑傳寫之誤耳</p>
             </note></l>
           <l>
             <app>
@@ -19193,81 +19221,14 @@
               <rdg wit="#ZQ">太子身令為國本</rdg>
               <rdg wit="#MY">太子身令為國本</rdg>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                <p> 右詩太子身<mentioned>令</mentioned>為國本<pc
-                    resp="#Xiang" ana="#punct-added">」</pc>句<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc><mentioned>令</mentioned>字當為<mentioned>今</mentioned>之形訛<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>說如左
-                    蓋此句為律詩頷聯出句對句以<pc resp="#Xiang"
-                    ana="#punct-added">「</pc>君王到手擇留封相匹<pc
-                    resp="#Xiang" ana="#punct-added">。</pc>近體律句以二二三分節為正體<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>上下句須詞性對品<pc resp="#Xiang" ana="#punct-added"
-                    >、</pc>結構相應平仄相對<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>太子<pc
-                    resp="#Xiang" ana="#punct-added">」</pc>與<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>君王<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>皆皇室尊稱名詞對舉<pc
-                    resp="#Xiang" ana="#punct-added">，</pc>體制森然<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>身<mentioned>今</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">」</pc>與<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>到手<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>
-                  身<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc>手<pc resp="#Xiang"
-                    ana="#punct-added">」</pc>同為體物名詞<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>屬小類工對<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc><mentioned>今</mentioned>為時間副詞<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>狀已然之態<pc resp="#Xiang"
-                    ana="#punct-added">「</pc>到動詞副詞化<pc
-                    resp="#Xiang" ana="#punct-added">，</pc>表事功之成<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>副詞相對句法一揆<pc resp="#Xiang"
-                    ana="#punct-added">；</pc>末三字為國本<pc
-                    resp="#Xiang" ana="#punct-added">」</pc><pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>擇留封<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>皆動賓結構
-                    對仗圓合若作<mentioned>令</mentioned>字<pc
-                    resp="#Xiang" ana="#punct-added">，</pc>則為使令動詞<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>與對句手<pc
-                    resp="#Xiang" ana="#punct-added">」</pc>之名詞詞性舛馳<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>節奏點平仄失對<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>律體規矩盡失 斷非詩人本貌<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>
-                    況<mentioned>今</mentioned>與<mentioned>令</mentioned>字形僅差一筆<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>刻本<pc resp="#Xiang" ana="#punct-added"
-                    >、</pc>抄本手寫傳抄之際極易互訛<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>此古典文獻校勘中至為常見之形近致誤案例也<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>復考唐宋元三代詩家遺篇
-                  身<mentioned>今</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">」</pc>乃習見之固定語式<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>僅<title>全元詩</title>所錄<pc resp="#Xiang"
-                    ana="#punct-added">，</pc><pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>身<mentioned>今</mentioned><pc resp="#Xiang" ana="#punct-added"
-                    >」</pc>入律句者便有數十例語義皆為<pc resp="#Xiang"
-                    ana="#punct-added">「</pc>其身今者自身如今」<pc
-                    resp="#Xiang" ana="#punct-added">，</pc> 圓通穩愜<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>反觀身<mentioned>令</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">」</pc>一語<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>遍檢歷代律詩 無一例合規之對仗用例<pc
-                    resp="#Xiang" ana="#punct-added">，</pc>其為後世傳抄誤寫<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>斷然可知
-                    更以詩旨核之此篇詠張良式定策安邦<pc resp="#Xiang"
-                    ana="#punct-added">、</pc>功成身退之臣<pc resp="#Xiang" ana="#punct-added"
-                    >。</pc>前四句一氣貫注皆頌其不世勛業<pc
-                    resp="#Xiang" ana="#punct-added">：</pc>首二句言其補袞安邦<pc resp="#Xiang"
-                    ana="#punct-added">，</pc> 勛勒鼎鐘<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>此二句言其定儲固國 輔主定業<pc
-                    resp="#Xiang" ana="#punct-added">。</pc>作<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>太子身<mentioned>今</mentioned>為國本<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc>為社稷根本<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>暗寫功臣定儲安邦之力<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>脈絡一以貫之<pc resp="#Xiang" ana="#punct-added"
-                    >；</pc>若作<mentioned>令</mentioned>字<pc resp="#Xiang" ana="#punct-added"
-                    >，</pc>則語義扞格難通 且泯沒功臣定策之功<pc
-                    resp="#Xiang" ana="#punct-added">，</pc>乖違全篇詠頌之旨<pc resp="#Xiang"
-                    ana="#punct-added">。</pc>據此
-                  <mentioned>令</mentioned>字必為<mentioned>今</mentioned>之形訛<pc resp="#Xiang"
-                    ana="#punct-added">，</pc> 此句當正作<pc resp="#Xiang" ana="#punct-added"
-                    >「</pc>太子身<mentioned>今</mentioned>為國本<pc resp="#Xiang" ana="#punct-added"
-                    >」</pc>
+                <p> 右詩太子身<mentioned>令</mentioned>為國本」句，<mentioned>令</mentioned>字當為<mentioned>今</mentioned>之形訛，說如左
+                    蓋此句為律詩頷聯出句對句以「君王到手擇留封相匹。近體律句以二二三分節為正體，上下句須詞性對品、結構相應平仄相對。太子」與「君王，皆皇室尊稱名詞對舉，體制森然；身<mentioned>今</mentioned>」與「到手，
+                  身」手」同為體物名詞，屬小類工對，<mentioned>今</mentioned>為時間副詞，狀已然之態「到動詞副詞化，表事功之成，副詞相對句法一揆；末三字為國本」「擇留封，皆動賓結構
+                    對仗圓合若作<mentioned>令</mentioned>字，則為使令動詞，與對句手」之名詞詞性舛馳，節奏點平仄失對，律體規矩盡失 斷非詩人本貌。
+                    況<mentioned>今</mentioned>與<mentioned>令</mentioned>字形僅差一筆，刻本、抄本手寫傳抄之際極易互訛，此古典文獻校勘中至為常見之形近致誤案例也。復考唐宋元三代詩家遺篇
+                  身<mentioned>今</mentioned>」乃習見之固定語式，僅<title>全元詩</title>所錄，「身<mentioned>今</mentioned>」入律句者便有數十例語義皆為「其身今者自身如今」， 圓通穩愜；反觀身<mentioned>令</mentioned>」一語，遍檢歷代律詩 無一例合規之對仗用例，其為後世傳抄誤寫，斷然可知
+                    更以詩旨核之此篇詠張良式定策安邦、功成身退之臣。前四句一氣貫注皆頌其不世勛業：首二句言其補袞安邦， 勛勒鼎鐘；此二句言其定儲固國 輔主定業。作「太子身<mentioned>今</mentioned>為國本」為社稷根本，暗寫功臣定儲安邦之力，脈絡一以貫之；若作<mentioned>令</mentioned>字，則語義扞格難通 且泯沒功臣定策之功，乖違全篇詠頌之旨。據此
+                  <mentioned>令</mentioned>字必為<mentioned>今</mentioned>之形訛， 此句當正作「太子身<mentioned>今</mentioned>為國本」
                 </p>
               </note>
             </app></l>
@@ -19735,15 +19696,10 @@
               <note type="editorial" resp="#Xiang" ana="#editorial-note" target="#by296_l5">
                 <p><ref target="#Bao">鮑本</ref>云此處惟<ref
                     target="#GX">古香樓本</ref>作<mentioned
-                    corresp="#by296_l5_yuxiang #by296_l5_yuxiang_end">浴像</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">，</pc>
+                    corresp="#by296_l5_yuxiang #by296_l5_yuxiang_end">浴像</mentioned>，
                   <ref target="#MY">眠雲精舍本</ref>與<ref target="#ZQ">振綺堂本</ref>並作<mentioned
-                    corresp="#by296_l5_suxiang #by296_l5_suxiang_end">俗像</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">。</pc>今覆按三個抄本<pc resp="#Xiang"
-                    ana="#punct-added">，</pc>則<ref target="#MY">眠雲精舍本</ref>亦作<mentioned
-                    corresp="#by296_l5_yuxiang #by296_l5_yuxiang_end">浴像</mentioned><pc
-                    resp="#Xiang" ana="#punct-added">，</pc><ref target="#Bao">鮑</ref>說誤記也<pc
-                    resp="#Xiang" ana="#punct-added">。</pc></p>
+                    corresp="#by296_l5_suxiang #by296_l5_suxiang_end">俗像</mentioned>。今覆按三個抄本，則<ref target="#MY">眠雲精舍本</ref>亦作<mentioned
+                    corresp="#by296_l5_yuxiang #by296_l5_yuxiang_end">浴像</mentioned>，<ref target="#Bao">鮑</ref>說誤記也。</p>
               </note>
             </app></l>
           <l>
