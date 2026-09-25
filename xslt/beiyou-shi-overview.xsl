@@ -816,7 +816,7 @@
         序文在 TEI 中有巢狀 div。這裡一律按文檔順序攤平成獨立區塊，
         避免第 3–6 篇被視為第 2 篇的內層內容。
       -->
-      <xsl:for-each select=".//tei:div[@type='preface']">
+      <xsl:for-each select="tei:div">
         <xsl:variable name="prefWits">
           <xsl:if test="tei:head//tei:lem[contains(@wit,'#GX')] or tei:head//tei:rdg[contains(@wit,'#GX') and not(contains(@ana,'#unattested'))]">GX </xsl:if>
           <xsl:if test="tei:head//tei:lem[contains(@wit,'#MY')] or tei:head//tei:rdg[contains(@wit,'#MY') and not(contains(@ana,'#unattested'))]">MY </xsl:if>
@@ -838,7 +838,7 @@
           </xsl:if>
 
           <!-- 只處理本序自己的段落，巢狀序由外層 for-each 另行輸出，避免重複。 -->
-          <xsl:apply-templates select="tei:p"/>
+          <xsl:apply-templates select="*[not(self::tei:head or self::tei:note)]"/>
         </div>
       </xsl:for-each>
     </div>
@@ -1099,7 +1099,7 @@
     募刻名錄的版面標記屬於原本抄本的版面資訊，不是編者校記。
     因此不使用 critnote，也不受「顯示注釋」開關控制。
   -->
-  <xsl:template match="tei:seg[@type='donorList']">
+  <xsl:template match="tei:seg[@type='donorList'] | tei:ab[@type='donorList']">
     <span class="donor-list">
       <xsl:apply-templates select="tei:seg[@type='donorColumn']"/>
     </span>
