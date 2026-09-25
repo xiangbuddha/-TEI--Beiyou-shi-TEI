@@ -12790,7 +12790,12 @@
         </lg>
       </div>
       <div xml:id="by175" type="poem">
-        <head>席上分題得清涼國送王錬師還桐廬</head>
+        <head></head>
+        <app>
+          <lem wit="#MY">席上分題得清涼國送王錬師還桐廬</lem>      
+          <rdg wit="#GX">席上分題得清涼國送王錬師還桐廬</rdg>
+          <rdg wit="#ZQ" ana="#agree"/>
+        </app>
         <lg>
           <l>
             <app>
@@ -13635,7 +13640,37 @@
       </div>
       <div xml:id="by188" type="poem">
         <head>園陵</head>
-        <p> 序<date>漢氏</date>之法人君在位三分天下貢賦一分入山陵<persName>武帝</persName>歷年長久比葬陵中不復容物<persName>霍光</persName>暗於大體奢侈過度其後<persName>更始</persName>之敗赤眉賊入<placeName type="location">長安</placeName>破<placeName type="location">茂陵</placeName>取物猶不能盡。賊師<persName>樊崈</persName>發掘諸陵取其寶貨凡所發有玉柙殯者聞如生故得恣行淫穢惟<persName>文帝</persName><placeName type="location">灞陵</placeName>獨完<persName>光武</persName>目擊其事猶不能改初作<placeName type="location">夀陵</placeName><roleName>將作大匠</roleName><persName>竇融</persName>即上言園陵廣袤無所用<persName>光武</persName>曰古者帝王之葬皆陶人瓦器木車茆馬使後代之人不知其處雖有此語而所作<placeName type="location">壽陵</placeName>亦二三頃城何益於後至<date>唐</date><date>宋</date>諸陵皆不免於發掘豈不痛哉<date>國朝</date>之制最為深密既葬人莫知其方與古帝王何遠之有
+        <p>
+          序<date>漢氏</date>之法人君在位三分天下貢賦一分入山陵
+          <persName>武帝</persName>歷年長久比葬陵中
+          <app>
+            <lem wit="#ZQ">不復</lem>
+            <rdg wit="#MY">不復</rdg>
+            <rdg wit="#GX">不能</rdg>
+          </app>
+          容物
+          <persName>霍光</persName>暗於大體奢侈過度其後
+          <persName>更始</persName>之敗赤眉賊入
+          <placeName type="location">長安</placeName>破
+          <placeName type="location">茂陵</placeName>取物猶不能盡。賊師
+          <persName>樊崈</persName>發掘諸陵取其寶貨凡所發有玉柙殯者聞如生故得恣行淫穢惟
+          <persName>文帝</persName>
+          <placeName type="location">灞陵</placeName>獨完
+          <persName>光武</persName>目擊其事猶不能改初作
+          <placeName type="location">夀陵</placeName>
+          <roleName>將作大匠</roleName>
+          <persName>竇融</persName>即上言園陵廣袤無所用
+          <persName>光武</persName>曰古者帝王之葬皆陶人瓦器木車茆馬使後代之人不知其處雖有此語而所作
+          <placeName type="location">壽陵</placeName>亦二三頃
+          <app>
+            <lem wit="#ZQ">誠</lem>
+            <rdg wit="#GX">誠</rdg>
+            <rdg wit="#MY">城</rdg>
+          </app>
+          何益於後至
+          <date>唐</date>
+          <date>宋</date>諸陵皆不免於發掘豈不痛哉
+          <date>國朝</date>之制最為深密既葬人莫知其方與古帝王何遠之有
         </p>
         <lg>
           <l>
@@ -17596,7 +17631,13 @@
         </lg>
       </div>
       <div xml:id="by274" type="poem">
-        <head>詠筍</head>
+        <head>
+         <app>
+           <lem wit="#MY">詠筍</lem>
+           <rdg wit="#ZQ" ana="#agree"/>
+           <rdg wit="#GX" ana="#omitted"/>
+         </app>
+        </head>
         <p><placeName>都下</placeName>無竹<pc>，</pc>獨<placeName type="temple">南古寺</placeName>有碧條一叢<pc>。</pc>今春忽作數筍<pc>，</pc>小如筋<pc>，</pc>甚可愛也<pc>。</pc></p>
         <lg>
           <l>
@@ -19454,7 +19495,7 @@
       <div xml:id="by293" type="poem">
         <head>
           <title type="main">
-            出京附山中隱舟無他書但是一部<title type="sutra" ana="#buddhist-sutra">華嚴經</title>而已以詩美之
+            出京附山中隱舟無他書但是一部<title type="sutra" ana="#buddhist-sutra">華嚴</title>而已以詩美之
           </title>
           <num value="1">一</num>
         </head>
@@ -19585,7 +19626,13 @@
         </lg>
       </div>
       <div xml:id="by295" type="poem">
-        <head>山隱授業無錫州洞觀虛因北歸觴客遂留數日</head>
+        <head>
+          <app>
+            <lem wit="#MY">山隱授業無錫州洞觀虛因北歸觴客遂留數日</lem>
+            <rdg wit="#ZQ" ana="#agree"/>
+            <rdg wit="#GX">山隱授業無錫州洞觀虛因北歸觴客遂留數月</rdg>
+          </app>
+        </head>
         <lg>
           <l>
             <app>
