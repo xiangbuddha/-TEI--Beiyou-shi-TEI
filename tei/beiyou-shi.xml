@@ -2494,7 +2494,7 @@
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
                 <p>按：此處<ref target="#GX">古香樓本</ref>作<mentioned>蒹</mentioned>，<ref target="#ZQ"
-                    >振綺堂本</ref>作<mentioned>兼</mentioned>。二字雖通假，義可互通，然諸本用字既殊，各有所據，非後人妄改。故今仍依各本之實錄入，並存其異，不強出一讀，以存其舊，而備考校焉。</p>
+                    >振綺堂本</ref>作<mentioned>兼</mentioned>。按<mentioned>蒹</mentioned>、<mentioned>兼</mentioned>同源而非異體，句出《詩·秦風·蒹葭》，<ref target="#ZQ">振綺堂本</ref>作<mentioned>兼</mentioned>，蓋省艸頭而誤，今從<ref target="#GX">古香樓本</ref>。</p>
               </note>
             </app></l>
           <l>
@@ -2971,7 +2971,7 @@
               <rdg wit="#ZQ">苦李寔多人競採</rdg>
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                <p>按：此句<ref target="#GX">古香樓本</ref>作<mentioned>實</mentioned>，<ref target="#ZQ">振綺堂本</ref>作<mentioned>寔</mentioned>。二字通假，義同，故並錄其異。</p>
+                <p>按：此句<ref target="#GX">古香樓本</ref>作<mentioned>實</mentioned>，<ref target="#ZQ">振綺堂本</ref>作<mentioned>寔</mentioned>。二字唯於「是」義相通；此言苦李之果實，<mentioned>寔</mentioned>無此義，<ref target="#ZQ">振綺堂本</ref>形近而誤，今從<ref target="#GX">古香樓本</ref>。</p>
               </note>
             </app></l>
           <l>
@@ -2990,9 +2990,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">難得升堂奉酒卮 </lem>
-              <rdg wit="#ZQ">難得升堂奉壽卮</rdg>
-              <rdg wit="#MY">難得升堂奉壽卮</rdg>
+              <lem wit="#MY">難得升堂奉壽卮 </lem>
+              <rdg wit="#ZQ" ana="#agree"/>
+              <rdg wit="#GX">難得升堂奉酒卮</rdg>
             </app>
           </l>
         </lg>
@@ -3195,7 +3195,7 @@
               <rdg wit="#ZQ">野人應聘媿非材</rdg>
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                <p>按：此句<ref target="#GX">古香樓本</ref>作<mentioned>愧</mentioned>，<ref target="#ZQ">振綺堂本</ref>作<mentioned>媿</mentioned>。二字通假，義同，故並錄其異。</p>
+                <p>按：此句<ref target="#GX">古香樓本</ref>作<mentioned>愧</mentioned>，<ref target="#ZQ">振綺堂本</ref>作<mentioned>媿</mentioned>。二字異體，義同，故並錄其異。</p>
               </note>
             </app></l>
           <l>
@@ -3350,9 +3350,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">君前猶有鏡新磨 </lem>
-              <rdg wit="#ZQ">君前猶有敬新磨</rdg>
-              <rdg wit="#MY">君前猶有敬新磨</rdg>
+              <lem wit="#MY">君前猶有敬新磨</lem>
+              <rdg wit="#ZQ" ana="#agree"/>
+              <rdg wit="#GX">君前猶有鏡新磨 </rdg>
             </app>
           </l>
           <l>
@@ -4326,9 +4326,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#ZQ">南去渾如不第時</lem>
-              <rdg wit="#GX">南去渾如下第時</rdg>
-              <rdg wit="#MY">南去渾如下第時</rdg>
+              <lem wit="#GX">南去渾如下第時</lem>
+              <rdg wit="#ZQ">南去渾如不第時</rdg>
+              <rdg wit="#MY" ana="#agree"/>
             </app>
           </l>
           <l>
@@ -4696,9 +4696,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">人生淡泊從我好</lem>
-              <rdg wit="#ZQ">人生淡泊從吾好</rdg>
-              <rdg wit="#MY">人生淡泊從吾好</rdg>
+              <lem wit="#ZQ">人生淡泊從吾好</lem>
+              <rdg wit="#GX">人生淡泊從我好</rdg>
+              <rdg wit="#MY" ana="#agree"/>
             </app>
           </l>
           <l>
@@ -5757,9 +5757,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">古無封域盛王元</lem>
-              <rdg wit="#ZQ">古無封域盛皇元</rdg>
-              <rdg wit="#MY" ana="#agree"/>
+              <lem wit="#ZQ">古無封域盛皇元</lem>
+              <rdg wit="#GX">古無封域盛王元</rdg>
+              <rdg wit="#MY">古無封域盛王元</rdg>
             </app>
           </l>
           <l>
@@ -6050,9 +6050,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#ZQ">役夫何事夢何君</lem>
-              <rdg wit="#GX">役夫何事夢爲君</rdg>
-              <rdg wit="#MY">役夫何事夢爲君</rdg>
+              <lem wit="#GX">役夫何事夢爲君</lem>
+              <rdg wit="#ZQ">役夫何事夢何君</rdg>
+              <rdg wit="#MY" ana="#agree"/>
             </app>
           </l>
         </lg>
@@ -8988,8 +8988,7 @@
                 </app>
                 字
                 <lb/>
-                <ref target="#GX">古香樓本</ref><ref target="#MY">眠雲精舍本</ref>作<mentioned>閒</mentioned><ref target="#ZQ">振綺堂本</ref>作<mentioned>間</mentioned> 按<mentioned>閒</mentioned>古通<mentioned>間</mentioned>義無別當以同字處理
-                <bibl><title>楚石北遊詩</title></bibl><ref target="#Bao">吳、鮑注</ref>未審通假之義徑視為異文出校非是今正之
+                <ref target="#GX">古香樓本</ref><ref target="#MY">眠雲精舍本</ref>作<mentioned>閒</mentioned><ref target="#ZQ">振綺堂本</ref>作<mentioned>間</mentioned> 按：<mentioned>閒</mentioned>、<mentioned>間</mentioned>古今分化，<mentioned>閒</mentioned>兼空隙、閒暇二義，<mentioned>間</mentioned>但承空隙一義。此聯「月屋閒蜉蟻」對「霜空好射雕」，<mentioned>閒</mentioned>與<mentioned>好</mentioned>相對，當作閒暇解；<ref target="#ZQ">振綺堂本</ref>作<mentioned>間</mentioned>則不辭，形近而誤。<bibl><title>楚石北遊詩</title></bibl><ref target="#Bao">吳、鮑注</ref>出校，是也。
               </note>
             </app></l>
           <l>
@@ -10620,14 +10619,7 @@
               <rdg wit="#ZQ">沙怱葉負霜</rdg>
               <rdg wit="#MY" ana="#agree"/>
             </app>
-            <note resp="#Xiang" type="critique" ana="#textual-criticism">
-              <p>
-                <mentioned>怱</mentioned>乃<mentioned>葱</mentioned>之異體，古今字書多載，非俗訛也。 <ref target="#ZQ">振綺堂本</ref>作<mentioned>忽</mentioned>， <ref target="#Bao">鮑</ref>、<ref target="#Yu">余</ref>不察，以為訛字而輒改，遂指<ref target="#ZQ">振綺堂本</ref><mentioned>忽</mentioned>為誤。
-                  然詳其字形，<mentioned>怱</mentioned>與<mentioned>忽</mentioned>相近，傳寫易混；且文義當指蔥蒜辛香之屬，作<mentioned>葱／怱</mentioned>乃順，作<mentioned>忽</mentioned>則義乖而不通。
-                  故知<ref target="#ZQ">振綺堂本</ref>非必誤，特<mentioned>怱</mentioned>字未識而致其失耳。
-                  今校以<mentioned>怱</mentioned>為正，並釋其為<mentioned>葱</mentioned>異體，以正<ref target="#Bao">鮑</ref>、<ref target="#Yu">余</ref>之誤斷
-              </p>
-            </note></l>
+</l>
           <l>
             <app>
               <lem wit="#GX">何人鳴觱篥</lem>
@@ -10654,7 +10646,7 @@
             <app>
               <lem wit="#GX">無樹可黃落</lem>
               <rdg wit="#ZQ" ana="#agree"/>
-              <rdg wit="#MY"><del rend="strikeyhrough">黃</del><add>無</add>樹<del rend="strikethrough">可</del><add>不</add>黃落</rdg>
+              <rdg wit="#MY"><del rend="strikethrough">黃</del><add>無</add>樹<del rend="strikethrough">可</del><add>不</add>黃落</rdg>
             </app>
           </l>
           <l>
@@ -10719,7 +10711,7 @@
               <rdg wit="#ZQ">吾聞穹髮北</rdg>
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note">
-                  按：此處<mentioned>窮</mentioned>通<mentioned>穹</mentioned>。蓋古書假借通用，形近而義轉，故仍錄其文，而明其通假云。
+                  按：此處<ref target="#GX">古香樓本</ref>、<ref target="#MY">眠雲精舍本</ref>作<mentioned>窮</mentioned>，<ref target="#ZQ">振綺堂本</ref>作<mentioned>穹</mentioned>。語出《莊子·逍遙遊》「窮髮之北，有冥海者」。《說文》雖訓「穹，窮也」，然<mentioned>窮髮</mentioned>為成語，不容易字，<ref target="#ZQ">振綺堂本</ref>形近而誤。
               </note>
             </app></l>
         </lg>
@@ -10763,7 +10755,7 @@
             <app>
               <lem wit="#GX">愛爾捐居室</lem>
               <rdg wit="#ZQ">愛爾損居室</rdg>
-              <rdg wit="#MY">愛而捐屋居</rdg>
+              <rdg wit="#MY">愛爾捐屋居</rdg>
             </app>
           </l>
           <l>
@@ -11447,7 +11439,7 @@
             <app>
               <lem wit="#GX">塞土凝煙紫</lem>
               <rdg wit="#ZQ">塞土疑煙紫</rdg>
-              <rdg wit="#MY">塞上凝煙紫</rdg>
+              <rdg wit="#MY">塞<subst ana="#scribal-augmentation"><del rend="modified"><gap reason="illegible" quantity="1" unit="character"/></del><add place="overstrike" rend="heavy-ink">上</add></subst>凝煙紫</rdg>
             </app>
           </l>
           <l>
@@ -12515,7 +12507,7 @@
             <app>
               <lem wit="#GX">北固城頭試薄衫</lem>
               <rdg wit="#ZQ" ana="#agree"/>
-              <rdg wit="#MY">北固城頭試薄彩</rdg>
+              <rdg wit="#MY">北固城頭試薄<subst ana="#scribal-augmentation"><del rend="modified"><gap reason="illegible" quantity="1" unit="character"/></del><add place="overstrike" rend="heavy-ink">彩</add></subst></rdg>
             </app>
           </l>
           <l>
@@ -12790,12 +12782,13 @@
         </lg>
       </div>
       <div xml:id="by175" type="poem">
-        <head></head>
+        <head>
         <app>
           <lem wit="#MY">席上分題得清涼國送王錬師還桐廬</lem>      
           <rdg wit="#GX">席上分題得清涼國送王錬師還桐廬</rdg>
           <rdg wit="#ZQ" ana="#agree"/>
         </app>
+        </head>
         <lg>
           <l>
             <app>
@@ -13260,7 +13253,7 @@
               <note type="editorial" resp="#Xiang" ana="#editorial-note"> 按：<ref target="#GX"
                   >古香樓本</ref>作<mentioned>燃</mentioned>，<ref target="#MY">眠雲精舍本</ref>與<ref
                   target="#ZQ"
-                  >振綺堂本</ref>作<mentioned>然</mentioned>。<mentioned>燃</mentioned>、<mentioned>然</mentioned>古有通假，聲近而義相涉。然三本字形既殊，仍各依原文分別錄入，以存其異。
+                  >振綺堂本</ref>作<mentioned>然</mentioned>。<mentioned>燃</mentioned>、<mentioned>然</mentioned>為古今字，<mentioned>燃</mentioned>乃<mentioned>然</mentioned>之後起區別字。然三本字形既殊，仍各依原文分別錄入，以存其異。
               </note>
             </app></l>
           <l>
@@ -13824,7 +13817,7 @@
               <lem wit="#GX">雨紅飄樹晩春静</lem>
               <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#MY"> 
-                <unclear reason="illegible" cert="medium">殘</unclear>紅飄雨晩春静
+                <subst ana="#scribal-augmentation"><del rend="overwritten"><gap reason="illegible" quantity="1" unit="character"/></del><add place="overstrike" rend="heavy-ink"><unclear reason="illegible" cert="medium">殘</unclear></add></subst>紅飄雨晩春静
               </rdg>
             </app>
           </l>
@@ -13844,9 +13837,10 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">只知戊已是中央</lem>
+              <lem wit="#ed" resp="#Xiang">只知戊己是中央</lem>
+              <rdg wit="#GX">只知戊已是中央</rdg>
               <rdg wit="#ZQ">只知戊巳是中央</rdg>
-              <rdg wit="#MY" ana="#agree"/>
+              <rdg wit="#MY">只知戊已是中央</rdg>
             </app>
           </l>
         </lg>
@@ -14100,9 +14094,9 @@
         <lg>
           <l>
             <app>
-              <lem wit="#ZQ">波送羅川鴻雁來</lem>
+              <lem wit="#MY">波謎羅川鴻雁來</lem>
               <rdg wit="#GX">波迷羅川鴻雁來</rdg>
-              <rdg wit="#MY">波謎羅川鴻雁來</rdg>
+              <rdg wit="#ZQ">波送羅川鴻雁來</rdg>
             </app>
           </l>
           <l>
@@ -14751,9 +14745,9 @@
         <lg>
           <l>
             <app>
-              <lem wit="#GX">平時官吏守居庸</lem>
-              <rdg wit="#ZQ">平時關吏守居庸</rdg>
-              <rdg wit="#MY" ana="#agree"/>
+              <lem wit="#ZQ">平時關吏守居庸</lem>
+              <rdg wit="#GX">平時官吏守居庸</rdg>
+              <rdg wit="#MY">平時官吏守居庸</rdg>
             </app>
           </l>
           <l>
@@ -15441,14 +15435,13 @@
         <lg>
           <l>
             <app>
-              <lem wit="#ed">狐裘自古歎蒙茸</lem>
+              <lem wit="#ZQ">狐裘自古歎蒙茸</lem>
               <rdg wit="#MY">狐裘自古歎蒙
                 <subst ana="#scribal-augmentation">
                   <del rend="modified">耸</del>
                   <add place="above" rend="heavy-ink">茸</add>
                 </subst>
               </rdg>
-              <rdg wit="#ZQ" ana="#agree"/>
               <rdg wit="#GX">狐裘自古歎蒙戎</rdg>
             </app>
           </l>
@@ -15957,7 +15950,7 @@
           <l>
             <app>
               <lem wit="#ZQ">吾聞衰晉有劉侯</lem>
-              <rdg wit="#MY">吾聞哀晉有劉侯</rdg>
+              <rdg wit="#MY">吾聞<subst ana="#scribal-augmentation"><del rend="modified"><gap reason="illegible" quantity="1" unit="character"/></del><add place="overstrike" rend="heavy-ink">哀</add></subst>晉有劉侯</rdg>
               <rdg wit="#GX">吾聞<gap reason="omission" unit="char" quantity="1"/>晉有劉侯</rdg>
             </app>
           </l>
@@ -16337,9 +16330,9 @@
           </l>
           <l>
             <app>
-              <lem wit="#MY">不出明光一顆珠</lem>
-              <rdg wit="#ZQ">不出光明一顆珠</rdg>
-              <rdg wit="#GX">不出光明一顆珠</rdg>
+              <lem wit="#GX">不出光明一顆珠</lem>
+              <rdg wit="#ZQ" ana="#agree"/>
+              <rdg wit="#MY">不出明光一顆珠</rdg>
             </app>
           </l>
         </lg>
@@ -16632,21 +16625,18 @@
       <div xml:id="by267" type="poem">
         <head>
           <app>
-            <lem wit="#ZQ">
-              <title>君子交行</title>贈<persName role="addressed_to">呂日新</persName>
-              <persName>日新</persName>與余相知最早
-              先後來<placeName type="location">京師</placeName>
-              作<title>君子行</title>贈之
-            </lem>
-            
-            <rdg wit="#GX">
+            <lem wit="#GX">
               <title>君子交行</title>贈<persName>日新</persName>
               <persName>日新</persName>與余相知最早
               先後來<placeName type="location">京師</placeName>
               作<title>君子交行</title>贈之
+            </lem>
+            <rdg wit="#ZQ #MY">
+              <title>君子交行</title>贈<persName role="addressed_to">呂日新</persName>
+              <persName>日新</persName>與余相知最早
+              先後來<placeName type="location">京師</placeName>
+              作<title>君子行</title>贈之
             </rdg>
-            
-            <rdg wit="#MY" ana="#agree"/>
           </app>
         </head>
         <lg>
@@ -17276,7 +17266,7 @@
           </l>
           <l>
             <app>
-              <lem wit="#GX">又聞黃鸝聲晛睆</lem>
+              <lem wit="#GX">又聞黃鸝聲睍睆</lem>
               <rdg wit="#ZQ">又聞黃鸝聲睨睆</rdg>
               <rdg wit="#MY" ana="#agree"/>
             </app>
@@ -19600,7 +19590,7 @@
               <rdg wit="#MY" ana="#agree"/>
               <note type="editorial" resp="#Xiang" ana="#editorial-note"> 此處<ref target="#GX"
                   >古香樓本</ref>作<mentioned>策</mentioned>，<ref target="#ZQ"
-                  >振綺堂本</ref>作<mentioned>筴</mentioned>。二字聲近而通用，屬通假，義不相乖。 </note>
+                  >振綺堂本</ref>作<mentioned>筴</mentioned>。二字異體（《康熙字典》<mentioned>筴</mentioned>「又與策同」），義不相乖。 </note>
             </app></l>
           <l>
             <app>
@@ -19804,7 +19794,7 @@
             <app>
               <lem wit="#GX">真娘墓在連岡樹</lem>
               <rdg wit="#ZQ" ana="#agree"/>
-              <rdg wit="#MY">真娘墓石連岡樹</rdg>
+              <rdg wit="#MY">真娘墓<subst ana="#scribal-augmentation"><del rend="modified" cert="low">在</del><add place="overstrike" rend="heavy-ink">石</add></subst>連岡樹</rdg>
             </app>
           </l>
           <l>
@@ -20164,7 +20154,7 @@
               <note type="editorial" resp="#Xiang" ana="#editorial-note"><lb/>
                 <ref target="#GX">古香樓本</ref>、<ref target="#ZQ"
                   >振綺堂本</ref>作<mentioned>閒</mentioned>；<ref target="#MY"
-                  >眠雲精舍</ref>作<mentioned>間</mentioned>。按：<mentioned>閒</mentioned>古通<mentioned>間</mentioned>，義無別。
+                  >眠雲精舍</ref>作<mentioned>間</mentioned>。按：<mentioned>閒</mentioned>、<mentioned>間</mentioned>古今分化，<mentioned>間</mentioned>但承空隙一義。此言車馬閒暇，<ref target="#MY">眠雲精舍本</ref>作<mentioned>間</mentioned>則不辭，形近而誤。
               </note>
             </app></l>
   </lg>
@@ -20236,7 +20226,7 @@
           <title type="main">遊洞庭</title>
           <num value="1">一</num>
           <note type="editorial" resp="#Xiang" ana="#title-label #count-mismatch">
-            <ref target="#MY">眠雲本</ref>題簽作「遊洞庭二首」<pc>，</pc>而實收三首<pc>。</pc>
+            <ref target="#MY">眠雲本</ref>題作「遊洞庭二首」<pc>，</pc>而實收三首<pc>。</pc>
           </note></head>
   <lg>
     <l>
@@ -20964,9 +20954,9 @@
   <lg>
     <l>
             <app>
-              <lem wit="#GX">欲上高臺望两京</lem>
+              <lem wit="#MY">欲上高臺望<del rend="strikethrough">南</del><add>北</add>京</lem>
+              <rdg wit="#GX">欲上高臺望两京</rdg>
               <rdg wit="#ZQ">欲上高臺望南京</rdg>
-              <rdg wit="#MY">欲上高臺望<del rend="strikethrough">南</del><add>北</add>京</rdg>
             </app>
           </l>
     <l>
